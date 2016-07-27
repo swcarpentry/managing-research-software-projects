@@ -21,17 +21,11 @@ The main sections are:
 While this looks like a waterfall process, in practice we did this:
 
 1.  Draft the assumptions.
-
 2.  Do one bullet point for each of several learning milestones.
-
 3.  Draft the desired results.
-
 4.  Update the learning milestones (still as just one bullet point each, no time estimates or exercises).
-
 5.  Get early feedback from four people.
-
 6.  Do a full pass to flesh out the assumptions and add time estimates and exercises.
-
 7.  Ask for feedback and start iterating (mostly to cut things).
 
 ## Stage 0 - Assumptions
@@ -47,41 +41,16 @@ While this looks like a waterfall process, in practice we did this:
         *   1:00 for lunch
         *   0:30 total for two coffee breaks
     *   Learners use native installs on their own machines
-        *   Must be familiar with the Unix shell
-        *   Know enough version control to follow along/imitate a pull/edit/commit/push/PR cycle
+    *   Must be familiar with:
+        *   [the Unix shell][shell-lesson]
+        *   [Make][make-lesson]
+        *   [version control][git-lesson] (enough to follow pull/edit/commit/push/PR instructions)
+        *   [Python][python-lesson] (because we have to use some programming language for examples)
 *   Data
     *   Start with a copy of a badly-organized software project
     *   Improve it in pieces throughout the course
-*   Focus on practices common to all real-world development methodologies
-    *   Automated builds (mini-lesson on Make)
-    *   Regression testing
-    *   Continuous integration
 
 ## Stage 1 - Desired Results
-
-### Goals
-
-Learners can:
-
-1.  ...explain the core practices of agile and sturdy development
-    and identify the kinds of projects each is best suited for.
-2.  ...implement continuous integration.
-3.  ...automate basic management tasks using a self-documenting Makefile.
-4.  ...automatically generate documentation for a project
-    from information embedded in the project's source code.
-5.  ...coach other developers on pair programming.
-6.  ...report their own status clearly and succinctly in a stand-up meeting.
-7.  ...coach other developers on reporting status in stand-up meetings.
-8.  ...critique and improve bug reports and status reports.
-9.  ...create a development schedule for a project
-    given a set of tasks with priorities and time estimates.
-10. ...create a release.
-
-### Summative Assessment
-
-*   Midpoint: triage a set of issues in a GitHub repository
-    and create a work plan for the upcoming release.
-*   Final: create an installable version of a small project.
 
 ### Essential Questions
 
@@ -91,12 +60,45 @@ How do I...
 *   ...figure out what the team ought to work on next?
 *   ...figure out when they'll be done (and what "done" means)?
 *   ...adjust plans when things go wrong?
-*   ...create an installable, discoverable version of my project?
+*   ...manage contributions from other developers?
+*   ...create an installable, usable version of my project?
 
 ### Concepts
 
 Learners will know that...
 
-*   FIXME
+*   ...participating in a software project is a learnable skill
+*   ...managing a software project depends on making plans and having feedback at several scales
+*   ...off-the-shelf tools can provide part of the information needed to manage a project
 
+### Summative Assessment
+
+*   Midpoint: triage a set of issues in a GitHub repository
+    and create a work plan for the upcoming release.
+*   Final: create an installable version of a small project.
+
+### Skills
+
+Learners can:
+
+1.  ...explain the core practices of agile and sturdy development
+    and identify the kinds of projects each is best suited for.
+2.  ...report their status clearly and succinctly in a stand-up meeting.
+3.  ...give others feedback on their stand-up reports (content and presentation).
+4.  ...critique and improve bug reports and status reports.
+5.  ...create a development schedule for a project
+    given a set of tasks with priorities and time estimates.
+6.  ...implement regression tests driven by
+    a single script with an appropriate exit status
+7.  ...implement continuous integration by connecting a GitHub repository
+    to [Travis-CI][travis-pr].
+8.  ...automatically generate documentation for a project
+    from information embedded in the project's source code.
+9.  ...package a release.
+
+[git-lesson]: https://swcarpentry.github.io/git-novice/
+[make-lesson]: https://swcarpentry.github.io/make-novice/
+[python-lesson]: https://swcarpentry.github.io/python-novice-gapminder/
 [rse]: http://www.rse.ac.uk/
+[shell-lesson]: https://swcarpentry.github.io/shell-novice/
+[travis-pr]: https://docs.travis-ci.com/user/pull-requests
