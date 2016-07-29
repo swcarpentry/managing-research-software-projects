@@ -1,7 +1,7 @@
 ---
 title: "Agile Development"
 teaching: 15
-exercises: 0
+exercises: 15
 questions:
 - "What is agile software development?"
 - "What kinds of projects is agile development best suited to?"

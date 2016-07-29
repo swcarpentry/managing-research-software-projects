@@ -1,7 +1,7 @@
 ---
 title: "Sturdy Development"
 teaching: 15
-exercises: 0
+exercises: 15
 questions:
 - "What is sturdy software development?"
 - "What kinds of projects is sturdy development best suited to?"
