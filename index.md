@@ -13,4 +13,4 @@ suggestions and improvements are very welcome,
 and you can send us either by
 [filing issues]({{ site.github.repository_url}}/issues)
 or
-[submitting pull requests]({{ site.github.repository_url}}/pulls).
+[submitting pull requests]({{ site.github.repository_url}}/pulls).**
