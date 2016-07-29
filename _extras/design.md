@@ -11,12 +11,13 @@ The main sections are:
 1.  Assumptions about audience, time, etc.
 
 2.  Desired results:
-    overall goals, summative assessments at half-day granularity, what learners will be able to do, what learners will know.
+    *   Overall goals
+    *   Summative assessments at half-day granularity
+    *   What learners will be able to do, what they will know, etc.
 
-3.  Learning plan:
-    each episode has a heading that summarizes what will be covered,
-    then estimates time that will be spent on teaching and on exercises,
-    while the exercises are given as bullet points.
+3.  Learning plan
+    *   TBD
+    *   See [this lesson][gapminder-learning-plan] for an example
 
 ## Stage 0 - Assumptions
 
@@ -44,6 +45,8 @@ The main sections are:
 *   Running Example
     *   Start with a badly-organized software project
     *   Improve it in pieces throughout the course
+*   Resources
+    *   [Noble's Rules](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424)
 
 ## Stage 1 - Desired Results
 
@@ -88,13 +91,31 @@ Learners can:
 7.  ...implement regression tests driven by
     a single script with an appropriate exit status
 8.  ...implement continuous integration by connecting
-    a regression test script and [Travis-CI][travis-pr]
-    to a GitHub repository.
+    a regression test script and a Git repository.
 9.  ...create an installable Python package.
 
+### Tools
+
+Learners will use:
+
+*   [GitHub][github] for project management (issues and pull requests)
+*   [Make][make-lesson] for task automation
+*   [Travis-CI][travis] for continuous integration
+*   [Sphinx][sphinx] for documentation generation
+*   [Pip and Setuptools][python-packaging] to create and install packages
+*   [Waffle][waffle] for backlog management
+*   Cellphones to record themselves giving status reports
+*   Lots and lots of sticky notes
+
+[gapminder-learning-plan]: http://swcarpentry.github.io/python-novice-gapminder/design/#stage-2---learning-plan
 [git-lesson]: https://swcarpentry.github.io/git-novice/
+[github]: https://github.com/
 [make-lesson]: https://swcarpentry.github.io/make-novice/
 [python-lesson]: https://swcarpentry.github.io/python-novice-gapminder/
+[python-packaging]: https://packaging.python.org/
 [rse]: http://www.rse.ac.uk/
 [shell-lesson]: https://swcarpentry.github.io/shell-novice/
+[sphinx]: http://www.sphinx-doc.org/
 [travis-pr]: https://docs.travis-ci.com/user/pull-requests
+[travis]: https://travis-ci.org/
+[waffle]: http://waffle.io
