@@ -1,22 +1,16 @@
 ---
 layout: lesson
 ---
-This lesson is an introduction to programming Python
-for people with little or no previous programming experience
-using image manipulation as a motivating example.
-It is designed to be used in both [Data Carpentry]({{ site.dc_site }})
-and [Software Carpentry]({{ site.swc_site }}) workshops.
-This lesson references the Jupyter Notebook,
-but can be taught using a regular Python interpreter as well.
-Please note that this lesson uses Python 3 rather than Python 2.
+This lesson is an introduction to software project management
+for people with a background in research
+who find themselves running a small to medium-sized project
+(one with up to half a dozen team members
+working for a few months at a stretch).
 
-> ## Prerequisites
->
-> Learners need to understand the concepts of files and directories
-> (including the working directory)
-> and how to start a Python interpreter
-> before starting this lesson.
->
-> Learners must install Python and download the image files before class starts:
-> please see [the setup instructions]({{ site.github.url }}/setup/)) for details.
-{: .prereq}
+**This lesson is in the early stages of development.
+Please see [the design notes]({{ site.github.url }}/design/) for current thoughts:
+suggestions and improvements are very welcome,
+and you can send us either by
+[filing issues]({{ site.github.repository_url}}/issues)
+or
+[submitting pull requests]({{ site.github.repository_url}}/pulls).
