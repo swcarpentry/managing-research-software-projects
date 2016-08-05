@@ -16,10 +16,11 @@ The main sections are:
     *   What learners will be able to do, what they will know, etc.
 
 3.  Learning plan
-    *   TBD
-    *   See [this lesson][gapminder-learning-plan] for an example
+    *   Each episode has a heading that summarizes what will be covered,
+        then estimates time that will be spent on teaching and on exercises.
+    *   The exercises are outlined to make expectations concrete.
 
-## Stage 0 - Assumptions
+## Stage 1 - Assumptions
 
 *   Audience
     *   [Research software engineers][rse]
@@ -27,17 +28,24 @@ The main sections are:
     *   Program frequently, use version control, know what unit testing is (but may not actually have written many tests)
     *   No previous exposure to project management or software project management tools
 *   Projects
-    *   6×6: half a dozen people working for about six months
+    *   3×6: three people working for about six months
     *   Both numbers may vary up and down, but:
         *   Group is small enough to have lunch together (i.e., a single cohesive unit)
-        *   Timescale is short enough that personnel turnover probably isn't an issue
+        *   Timescale is short enough that personnel turnover isn't an issue
+    *   Some or all of the team members may be multi-tasking on other projects
+    *   Building digital scientific instruments rather than doing exploratory data analysis
+        *   E.g., creating a library, an application, or a pipeline
+        *   May be starting from scratch
+        *   But more likely cleaning up, rewriting, and integrating bits and pieces
+    *   The principal scientific investigator (PI) *isn't* a member of the development team
 *   Constraints
     *   One full day 09:00-17:00
+        *   06:30 teaching time
         *   1:00 for lunch
         *   0:30 total for two coffee breaks
-        *   So 6:30 teaching time
-    *   Learners use native installs on their own machines plus web resources (e.g., GitHub)
-    *   Must be familiar with:
+    *   This means we cannot introduce complex new tools
+        *   But can add extensions to tools participants are already familiar with
+    *   Attendees must be familiar with:
         *   [the Unix shell][shell-lesson]
         *   [Make][make-lesson]
         *   [Git][git-lesson] (enough to follow pull/edit/commit/push/PR instructions and use GitHub)
@@ -46,9 +54,11 @@ The main sections are:
     *   Start with a badly-organized software project
     *   Improve it in pieces throughout the course
 *   Resources
-    *   [Noble's Rules](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424)
+    *   [Noble's Rules][noble-rules]
+    *   [Jenkins' Project Primer][jenkins-primer]
+    *   [Taschuk's Rules][taschuk-rules]
 
-## Stage 1 - Desired Results
+## Stage 2 - Desired Results
 
 ### Essential Questions
 
@@ -66,15 +76,14 @@ How do I...
 
 Learners will know that...
 
-*   ...participating in a software project is a learnable skill
-*   ...managing a software project depends on making plans and having feedback at several timescales
-*   ...off-the-shelf tools can provide part of the information needed to manage a project
+*   ...participating in a software project is a separate skill from programming.
+*   ...managing a software project depends on planning and getting feedback at multiple timescales.
+*   ...a few simple off-the-shelf tools can reduce or remove many barriers to participation.
 
 ### Summative Assessment
 
-*   Midpoint: triage a set of issues in a GitHub repository
-    and create a work plan for the upcoming release.
-*   Final: create an installable version of a small project.
+*   Learners will draw up a prioritized plan for work on their own projects
+    *   Where "work" includes "training stakeholders"
 
 ### Skills
 
@@ -87,12 +96,12 @@ Learners can:
 4.  ...critique and improve bug reports and status reports.
 5.  ...create a development schedule for a project
     given a set of tasks with priorities and time estimates.
-6.  ...organize the files in a small to medium-sized software project
-7.  ...implement regression tests driven by
-    a single script with an appropriate exit status
-8.  ...implement continuous integration by connecting
-    a regression test script and a Git repository.
-9.  ...create an installable Python package.
+6.  ...(re-)organize the files in a small to medium-sized software project
+    according to [Noble's Rules][noble-rules]
+7.  ...implement continuous integration by connecting
+    a regression test script to a GitHub repository using Travis-CI.
+9.  ...apply [Taschuk's Rules][taschuk-rules] to robustify software.
+10. ...create an installable Python package.
 
 ### Tools
 
@@ -107,15 +116,34 @@ Learners will use:
 *   Cellphones to record themselves giving status reports
 *   Lots and lots of sticky notes
 
+## Stage 3 - Learning Plan
+
+### Agile Development (09:00)
+
+*   Teaching: 20 min
+*   Exercises: 25 min
+    *   FIXME: exercise
+
+### Sturdy Development (09:45)
+
+*   Teaching: 20 min
+*   Exercises: 25 min
+    *   FIXME: exercise
+
+### Coffee (10:30): 15 min
+
 [gapminder-learning-plan]: http://swcarpentry.github.io/python-novice-gapminder/design/#stage-2---learning-plan
 [git-lesson]: https://swcarpentry.github.io/git-novice/
 [github]: https://github.com/
+[jenkins-primer]: http://www.nickjenkins.net/prose/projectPrimer.pdf
 [make-lesson]: https://swcarpentry.github.io/make-novice/
+[noble-rules]: http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424
 [python-lesson]: https://swcarpentry.github.io/python-novice-gapminder/
 [python-packaging]: https://packaging.python.org/
 [rse]: http://www.rse.ac.uk/
 [shell-lesson]: https://swcarpentry.github.io/shell-novice/
 [sphinx]: http://www.sphinx-doc.org/
+[taschuk-rules]: https://github.com/oicr-gsi/robust-paper
 [travis-pr]: https://docs.travis-ci.com/user/pull-requests
 [travis]: https://travis-ci.org/
 [waffle]: http://waffle.io
