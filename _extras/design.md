@@ -71,6 +71,7 @@ How do I...
 *   ...make it easy for other people to contribute?
 *   ...manage contributions from other developers?
 *   ...create an installable, usable version of my project?
+*   ...pass these skills on to my team?
 
 ### Concepts
 
@@ -83,7 +84,7 @@ Learners will know that...
 ### Summative Assessment
 
 *   Learners will draw up a prioritized plan for work on their own projects
-    *   Where "work" includes "training stakeholders"
+    *   Where "work" includes "educating stakeholders"
 
 ### Skills
 
@@ -102,6 +103,7 @@ Learners can:
     a regression test script to a GitHub repository using Travis-CI.
 9.  ...apply [Taschuk's Rules][taschuk-rules] to robustify software.
 10. ...create an installable Python package.
+11. ...pass their skills on to teammates.
 
 ### Tools
 
@@ -121,16 +123,64 @@ Learners will use:
 ### Agile Development (09:00)
 
 *   Teaching: 20 min
+*   Exercises: 60 min
+    *   Do standup reports and give feedback on others' standup reports
+    *   Pair program and critique
+    *   Test-driven development
+        *   Turn prose description into tests
+        *   Turn tests into function
+
+### Coffee (10:20): 15 min
+
+### Sturdy Development (10:35)
+
+*   Teaching: 30 min
+*   Exercises: 50 min
+    *   Give feedback on a small set of issues filed in a repo
+    *   Convert project backlog with time estimates into schedule
+    *   Code review
+
+### Morning Review (11:55): 10 min
+
+### Lunch (12:05): 55 min
+
+*   Think about one technique or tool you like and how to pitch it
+
+### Project Organization (13:00)
+
+*   Teaching: 15 min
+*   Exercises: 15 min
+    *   Reorganize code according to Noble's Rules
+
+### Robustifying Code (13:30)
+
+*   Teaching: 15 min
+*   Exercises: 15 min
+    *   Identify violations of Taschuk's Rules
+
+### Continuous Integration (14:00)
+
+*   Teaching: 15 min
+*   Exercises: 15 min
+    *   Set up Travis-CI and a GitHub repository
+    *   Automatically regenerate documentation using Sphinx
+
+### Coffee (14:30): 15 min
+
+### Packaging and Dependency Management (14:45)
+
+*   Teaching: 15 min
 *   Exercises: 25 min
-    *   FIXME: exercise
+    *   Capture project dependencies in requirements.txt
+    *   Create installable Python package
 
-### Sturdy Development (09:45)
+### Lightning Presentations (15:25)
 
-*   Teaching: 20 min
-*   Exercises: 25 min
-    *   FIXME: exercise
+*   Learners' 1-minute pitches of other techniques and tools: 20 min
 
-### Coffee (10:30): 15 min
+### Wrap-Up (15:45)
+
+*   Discussion: 15 min
 
 [gapminder-learning-plan]: http://swcarpentry.github.io/python-novice-gapminder/design/#stage-2---learning-plan
 [git-lesson]: https://swcarpentry.github.io/git-novice/
