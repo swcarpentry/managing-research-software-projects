@@ -138,7 +138,7 @@ Learners will use:
 *   Exercises: 50 min
     *   Give feedback on a small set of issues filed in a repo
     *   Convert project backlog with time estimates into schedule
-    *   Code review
+*   Note: will cover code review later when looking at Taschuk's Rules
 
 ### Morning Review (11:55): 10 min
 
