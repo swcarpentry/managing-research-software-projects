@@ -20,7 +20,7 @@ The main sections are:
         then estimates time that will be spent on teaching and on exercises.
     *   The exercises are outlined to make expectations concrete.
 
-## Stage 1 - Assumptions
+## Stage 1: Assumptions
 
 *   Audience
     *   [Research software engineers][rse]
@@ -39,7 +39,7 @@ The main sections are:
         *   But more likely cleaning up, rewriting, and integrating bits and pieces
     *   The principal scientific investigator (PI) *isn't* a member of the development team
 *   Constraints
-    *   One full day 09:00-17:00
+    *   One full day 09:00-16:00
         *   06:30 teaching time
         *   1:00 for lunch
         *   0:30 total for two coffee breaks
@@ -58,9 +58,9 @@ The main sections are:
     *   [Jenkins' Project Primer][jenkins-primer]
     *   [Taschuk's Rules][taschuk-rules]
 
-## Stage 2 - Desired Results
+## Stage 2: Desired Results
 
-### Essential Questions
+### Questions
 
 How do I...
 
@@ -73,110 +73,113 @@ How do I...
 *   ...create an installable, usable version of my project?
 *   ...pass these skills on to my team?
 
-### Concepts
-
-Learners will know that...
-
-*   ...participating in a software project is a separate skill from programming.
-*   ...managing a software project depends on planning and getting feedback at multiple timescales.
-*   ...a few simple off-the-shelf tools can reduce or remove many barriers to participation.
-
-### Summative Assessment
-
-*   Learners will draw up a prioritized plan for work on their own projects
-    *   Where "work" includes "educating stakeholders"
-
 ### Skills
 
-Learners can:
+I can...
 
-1.  ...explain the core practices of agile and sturdy development
-    and identify the kinds of projects each is best suited for.
-2.  ...report their status clearly and succinctly in a stand-up meeting.
-3.  ...give others feedback on the content and presentation of their stand-up reports.
-4.  ...critique and improve bug reports and status reports.
-5.  ...create a development schedule for a project
+1.  ...report my status clearly and succinctly in a stand-up meeting.
+2.  ...give others feedback on the content and presentation of their stand-up reports.
+3.  ...critique and improve bug reports and status reports.
+4.  ...create a development schedule for a project
     given a set of tasks with priorities and time estimates.
-6.  ...(re-)organize the files in a small to medium-sized software project
+5.  ...(re-)organize the files in a small to medium-sized software project
     according to [Noble's Rules][noble-rules]
-7.  ...implement continuous integration by connecting
+6.  ...implement continuous integration by connecting
     a regression test script to a GitHub repository using Travis-CI.
-9.  ...apply [Taschuk's Rules][taschuk-rules] to robustify software.
-10. ...create an installable Python package.
-11. ...pass their skills on to teammates.
+7.  ...apply [Taschuk's Rules][taschuk-rules] to make software more robust.
+8.  ...create an installable Python package.
+
+### Concepts
+
+I know...
+
+*   ...that participating in a software project is a separate skill from programming.
+*   ...what the core practices of agile and sturdy development are
+    and what kinds of projects each is best suited for.
+*   ...that managing a software project depends on planning and feedback at multiple timescales.
+*   ...that simple off-the-shelf tools can make participation in software projects easier.
 
 ### Tools
 
-Learners will use:
+I can use...
 
-*   [GitHub][github] for project management (issues and pull requests)
-*   [Make][make-lesson] for task automation
-*   [Travis-CI][travis] for continuous integration
-*   [Sphinx][sphinx] for documentation generation
-*   [Pip and Setuptools][python-packaging] to create and install packages
-*   [Waffle][waffle] for backlog management
-*   Cellphones to record themselves giving status reports
-*   Lots and lots of sticky notes
+*   ...[GitHub][github] for project management (issues and pull requests).
+*   ...[Make][make-lesson] for task automation.
+*   ...[Travis-CI][travis] for continuous integration.
+*   ...[Sphinx][sphinx] for documentation generation.
+*   ...[Pip and Setuptools][python-packaging] to create and install packages.
+*   ...[Waffle][waffle] for backlog management.
 
-## Stage 3 - Learning Plan
+## Stage 3: Learning Plan
+
+### Summative Assessment
+
+*   Mid-day: learners will set up continuous integration for a small project
+*   End of day: learners will develop a one-minute pitch for their real project
 
 ### Agile Development (09:00)
 
 *   Teaching: 20 min
-*   Exercises: 60 min
-    *   Do standup reports and give feedback on others' standup reports
-    *   Pair program and critique
+*   Exercises: 40 min
+    *   Do standup reports and critique others' standup reports
+        *   Groups of three with cellphone recording
     *   Test-driven development
         *   Turn prose description into tests
-        *   Turn tests into function
+        *   Turn tests into functions
+        *   All done with pair programming
 
-### Coffee (10:20): 15 min
-
-### Sturdy Development (10:35)
-
-*   Teaching: 30 min
-*   Exercises: 50 min
-    *   Give feedback on a small set of issues filed in a repo
-    *   Convert project backlog with time estimates into schedule
-*   Note: will cover code review later when looking at Taschuk's Rules
-
-### Morning Review (11:55): 10 min
-
-### Lunch (12:05): 55 min
-
-*   Think about one technique or tool you like and how to pitch it
-
-### Project Organization (13:00)
+### Project Organization (10:00)
 
 *   Teaching: 15 min
 *   Exercises: 15 min
     *   Reorganize code according to Noble's Rules
 
-### Robustifying Code (13:30)
+### Coffee (10:30): 15 min
+
+### Robustifying Code (10:45)
 
 *   Teaching: 15 min
 *   Exercises: 15 min
     *   Identify violations of Taschuk's Rules
 
-### Continuous Integration (14:00)
+### Continuous Integration (11:15)
 
 *   Teaching: 15 min
 *   Exercises: 15 min
     *   Set up Travis-CI and a GitHub repository
     *   Automatically regenerate documentation using Sphinx
+    *   Note: part of the exercise will be done during the teaching time by following along
 
-### Coffee (14:30): 15 min
+### Morning Review (11:45): 15 min
 
-### Packaging and Dependency Management (14:45)
+### Lunch (12:00): 60 min
+
+*   Think about one technique or tool you like and how to pitch it
+
+### Sturdy Development (13:00)
+
+*   Teaching: 30 min
+*   Exercises: 30 min
+    *   Critique a couple of badly-written issues in a repo
+    *   Write short workflow description in three-part notation (actor-view-model)
+
+### Packaging and Dependency Management (14:00)
 
 *   Teaching: 15 min
-*   Exercises: 25 min
+*   Exercises: 30 min
     *   Capture project dependencies in requirements.txt
     *   Create installable Python package
 
-### Lightning Presentations (15:25)
+### Coffee (14:45): 15 min
 
-*   Learners' 1-minute pitches of other techniques and tools: 20 min
+### Staying on Track
+
+*   Teaching: 15 min
+    *   Barriers to participation
+    *   Code of conduct
+    *   Developing a mission statement
+*   Exercises: 30 min
+    *   Create and deliver a mission statement (1-minute pitches)
 
 ### Wrap-Up (15:45)
 
