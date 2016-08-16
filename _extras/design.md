@@ -3,6 +3,13 @@ layout: page
 title: "Lesson Design"
 permalink: /design/
 ---
+
+## Contents
+{:.no_toc}
+
+* Jekyll will replace this line with an auto-generated table of contents.
+{:toc}
+
 ## Process Used
 
 This lesson was developed using a slimmed-down variant of the "Understanding by Design" process.
