@@ -1,0 +1,379 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Managing Research Software Projects</title>
+    <link rel="stylesheet" href="css/reveal.css">
+    <link rel="stylesheet" href="css/theme/sky.css">
+    <link rel="stylesheet" href="lib/css/zenburn.css">
+    <link rel="stylesheet" href="custom.css">
+    <script>
+      var link = document.createElement( 'link' );
+      link.rel = 'stylesheet';
+      link.type = 'text/css';
+      link.href = window.location.search.match( /print-pdf/gi ) ? 'css/print/pdf.css' : 'css/print/paper.css';
+      document.getElementsByTagName( 'head' )[0].appendChild( link );
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+
+<!-- @ title page -->
+<section style="text-align: center;">
+  <h2>Managing Research Software Projects</h2>
+  <p>&nbsp;</p>
+  <h3>Daniel Standage</h3>
+  <h4><a href="https://standage.github.io/">https://standage.github.io/</a></h4>
+  <p><a href="mailto:daniel.standage@gmail.com">daniel.standage@gmail.com</a></p>
+  <p>&nbsp;</p>
+  <div>
+    <div class="left">
+      <h4>October 2016</h4>
+    </div>
+    <div class="right">
+      <img src="img/cc-by.svg" alt="CC-BY" />
+    </div>
+  </div>
+</section>
+
+<!-- @ overview -->
+<section data-markdown>
+**Roadmap**
+
+*   What "done" looks like
+*   Key features of research software projects
+*   Noble's Rules
+*   Taschuk's Rules
+*   Agile vs. sturdy development
+    *   And why "versus" is the wrong way to think
+</section>
+
+<!-- @ scope of this talk -->
+<section data-markdown>
+**What Kinds of Projects?**
+
+*   3x3: three people for three months
+*   Contributors are frequently time-slicing other projects
+*   "Everybody makes coffee"
+</section>
+
+<!-- @ goals -->
+<section data-markdown>
+**What "Done" Looks Like**
+
+*   Software can be used by people other than original authors
+    *   Reproducibility meaningless without this
+*   Reasonably confident that results are correct
+    *   As good as physical experiment
+*   Small changes and extensions are easy
+    *   Regression tests make change safe - [Feathers](https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052/)
+*   Fast enough to be useful
+</section>
+
+<!-- @ sustainability -->
+<section data-markdown>
+**A Note on Sustainability**
+
+*   Meaningless to speak of "sustainable software"
+*   Effort = size of change / (developers' skill * code quality)
+*   But even this is misleading
+    *   Developers' skill *with code built that way*
+*   Research software is a [commons](https://www.amazon.com/Think-Like-Commoner-Introduction-Commons/dp/0865717680/):
+    *   a shared resource
+    *   a community that manages it
+    *   a set of social rules governing its use
+</section>
+
+<!-- @ what makes research projects special -->
+<section data-markdown>
+**Key Features of Research Software Projects**
+
+*   Developers have extensive domain knowledge, but are largely self-taught programmers
+*   Don't know all the right answers, but do know some
+*   Requirements may be either:
+    *   Discovered as we go along (exploring)
+    *   Relatively stable (engineering)
+*   Problem is *subtle* as well as *complicated*
+</section>
+
+<!-- @ Noble's Rules -->
+<section data-markdown>
+**[Noble's Rules](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424)**
+
+How to organize small research projects:
+
+*   Put each project in its own directory, which is named after the project
+*   Put text documents associated with the project in `doc`
+*   Put raw data and metadata in `data`
+*   Put files generated during cleanup and analysis in `results`
+*   Put project source code in `src`
+*   Put external scripts, or compiled programs in `bin`
+*   Name all files to reflect their content or function
+</section>
+
+<section data-markdown>
+**A Note on Contribution**
+
+*   [Steinmacher](http://www.igor.pro.br/publica/papers/GSD_CSCW2014.pdf)'s analysis of barriers to contribution
+    *   How easy is it to get set up?
+    *   How friendly was reception of first contribution?
+*   So add the following to Noble's Rules:
+    *   `LICENSE`: terms of re-use
+        *   **Use a standard license** (preferably MIT)
+    *   `CITATION`: how to cite the software
+        *   Get a DOI for the software from [Zenodo](https://zenodo.org/) or the like
+    *   `CONTRIBUTING`: how to make contributions
+    *   `CONDUCT`: project's social rules
+</section>
+
+<!-- @ Taschuk's Rules -->
+<section data-markdown>
+**[Taschuk's Rules](http://oicr-gsi.github.io/robust-paper/)**
+
+How to make research software more robust:
+
+*   Have a README that explains in a few lines what the software does and what its dependencies are
+*   Print usage information when launching from the command line that explains the software's features
+*   Give the software a meaningful version number
+*   Make older versions available
+*   Reuse software (within reason)
+</section>
+
+<!-- @ Taschuk's Rules -->
+<section data-markdown>
+**[Taschuk's Rules](http://oicr-gsi.github.io/robust-paper/)** (cont.)
+
+*   Do not require root or other special privileges
+*   Eliminate hard-coded paths
+*   Allow configuration of all useful parameters from the command line
+*   Include a small test set that can be run to ensure the software is actually working
+*   Produce identical results when given identical inputs
+
+From "works on my laptop" to "runs on your cluster".
+</section>
+
+<!-- @ overview of agile vs. sturdy -->
+<section data-markdown>
+**From What to How**
+
+*   That's what we want: how do we get there?
+*   "Traditional" software development is a planning-intensive engineering discipline
+    *   In theory - in practice, not so much
+*   Didn't really have a name until "agile" came along in the 1990s
+*   Now refer to the engineering approach as "sturdy"
+*   Differences between the two are much smaller in practice than in theory
+</section>
+
+<!-- @ agile -->
+<section data-markdown>
+**Agile Development**
+
+*   Any methodology that relies on tight feedback loops
+*   Iterations range in length from one day to two weeks
+*   Time-boxing: size the work to fit a fixed deadline
+    *   Relative error is smaller on shorter timescales
+    *   Everyone misses deadlines the first few times
+    *   Practice makes better
+*   Plan each iteration at its start
+*   Debugging is easier
+    *   Whatever broke must have happened recently
+</section>
+
+<section data-markdown>
+**Agile Development** (cont.)
+
+*   Start each day with a stand-up meeting
+    *   Standing up encourages brevity
+    *   Everything is "done" or "not done"
+*   Three things in one minute
+    *   What did you do yesterday?
+    *   What are you going to do today?
+    *   What's blocking you?
+*   *Write it down* and check
+*   Encourages people to break things into one-day chunks
+</section>
+
+<section data-markdown>
+**Agile Development** (cont.)
+
+*   Pair programming
+    *   Real-time code review
+    *   Knowledge transfer ("we all make coffee")
+    *   Discourages Facebook and Twitter
+        *   At least initially
+*   Driver and navigator switch roles every hour
+    *   With a short break to stay fresh
+*   [Empirical studies](https://www.amazon.com/Making-Software-Really-Works-Believe/dp/0596808321/)
+    confirm effectiveness
+</section>
+
+<section data-markdown>
+**Agile Development** (cont.)
+
+*   Test-driven development (TDD)
+    *   Write the test
+    *   *Then* write the code
+    *   Then clean up and commit
+    *   "Red-green-refactor"
+*   Writing tests first helps with design
+    *   And ensures tests actually get written
+*   [Empirical studies](https://www.amazon.com/Making-Software-Really-Works-Believe/dp/0596808321/)
+    don't confirm effectiveness...
+*   ...but people who use it swear by it
+</section>
+
+<section data-markdown>
+**Agile Development** (cont.)
+
+*   Continuous integration
+    *   Re-run regression tests automatically *before* merging changes
+    *   Ensures baseline is always in runnable state
+</section>
+
+<section data-markdown>
+**When to Use Agile Development?**
+
+1.  Requirements are constantly changing.
+2.  Developers and users can communicate continuously.
+3.  The team is small.
+4.  Team members are disciplined enough not to use "agile" as
+    an excuse for cowboy coding.
+5.  They actually *like* being empowered.
+</section>
+
+<section data-markdown>
+**Sturdy Development**
+
+*   Basis: the later a problem is found, the more expensive it is to fix
+    *   Measure twice, cut once
+*   *Not* "waterfall"
+    *   That term was coined in 1970 to label something that people didn't do
+*   Iterative, but:
+    *   Much longer iterations
+    *   Planning is much more formal
+    *   (Usually) more division of responsibility
+</section>
+
+<section data-markdown>
+**Sturdy Development** (cont.)
+
+*   The *product manager* owns the spec
+    *   Do *not* ask "What features do you want?"
+    *   Instead, ask "What needs doesn't it meet?" and "What hurts?"
+*   Translate desires into features
+    *   Strive for objectively testable
+</section>
+
+<section data-markdown>
+**Sturdy Development** (cont.)
+
+*   Analysis and estimation (A&E)
+    *   How long to develop/test/document?
+*   Developers/testers/writers provide the estimates
+    *   Management is not allowed to shave them
+    *   That results in "Star Trek scheduling"
+*   But management *does* prioritize
+    *   Low/medium/high is usually good enough
+</section>
+
+<section data-markdown>
+**Sturdy Development** (cont.)
+
+*   The *project manager* owns the schedule
+    *   How far behind are we?
+    *   What can we do about it?
+*   Put high-effort/low-priority items on the shelf
+*   Start high-effort/high-priority items early
+    *   In case something goes wrong
+*   Track progress and *re-scale estimates*
+    *   If the first six things went 20% over time,
+        assume the next six will too
+*   Plan to spend the last 1/3 of the project tidying up
+</section>
+
+<section data-markdown>
+**Sturdy Development** (cont.)
+
+*   Testing starts at the same time as development
+    *   Build infrastructure
+    *   Check that features are actually testable
+*   Ditto documentation
+    *   "If we can't explain it, you don't get to build it"
+*   "Delivery" starts early too
+    *   The only way to make sure fixes can be deployed quickly
+        is to make quick deployment the norm
+</section>
+
+<section data-markdown>
+**Common Themes**
+
+*   TDD, pair programming, and continuous integration
+    fit sturdy development as naturally as agile
+*   Use a ticketing system with both to track:
+    *   What's broken
+    *   What needs to be added
+    *   Who's working on what
+</section>
+
+<section data-markdown>
+**A Note on Code Review**
+
+*   [Petre](http://arxiv.org/abs/1407.5648) found:
+    *   Requires domain knowledge to be useful
+    *   No point doing it at submission time
+*   But domain experts are scarce
+*   And no incentives to review someone else's thesis project code
+*   At present, only sustainable in team projects
+</section>
+
+<section data-markdown>
+**A Note on Overtime**
+
+*   [Robinson](http://www.igda.org/?page=crunchsixlessons):
+    working overtime when you're late only makes you later
+*   Continuous work reduces cognitive function 25% every 24 hours
+    *   So after two all nighters,
+        you would not legally be considered competent to care for yourself
+*   Optimal work cycle is:
+    *   45-50 minutes of work + 10 minute break (with exercise)
+    *   8 hours/day
+    *   5 days/week
+*   Science!
+</section>
+
+<section data-markdown>
+**When to Use Sturdy Development?**
+
+1.  Requirements are relatively fixed.
+
+2.  Team has enough experience in domain to make meaningful estimates.
+
+3.  The team is large.
+
+4.  The users insist on knowing in advance
+    what you're going to deliver and when.
+</section>
+
+      </div>
+    </div>
+    <script src="lib/js/head.min.js"></script>
+    <script src="js/reveal.js"></script>
+    <script>
+      // More info https://github.com/hakimel/reveal.js#configuration
+      // More info https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        history: true,
+        center: false,
+        slideNumber: true,
+        dependencies: [
+          { src: 'plugin/markdown/marked.js' },
+          { src: 'plugin/markdown/markdown.js' },
+          { src: 'plugin/notes/notes.js', async: true },
+          { src: 'plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } }
+        ]
+      });
+    </script>
+  </body>
+</html>

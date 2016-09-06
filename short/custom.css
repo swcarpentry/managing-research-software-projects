@@ -1,0 +1,23 @@
+section {
+  text-align: left;
+}
+
+p.title {
+  text-align: left;
+  font-weight: bold;
+}
+
+span.oops {
+  font-weight: bold;
+  font-style: italic;
+}
+
+div.left {
+  text-align: left;
+  float: left;
+}
+
+div.right {
+  float: right;
+  text-align: right;
+}
