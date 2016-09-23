@@ -47,10 +47,11 @@
 
 *   What "done" looks like
 *   Key features of research software projects
-*   Noble's Rules
-*   Taschuk's Rules
-*   Agile vs. sturdy development
-    *   And why "versus" is the wrong way to think
+*   Project organization (Noble's Rules)
+*   Social considerations
+*   Version control
+*   Automated testing
+*   "Technical robustness" (Taschuk's Rules)
 </section>
 
 <!-- @ scope of this talk -->
@@ -75,6 +76,7 @@
 *   Fast enough to be useful
 </section>
 
+<!-- Revisit this slide: software sustainability vs supporting academic software sustainably -->
 <!-- @ sustainability -->
 <section data-markdown>
 **A Note on Sustainability**
@@ -101,6 +103,8 @@
 *   Problem is *subtle* as well as *complicated*
 </section>
 
+<!-- Flow/transition?!?! -->
+
 <!-- @ Noble's Rules -->
 <section data-markdown>
 **[Noble's Rules](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424)**
@@ -116,8 +120,10 @@ How to organize small research projects:
 *   Name all files to reflect their content or function
 </section>
 
+<!-- @ Social considerations -->
+
 <section data-markdown>
-**A Note on Contribution**
+**Social considerations**
 
 *   [Steinmacher](http://www.igor.pro.br/publica/papers/GSD_CSCW2014.pdf)'s analysis of barriers to contribution
     *   How easy is it to get set up?
@@ -126,10 +132,24 @@ How to organize small research projects:
     *   `LICENSE`: terms of re-use
         *   **Use a standard license** (preferably MIT)
     *   `CITATION`: how to cite the software
-        *   Get a DOI for the software from [Zenodo](https://zenodo.org/) or the like
+        *   Get a DOI for the software (see [Zenodo](https://zenodo.org/) and the like)
     *   `CONTRIBUTING`: how to make contributions
     *   `CONDUCT`: project's social rules
 </section>
+<section data-markdown>
+**Social considerations (cont.)**
+
+* Simultaneously selfless and selfish
+    * makes science easier to evaluate
+    * makes life easier on your colleagues
+    * makes it more likely that others will use (and **contribute to!**) your software
+    * ensures relevancy of your work when funding runs out or maintainer moves on
+    * more likely to impact traditional academic metrics (i.e. citations)
+</section>
+
+<!-- @ Version control -->
+
+<!-- Automated testing -->
 
 <!-- @ Taschuk's Rules -->
 <section data-markdown>
@@ -143,8 +163,6 @@ How to make research software more robust:
 *   Make older versions available
 *   Reuse software (within reason)
 </section>
-
-<!-- @ Taschuk's Rules -->
 <section data-markdown>
 **[Taschuk's Rules](http://oicr-gsi.github.io/robust-paper/)** (cont.)
 
