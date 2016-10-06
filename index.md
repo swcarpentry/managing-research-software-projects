@@ -1,5 +1,6 @@
 ---
 layout: lesson
+root: .
 ---
 This lesson is an introduction to software project management
 for people with a background in research
