@@ -193,7 +193,7 @@ From "works on my laptop" to "runs on your cluster".
 
 <!-- @ Version control -->
 <section data-markdown>
-**Version control**
+**Does this look familiar?**
 
 ![Filenames](img/phd052810s.gif)
 </section>
@@ -239,20 +239,6 @@ for an overview.
 </section>
 
 <section data-markdown>
-**Continuous Integration**
-
-*   Tests are already automated, right...RIGHT?!
-*   Re-run automated tests *before* merging changes
-*   Ensures baseline is always in runnable state
-*   CI as a service
-    *   free for open-source projects
-    *   pay for private projects
-*   Run CI internally
-    *   free open-source solutions
-    *   bring your own hardware (& configuration)
-</section>
-
-<section data-markdown>
 **Pair Programming**
 
 *   Real-time code review
@@ -263,17 +249,6 @@ for an overview.
     *   With a short break to stay fresh
 *   [Empirical studies](https://www.amazon.com/Making-Software-Really-Works-Believe/dp/0596808321/)
     confirm effectiveness
-</section>
-
-<section data-markdown>
-**Ticketing Systems**
-
-*   A common fixture on code hosting services
-*   Use them to track:
-    *   What's broken
-    *   What needs to be added
-    *   Who's working on what
-*   Great place to foster open discussion
 </section>
 
 <section data-markdown>
@@ -292,6 +267,53 @@ for an overview.
 </section>
 
 <section data-markdown>
+**Exercise**
+
+*   Polygon overlay is one of the basic operations in geographic information systems.
+*   Simplified version is rectangle overlay.
+    *   Each rectangle is represented as [x0, y0, x1, y1].
+
+![Rectangle Overlay](img/overlay.png)
+
+*   Given two valid rectangles as input,
+    `overlay` return the rectangle that is their overlap.
+</section>
+
+<section data-markdown>
+**Exercise**
+
+*   What are the three most interesting tests to write for this function?
+*   Describe in terms of input 1, input 2, expected output, and why it's important.
+    *   Assume input rectangles are well-formed (i.e., nobody's trying to pass in a character string).
+*   Come up with answers on your own, then compare with your neighbor and select the best three.
+</section>
+
+<section data-markdown>
+**Continuous Integration**
+
+*   Tests are already automated, right...RIGHT?!
+*   Re-run automated tests *before* merging changes
+*   Ensures baseline is always in runnable state
+*   CI as a service
+    *   free for open-source projects
+    *   pay for private projects
+*   Run CI internally
+    *   free open-source solutions
+    *   bring your own hardware (& configuration)
+</section>
+
+<section data-markdown>
+**Ticketing Systems**
+
+*   A common fixture on code hosting services
+*   Use them to track:
+    *   What's broken
+    *   What needs to be added
+    *   Who's working on what
+*   Great place to foster open discussion
+</section>
+
+<section data-markdown>
 **Compromises**
 
 <!--
@@ -302,7 +324,8 @@ for an overview.
     * dissonance between conceptual model and model reflected in code  <!-- Strict definition -->
     * informed, deliberate suspension of best practice <!-- in the interest of Getting Things Done™ --> <!-- More general usage -->
 *   Necessary to get project off the ground
-*   Complicates sustained development: debt must be paid down
+*   Complicates sustained development
+    * debt must be paid down
 </section>
 
 <section data-markdown>
@@ -338,34 +361,14 @@ for an overview.
 **[Stupidity-Driven Development](http://ivory.idyll.org/blog/2014-research-coding.html)**
 
 *   Avoids wasting time writing tests for bugs that:
-    * never appear, or appear rarely
-    * don't affect correctness of results
+    *   never appear, or appear rarely
+    *   don't affect correctness of results
 *   Order of priorities
-    * correctness
-    * performance
-    * user experience
-</section>
-
-<section data-markdown>
-**Exercise**
-
-*   Polygon overlay is one of the basic operations in geographic information systems.
-*   Simplified version is rectangle overlay.
-    *   Each rectangle is represented as [x0, y0, x1, y1].
-
-![Rectangle Overlay](img/overlay.png)
-
-*   Given two valid rectangles as input,
-    `overlay` return the rectangle that is their overlap.
-</section>
-
-<section data-markdown>
-**Exercise**
-
-*   What are the three most interesting tests to write for this function?
-*   Describe in terms of input 1, input 2, expected output, and why it's important.
-    *   Assume input rectangles are well-formed (i.e., nobody's trying to pass in a character string).
-*   Come with answers on your own, then compare with your neighbor and select the best three.
+    *   correctness
+    *   performance
+    *   user experience
+    *   ...
+    *   beautiful code
 </section>
 
 <section data-markdown>
