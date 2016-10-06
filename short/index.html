@@ -45,13 +45,12 @@
 <section data-markdown>
 **Roadmap**
 
-*   What "done" looks like
 *   Key features of research software projects
-*   Project organization (Noble's Rules)
+*   What "done" looks like
+*   Basic rules of thumb for project organization, usability
 *   Social considerations
-*   Version control
-*   Automated testing
-*   "Technical robustness" (Taschuk's Rules)
+*   Critical fixtures: automated testing, version control
+*   Making it all happen
 </section>
 
 <!-- @ scope of this talk -->
@@ -62,34 +61,6 @@
 *   Contributors are frequently time-slicing other projects
 *   "Everybody makes coffee"
 </section>
-
-<!-- @ goals -->
-<section data-markdown>
-**What "Done" Looks Like**
-
-*   Software can be used by people other than original authors
-    *   Reproducibility meaningless without this
-*   Reasonably confident that results are correct
-    *   As good as physical experiment
-*   Small changes and extensions are easy
-    *   Regression tests make change safe - [Feathers](https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052/)
-*   Fast enough to be useful
-</section>
-
-<!-- Revisit this slide: software sustainability vs supporting academic software sustainably -->
-<!-- @ sustainability -->
-<!--<section data-markdown>
-**A Note on Sustainability**
-
-*   Meaningless to speak of "sustainable software"
-*   Effort = size of change / (developers' skill * code quality)
-*   But even this is misleading
-    *   Developers' skill *with code built that way*
-*   Research software is a [commons](https://www.amazon.com/Think-Like-Commoner-Introduction-Commons/dp/0865717680/):
-    *   a shared resource
-    *   a community that manages it
-    *   a set of social rules governing its use
-</section>-->
 
 <!-- @ what makes research projects special -->
 <section data-markdown>
@@ -104,20 +75,36 @@
 *   Getting funding, credit can be difficult
 </section>
 
-<!-- Flow/transition?!?! -->
+<!-- @ goals -->
+<section data-markdown>
+**What "Done" Looks Like**
+
+*   Software can be used by people other than original authors
+    *   Reproducibility meaningless without this
+*   Reasonably confident that results are correct
+    *   As good as physical experiment
+*   Small changes and extensions are easy
+    *   Automated tests make change safe - [Feathers](https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052/)
+*   Fast enough to be useful
+</section>
 
 <!-- @ Noble's Rules -->
 <section data-markdown>
 **[Noble's Rules](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424)**
 
+![Project organization](img/noble.png)
+</section>
+<section data-markdown>
+**[Noble's Rules](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424)**
+
 How to organize small research projects:
 
-*   Put each project in its own directory, which is named after the project
-*   Put text documents associated with the project in `doc`
-*   Put raw data and metadata in `data`
-*   Put files generated during cleanup and analysis in `results`
-*   Put project source code in `src`
-*   Put external scripts, or compiled programs in `bin`
+*   Put each project in its own directory <!-- which is named after the project -->
+*   Put text documents in `doc/`
+*   Put raw data and metadata in `data/`
+*   Put files generated during analysis in `results/` <!-- preliminary cleanup is part of the analysis; document, treat raw data as read-only -->
+*   Put project source code in `src/`
+*   Put external scripts, or compiled programs in `bin/`
 *   Name all files to reflect their content or function
 </section>
 
@@ -127,8 +114,8 @@ How to organize small research projects:
 
 How to make research software more robust:
 
-*   Have a README that explains in a few lines what the software does and what its dependencies are
-*   Print usage information when launching from the command line that explains the software's features
+*   Have a descriptive README (synopsis, dependencies)  <!-- Have a README that explains in a few lines what the software does and what its dependencies are -->
+*   Provide a descriptive usage statement <!-- Print usage information when launching from the command line that explains the software's features -->
 *   Give the software a meaningful version number
 *   Make older versions available
 *   Reuse software (within reason)
@@ -138,18 +125,57 @@ How to make research software more robust:
 
 *   Do not require root or other special privileges
 *   Eliminate hard-coded paths
-*   Allow configuration of all useful parameters from the command line
-*   Include a small test set that can be run to ensure the software is actually working
+*   Enable command-line configuration <!-- Allow configuration of all useful parameters from the command line -->
+*   Include a small data set to test installation <!-- Include a small test set that can be run to ensure the software is actually working -->
 *   Produce identical results when given identical inputs
 
 From "works on my laptop" to "runs on your cluster".
+</section>
+
+<!-- @ Social considerations -->
+
+<section data-markdown>
+**Social considerations**
+
+*   [Steinmacher](http://www.igor.pro.br/publica/papers/GSD_CSCW2014.pdf)'s analysis of barriers to contribution
+    *   How easy is it to get set up?
+    *   How friendly was reception of first contribution?
+*   So add the following to Noble's Rules:
+    *   `LICENSE`: terms of re-use
+        *   **Use a standard license** (preferably MIT)
+    *   `CITATION`: how to cite the software
+        *   Get a DOI for the software (see [Zenodo](https://zenodo.org/))
+    *   `CONTRIBUTING`: how to make contributions
+    *   `CONDUCT`: project's social rules
+</section>
+<section data-markdown>
+**Social considerations (cont.)**
+
+* Simultaneously selfless and selfish
+    * makes science easier to evaluate
+    * makes life easier on your colleagues
+    * makes it more likely that others will use (and **contribute to!**) your software
+    * ensures relevancy of your work when funding runs out or maintainer moves on
+    * more likely to impact traditional academic metrics (i.e. citations)
+</section>
+
+<section data-markdown>
+**A Note on Code Review**
+
+*   Academics review each other's papers; what about code?
+*   Re: code review, [Petre](http://arxiv.org/abs/1407.5648) found:
+    *   Requires domain knowledge to be useful
+    *   No point doing it at submission time
+*   But domain experts are scarce
+*   No incentives to review someone else's thesis project code
+*   At present, only sustainable within team projects
 </section>
 
 <!-- Automated testing -->
 <section data-markdown>
 **Automated testing**
 
-*   Already have correctness/sanity tests in place (or should!)
+*   Already have correctness tests in place (or should!)
 *   Invest time to automate these tests
 *   Common kinds of tests
     *   Smoke tests (sanity checks)                       <!-- literally, make sure the code doesn't blow up when invoked -->
@@ -181,45 +207,6 @@ See [Ram, 2013](https://dx.doi.org/10.1186%2F1751-0473-8-7) and
 for an overview.
 </section>
 
-<!-- @ Social considerations -->
-
-<section data-markdown>
-**Social considerations**
-
-*   [Steinmacher](http://www.igor.pro.br/publica/papers/GSD_CSCW2014.pdf)'s analysis of barriers to contribution
-    *   How easy is it to get set up?
-    *   How friendly was reception of first contribution?
-*   So add the following to Noble's Rules:
-    *   `LICENSE`: terms of re-use
-        *   **Use a standard license** (preferably MIT)
-    *   `CITATION`: how to cite the software
-        *   Get a DOI for the software (see [Zenodo](https://zenodo.org/) and the like)
-    *   `CONTRIBUTING`: how to make contributions
-    *   `CONDUCT`: project's social rules
-</section>
-<section data-markdown>
-**Social considerations (cont.)**
-
-* Simultaneously selfless and selfish
-    * makes science easier to evaluate
-    * makes life easier on your colleagues
-    * makes it more likely that others will use (and **contribute to!**) your software
-    * ensures relevancy of your work when funding runs out or maintainer moves on
-    * more likely to impact traditional academic metrics (i.e. citations)
-</section>
-
-<section data-markdown>
-**A Note on Code Review**
-
-*   Academics review each other's papers; what about code?
-*   Re: code review, [Petre](http://arxiv.org/abs/1407.5648) found:
-    *   Requires domain knowledge to be useful
-    *   No point doing it at submission time
-*   But domain experts are scarce
-*   No incentives to review someone else's thesis project code
-*   At present, only sustainable within team projects
-</section>
-
 <!-- @ overview of agile vs. sturdy -->
 <section data-markdown>
 **From What to How**
@@ -239,7 +226,8 @@ for an overview.
     *   works well for small teams
 *   Sturdy: "measure twice, cut once"
     *   formal / mature requirements
-    *   more upfront planning and estimation; scheduling enforced by manager(s)
+    *   more upfront planning and estimation
+    *   scheduling enforced by manager(s)
     *   can scale to very large projects
 *   We're going to focus on common themes
 </section>
@@ -248,9 +236,14 @@ for an overview.
 **Continuous Integration**
 
 *   Tests are already automated, right...RIGHT?!
-*   Re-run regression tests automatically *before* merging changes
+*   Re-run automated tests *before* merging changes
 *   Ensures baseline is always in runnable state
-*   Free CI services for open-source projects
+*   CI as a service
+    *   free for open-source projects
+    *   pay for private projects
+*   Run CI internally
+    *   free open-source solutions
+    *   bring your own hardware (& configuration)
 </section>
 
 <section data-markdown>
@@ -290,6 +283,31 @@ for an overview.
 *   [Empirical studies](https://www.amazon.com/Making-Software-Really-Works-Believe/dp/0596808321/)
     don't confirm effectiveness...
     *   ...but people who use it swear by it
+</section>
+
+<section data-markdown>
+**Compromises**
+
+<!--
+*   Strict adherance isn't practical for most research projects
+    * limited time, resources
+-->
+*   "Technical debt"
+    * dissonance between conceptual model and model reflected in code
+    * informed, deliberate suspension of best practice
+*   Necessary to get project off the ground
+*   Complicates sustained development: debt must be paid down
+</section>
+
+<section data-markdown>
+**Compromises (cont.)**
+
+*   start small
+*   be aware of best practices
+*   let pain points be your guide
+*   compromise if you must
+    * but not on version control
+    * and not on automated testing
 </section>
 
 <section data-markdown>
