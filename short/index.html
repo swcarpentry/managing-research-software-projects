@@ -47,7 +47,7 @@
 
 *   Key features of research software projects
 *   What "done" looks like
-*   Basic rules of thumb for project organization, usability
+*   Basics of project organization, usability
 *   Social considerations
 *   Critical fixtures: automated testing, version control
 *   Making it all happen
@@ -106,6 +106,12 @@ How to organize small research projects:
 *   Put project source code in `src/`
 *   Put external scripts, or compiled programs in `bin/`
 *   Name all files to reflect their content or function
+
+<!--
+Adapt as necessary:
+precise organization isn't really important,
+but the underlying principles are.
+ -->
 </section>
 
 <!-- @ Taschuk's Rules -->
@@ -115,7 +121,7 @@ How to organize small research projects:
 How to make research software more robust:
 
 *   Have a descriptive README (synopsis, dependencies)  <!-- Have a README that explains in a few lines what the software does and what its dependencies are -->
-*   Provide a descriptive usage statement <!-- Print usage information when launching from the command line that explains the software's features -->
+*   Provide a descriptive usage statement               <!-- Print usage information when launching from the command line that explains the software's features -->
 *   Give the software a meaningful version number
 *   Make older versions available
 *   Reuse software (within reason)
@@ -125,8 +131,8 @@ How to make research software more robust:
 
 *   Do not require root or other special privileges
 *   Eliminate hard-coded paths
-*   Enable command-line configuration <!-- Allow configuration of all useful parameters from the command line -->
-*   Include a small data set to test installation <!-- Include a small test set that can be run to ensure the software is actually working -->
+*   Enable command-line configuration              <!-- Allow configuration of all useful parameters from the command line -->
+*   Include a small data set to test installation  <!-- Include a small test set that can be run to ensure the software is actually working -->
 *   Produce identical results when given identical inputs
 
 From "works on my laptop" to "runs on your cluster".
@@ -211,7 +217,7 @@ for an overview.
 <section data-markdown>
 **From What to How**
 
-*   These are the things what we want: how do we get there?
+*   This is the ideal: how do we get there?
 *   "Traditional" software development is a planning-intensive engineering discipline
 *   Didn't really have a name until "agile" came along in the 1990s
 *   Now refer to the engineering approach as "sturdy"
@@ -262,7 +268,7 @@ for an overview.
 <section data-markdown>
 **Ticketing Systems**
 
-*   Bug/Issue trackers a common fixture on code hosting services
+*   A common fixture on code hosting services
 *   Use them to track:
     *   What's broken
     *   What needs to be added
@@ -293,8 +299,8 @@ for an overview.
     * limited time, resources
 -->
 *   "Technical debt"
-    * dissonance between conceptual model and model reflected in code
-    * informed, deliberate suspension of best practice
+    * dissonance between conceptual model and model reflected in code  <!-- Strict definition -->
+    * informed, deliberate suspension of best practice <!-- in the interest of Getting Things Done™ --> <!-- More general usage -->
 *   Necessary to get project off the ground
 *   Complicates sustained development: debt must be paid down
 </section>
@@ -302,10 +308,14 @@ for an overview.
 <section data-markdown>
 **Compromises (cont.)**
 
-*   start small
-*   be aware of best practices
-*   let pain points be your guide
-*   compromise if you must
+*   Iterative development
+    *   Build a quick prototype  <!-- Best in a language like Python or R -->
+    *   Test accuracy            <!-- Also much nicer in Python or R -->
+    *   If performance is unsatisfactory:
+        *   profile performance empirically
+        *   optimize code surgically
+    *   Clean up code
+*   Compromise on best practices if you must
     * but not on version control
     * and not on automated testing
 </section>
@@ -314,7 +324,7 @@ for an overview.
 **[Stupidity-Driven Development](http://ivory.idyll.org/blog/2014-research-coding.html)**
 
 *   Write **lots** of tests for scientific core of the code
-*   Write few tests for other project components
+*   Start with many fewer tests for other project components
     *   command-line interface
     *   file I/O
     *   other "boring" and "unimportant" code
@@ -330,7 +340,10 @@ for an overview.
 *   Avoids wasting time writing tests for bugs that:
     * never appear, or appear rarely
     * don't affect correctness of results
-*   Correctness >> Performance >> Convenience
+*   Order of priorities
+    * correctness
+    * performance
+    * user experience
 </section>
 
 <section data-markdown>
