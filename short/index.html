@@ -45,13 +45,12 @@
 <section data-markdown>
 **Roadmap**
 
-*   What "done" looks like
 *   Key features of research software projects
-*   Project organization (Noble's Rules)
+*   What "done" looks like
+*   Basics of project organization, usability
 *   Social considerations
-*   Version control
-*   Automated testing
-*   "Technical robustness" (Taschuk's Rules)
+*   Critical fixtures: automated testing, version control
+*   Making it all happen
 </section>
 
 <!-- @ scope of this talk -->
@@ -62,34 +61,6 @@
 *   Contributors are frequently time-slicing other projects
 *   "Everybody makes coffee"
 </section>
-
-<!-- @ goals -->
-<section data-markdown>
-**What "Done" Looks Like**
-
-*   Software can be used by people other than original authors
-    *   Reproducibility meaningless without this
-*   Reasonably confident that results are correct
-    *   As good as physical experiment
-*   Small changes and extensions are easy
-    *   Regression tests make change safe - [Feathers](https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052/)
-*   Fast enough to be useful
-</section>
-
-<!-- Revisit this slide: software sustainability vs supporting academic software sustainably -->
-<!-- @ sustainability -->
-<!--<section data-markdown>
-**A Note on Sustainability**
-
-*   Meaningless to speak of "sustainable software"
-*   Effort = size of change / (developers' skill * code quality)
-*   But even this is misleading
-    *   Developers' skill *with code built that way*
-*   Research software is a [commons](https://www.amazon.com/Think-Like-Commoner-Introduction-Commons/dp/0865717680/):
-    *   a shared resource
-    *   a community that manages it
-    *   a set of social rules governing its use
-</section>-->
 
 <!-- @ what makes research projects special -->
 <section data-markdown>
@@ -104,21 +75,43 @@
 *   Getting funding, credit can be difficult
 </section>
 
-<!-- Flow/transition?!?! -->
+<!-- @ goals -->
+<section data-markdown>
+**What "Done" Looks Like**
+
+*   Software can be used by people other than original authors
+    *   Reproducibility meaningless without this
+*   Reasonably confident that results are correct
+    *   As good as physical experiment
+*   Small changes and extensions are easy
+    *   Automated tests make change safe - [Feathers](https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052/)
+*   Fast enough to be useful
+</section>
 
 <!-- @ Noble's Rules -->
 <section data-markdown>
 **[Noble's Rules](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424)**
 
+![Project organization](img/noble.png)
+</section>
+<section data-markdown>
+**[Noble's Rules](http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424)**
+
 How to organize small research projects:
 
-*   Put each project in its own directory, which is named after the project
-*   Put text documents associated with the project in `doc`
-*   Put raw data and metadata in `data`
-*   Put files generated during cleanup and analysis in `results`
-*   Put project source code in `src`
-*   Put external scripts, or compiled programs in `bin`
+*   Put each project in its own directory <!-- which is named after the project -->
+*   Put text documents in `doc/`
+*   Put raw data and metadata in `data/`
+*   Put files generated during analysis in `results/` <!-- preliminary cleanup is part of the analysis; document, treat raw data as read-only -->
+*   Put project source code in `src/`
+*   Put external scripts, or compiled programs in `bin/`
 *   Name all files to reflect their content or function
+
+<!--
+Adapt as necessary:
+precise organization isn't really important,
+but the underlying principles are.
+ -->
 </section>
 
 <!-- @ Taschuk's Rules -->
@@ -127,8 +120,8 @@ How to organize small research projects:
 
 How to make research software more robust:
 
-*   Have a README that explains in a few lines what the software does and what its dependencies are
-*   Print usage information when launching from the command line that explains the software's features
+*   Have a descriptive README (synopsis, dependencies)  <!-- Have a README that explains in a few lines what the software does and what its dependencies are -->
+*   Provide a descriptive usage statement               <!-- Print usage information when launching from the command line that explains the software's features -->
 *   Give the software a meaningful version number
 *   Make older versions available
 *   Reuse software (within reason)
@@ -138,47 +131,11 @@ How to make research software more robust:
 
 *   Do not require root or other special privileges
 *   Eliminate hard-coded paths
-*   Allow configuration of all useful parameters from the command line
-*   Include a small test set that can be run to ensure the software is actually working
+*   Enable command-line configuration              <!-- Allow configuration of all useful parameters from the command line -->
+*   Include a small data set to test installation  <!-- Include a small test set that can be run to ensure the software is actually working -->
 *   Produce identical results when given identical inputs
 
 From "works on my laptop" to "runs on your cluster".
-</section>
-
-<!-- Automated testing -->
-<section data-markdown>
-**Automated testing**
-
-*   Already have correctness/sanity tests in place (or should!)
-*   Invest time to automate these tests
-*   Common kinds of tests
-    *   Smoke tests (sanity checks)                       <!-- literally, make sure the code doesn't blow up when invoked -->
-    *   Unit tests (developer-facing)                     <!-- testing at scale of individual functions/methods -->
-    *   Functional tests (user-facing)                    <!-- testing at scale of entire reusable components (scripts, classes, libraries) -->
-    *   Regression tests (bug-facing)                     <!-- written when a bug is fixed -->
-*   Execute frequently to ensure reliability of software  <!-- setting up for discussion of continuous integration -->
-</section>
-
-<!-- @ Version control -->
-<section data-markdown>
-**Version control**
-
-![Filenames](img/phd052810s.gif)
-</section>
-
-<section data-markdown>
-**Version control**
-
-*   Provenance (reproducibility)
-*   Transparency (credibility, trust)
-*   Collaboration (work in parallel, peer review)
-*   Hosting (distribution, bug/issue tracking)
-*   Facilitates worry-free tinkering
-*   Professional obligation! <!-- I would argue that it's a... -->
-
-See [Ram, 2013](https://dx.doi.org/10.1186%2F1751-0473-8-7) and
-[Blischak *et al.*, 2016](https://dx.doi.org/10.1371%2Fjournal.pcbi.1004668)
-for an overview.
 </section>
 
 <!-- @ Social considerations -->
@@ -193,7 +150,7 @@ for an overview.
     *   `LICENSE`: terms of re-use
         *   **Use a standard license** (preferably MIT)
     *   `CITATION`: how to cite the software
-        *   Get a DOI for the software (see [Zenodo](https://zenodo.org/) and the like)
+        *   Get a DOI for the software (see [Zenodo](https://zenodo.org/))
     *   `CONTRIBUTING`: how to make contributions
     *   `CONDUCT`: project's social rules
 </section>
@@ -220,11 +177,56 @@ for an overview.
 *   At present, only sustainable within team projects
 </section>
 
+<!-- Automated testing -->
+<section data-markdown>
+**Automated testing**
+
+*   Already have correctness tests in place (or should!)
+*   Invest time to automate these tests
+*   Common kinds of tests
+    *   Smoke tests (sanity checks)                       <!-- literally, make sure the code doesn't blow up when invoked -->
+    *   Unit tests (developer-facing)                     <!-- testing at scale of individual functions/methods -->
+    *   Functional tests (user-facing)                    <!-- testing at scale of entire reusable components (scripts, classes, libraries) -->
+    *   Regression tests (bug-facing)                     <!-- written when a bug is fixed -->
+*   Execute frequently to ensure reliability of software  <!-- setting up for discussion of continuous integration -->
+</section>
+
+<!-- @ Version control -->
+<section data-markdown>
+**Does this look familiar?**
+
+![Filenames](img/phd052810s.gif)
+</section>
+<section data-markdown>
+**Discussion**
+
+*   What are your best and worst stories of project organization?
+    *   code and/or manuscript
+    *   personal and collaborative
+*   Consider on your own, then discuss with your neighbor:
+    *   What worked well?
+    *   What didn't work well?
+</section>
+<section data-markdown>
+**Version control**
+
+*   Provenance (reproducibility)
+*   Transparency (credibility, trust)
+*   Collaboration (work in parallel, peer review)
+*   Hosting (distribution, bug/issue tracking)
+*   Facilitates worry-free tinkering
+*   Professional obligation! <!-- I would argue that it's a... -->
+
+See [Ram, 2013](https://dx.doi.org/10.1186%2F1751-0473-8-7) and
+[Blischak *et al.*, 2016](https://dx.doi.org/10.1371%2Fjournal.pcbi.1004668)
+for an overview.
+</section>
+
 <!-- @ overview of agile vs. sturdy -->
 <section data-markdown>
 **From What to How**
 
-*   These are the things what we want: how do we get there?
+*   This is the ideal: how do we get there?
 *   "Traditional" software development is a planning-intensive engineering discipline
 *   Didn't really have a name until "agile" came along in the 1990s
 *   Now refer to the engineering approach as "sturdy"
@@ -239,18 +241,10 @@ for an overview.
     *   works well for small teams
 *   Sturdy: "measure twice, cut once"
     *   formal / mature requirements
-    *   more upfront planning and estimation; scheduling enforced by manager(s)
+    *   more upfront planning and estimation
+    *   scheduling enforced by manager(s)
     *   can scale to very large projects
 *   We're going to focus on common themes
-</section>
-
-<section data-markdown>
-**Continuous Integration**
-
-*   Tests are already automated, right...RIGHT?!
-*   Re-run regression tests automatically *before* merging changes
-*   Ensures baseline is always in runnable state
-*   Free CI services for open-source projects
 </section>
 
 <section data-markdown>
@@ -267,17 +261,6 @@ for an overview.
 </section>
 
 <section data-markdown>
-**Ticketing Systems**
-
-*   Bug/Issue trackers a common fixture on code hosting services
-*   Use them to track:
-    *   What's broken
-    *   What needs to be added
-    *   Who's working on what
-*   Great place to foster open discussion
-</section>
-
-<section data-markdown>
 **Test-Driven Development (TDD)**
 
 *   Approach
@@ -290,29 +273,6 @@ for an overview.
 *   [Empirical studies](https://www.amazon.com/Making-Software-Really-Works-Believe/dp/0596808321/)
     don't confirm effectiveness...
     *   ...but people who use it swear by it
-</section>
-
-<section data-markdown>
-**[Stupidity-Driven Development](http://ivory.idyll.org/blog/2014-research-coding.html)**
-
-*   Write **lots** of tests for scientific core of the code
-*   Write few tests for other project components
-    *   command-line interface
-    *   file I/O
-    *   other "boring" and "unimportant" code
-*   When bugs are encountered:
-    *   fix the observed bug
-    *   write new regression tests specific to that bug
-    *   get on with more important things
-</section>
-
-<section data-markdown>
-**[Stupidity-Driven Development](http://ivory.idyll.org/blog/2014-research-coding.html)**
-
-*   Avoids wasting time writing tests for bugs that:
-    * never appear, or appear rarely
-    * don't affect correctness of results
-*   Correctness >> Performance >> Convenience
 </section>
 
 <section data-markdown>
@@ -334,7 +294,90 @@ for an overview.
 *   What are the three most interesting tests to write for this function?
 *   Describe in terms of input 1, input 2, expected output, and why it's important.
     *   Assume input rectangles are well-formed (i.e., nobody's trying to pass in a character string).
-*   Come with answers on your own, then compare with your neighbor and select the best three.
+*   Come up with answers on your own, then compare with your neighbor and select the best three.
+</section>
+
+<section data-markdown>
+**Continuous Integration**
+
+*   Tests are already automated, right...RIGHT?!
+*   Re-run automated tests *before* merging changes
+*   Ensures baseline is always in runnable state
+*   CI as a service
+    *   free for open-source projects
+    *   pay for private projects
+*   Run CI internally
+    *   free open-source solutions
+    *   bring your own hardware (& configuration)
+</section>
+
+<section data-markdown>
+**Ticketing Systems**
+
+*   A common fixture on code hosting services
+*   Use them to track:
+    *   What's broken
+    *   What needs to be added
+    *   Who's working on what
+*   Great place to foster open discussion
+</section>
+
+<section data-markdown>
+**Compromises**
+
+<!--
+*   Strict adherance isn't practical for most research projects
+    * limited time, resources
+-->
+*   "Technical debt"
+    * dissonance between conceptual model and model reflected in code  <!-- Strict definition -->
+    * informed, deliberate suspension of best practice <!-- in the interest of Getting Things Done™ --> <!-- More general usage -->
+*   Necessary to get project off the ground
+*   Complicates sustained development
+    * debt must be paid down
+</section>
+
+<section data-markdown>
+**Compromises (cont.)**
+
+*   Iterative development
+    *   Build a quick prototype  <!-- Best in a language like Python or R -->
+    *   Test accuracy            <!-- Also much nicer in Python or R -->
+    *   If performance is unsatisfactory:
+        *   profile performance empirically
+        *   optimize code surgically
+    *   Clean up code
+*   Compromise on best practices if you must
+    * but not on version control
+    * and not on automated testing
+</section>
+
+<section data-markdown>
+**[Stupidity-Driven Development](http://ivory.idyll.org/blog/2014-research-coding.html)**
+
+*   Write **lots** of tests for scientific core of the code
+*   Start with many fewer tests for other project components
+    *   command-line interface
+    *   file I/O
+    *   other "boring" and "unimportant" code
+*   When bugs are encountered:
+    *   fix the observed bug
+    *   write new regression tests specific to that bug
+    *   get on with more important things
+</section>
+
+<section data-markdown>
+**[Stupidity-Driven Development](http://ivory.idyll.org/blog/2014-research-coding.html)**
+
+*   Avoids wasting time writing tests for bugs that:
+    *   never appear, or appear rarely
+    *   don't affect correctness of results
+*   Order of priorities
+    *   correctness
+    *   performance
+    *   user experience
+    *   ...
+    *   beautiful code
 </section>
 
 <section data-markdown>
