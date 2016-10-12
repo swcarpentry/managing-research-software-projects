@@ -298,6 +298,35 @@ for an overview.
 </section>
 
 <section data-markdown>
+**Exercise**
+
+```python
+def test_overlay_no_overlap():
+    rect1 = Rectangle(0, 0, 1, 1)
+    rect2 = Rectangle(2, 0, 2, 2)
+    assert overlay(rect1, rect2) == None
+
+def test_overlay_contains():
+    rect1 = Rectangle(0, 0, 5, 5)
+    rect2 = Rectangle(2, 2, 3, 3)
+    rect_ov = overlay(rect1, rect2)
+
+    assert rect_ov.x0 == 0
+    assert rect_ov.y0 == 0
+    assert rect_ov.x1 == 5
+    assert rect_ov.y1 == 5
+
+def test_overlay_area():
+    rect1 = Rectangle(0, 0, 5, 5)
+    rect2 = Rectangle(0, 1, 5, 2)
+    rect_ov = overlay(rect1, rect2)
+
+    assert rect_ov.area() <= rect1.area()
+    assert rect_ov.area() <= rect2.area()
+```
+</section>
+
+<section data-markdown>
 **Continuous Integration**
 
 *   Tests are already automated, right...RIGHT?!
