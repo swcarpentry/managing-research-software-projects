@@ -179,16 +179,30 @@ From "works on my laptop" to "runs on your cluster".
 
 <!-- Automated testing -->
 <section data-markdown>
-**Automated testing**
+**Automated Testing**
 
 *   Already have correctness tests in place (or should!)
 *   Invest time to automate these tests
-*   Common kinds of tests
-    *   Smoke tests (sanity checks)                       <!-- literally, make sure the code doesn't blow up when invoked -->
-    *   Unit tests (developer-facing)                     <!-- testing at scale of individual functions/methods -->
-    *   Functional tests (user-facing)                    <!-- testing at scale of entire reusable components (scripts, classes, libraries) -->
-    *   Regression tests (bug-facing)                     <!-- written when a bug is fixed -->
-*   Execute frequently to ensure reliability of software  <!-- setting up for discussion of continuous integration -->
+*   Execute tests automatically and frequently
+    *   Ensures code changes don't break what already works <!-- setting up for discussion of continuous integration -->
+</section>
+
+<section data-markdown>
+**Automated Testing (cont.)**
+
+*   Smoke tests (sanity checks)     <!-- literally, make sure the code doesn't blow up when invoked -->
+*   Unit tests (developer-facing)   <!-- testing at scale of individual functions/methods -->
+*   Functional tests (user-facing)  <!-- testing at scale of entire reusable components (scripts, classes, libraries) -->
+*   Regression tests (bug-facing)   <!-- written when a bug is fixed -->
+</section>
+
+<section data-markdown>
+**Automated Testing (cont.)**
+
+*   How do you know what tests to write?
+    *   Measure code coverage       <!-- Include examples from a project you're working on. -->
+    *   Write regression tests for observed bugs
+    *   Test-driven development (more later)
 </section>
 
 <!-- @ Version control -->
