@@ -61,6 +61,7 @@ keypoints:
     *   Version control - ditto
     *   Build and test tools - often the only one on their team doing any of this
     *   Performance analysis and tuning - ditto
+    *   Packaging and deployment - ditto (and then some)
     *   Software lifecycle management - often de facto process owners
         *   What needs to be done?
         *   Why?
@@ -69,10 +70,6 @@ keypoints:
         *   What state is it in (i.e., are we done yet)?
         *   Where is everything?
         *   How do we do things?
-*   Outline of this class
-    *   Software lifecycles for small research projects
-    *   How to implement simple lifecycles with off-the-shelf tools
-*   What's not included
-    *   Software architecture - see [AOSA](http://aosabook.org) for ideas
-    *   Refactoring - see [Feathers](https://www.amazon.com/Working-Effectively-Legacy-Michael-Feathers/dp/0131177052/)
-    *   ...and much else
+*   Goals of this class
+    1.  Understand software lifecycles for small research projects
+    2.  Know how to implement simple lifecycles with off-the-shelf tools
