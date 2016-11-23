@@ -3,14 +3,29 @@ title: "Introduction"
 teaching: 5
 exercises: 10
 questions:
-- "What is the scope of this class?"
-- "What does 'done' look like?"
+- "What are the key differences between research software and 'normal' projects?"
+- "What is a research software engineer?"
+- "What does 'done' look like for a research software project?"
+- "What are the goals of this class?"
 objectives:
-- FIXME
+- "Compare and contrast research software projects and 'normal' software projects."
+- "Explain what research software engineers do and don't do."
+- "Name and explain key features of a mature research software project."
 keypoints:
-- FIXME
+- "Requirements for small research software projects are typically emergent."
+- "Research software engineers usually have advanced degrees in a research area, but are no longer principally doing research."
+- "Research software engineers design, write, test, and maintain software."
+- "Research software is 'good enough' when people other than its authors can use it with confidence and extend it with reasonable effort."
+- "Research software engineers need to understand languages, version control, build and test tools, performance tools, packaging, and lifecycle management."
 ---
 
+*   Key differences between research software and "normal" projects
+    *   Requirements may be either:
+        *   Discovered as we go along (exploring)
+        *   Relatively stable (engineering)
+    *   Problem is *subtle* as well as *complicated*
+        *   Control flow may be very simple...
+        *   ...but figuring out exactly what coefficients and indexes to use can be very hard
 *   [What is a research software engineer](http://www.rse.ac.uk/who.html) (RSE)?
     *   Combine expertise in programming with an in-depth understanding of research
     *   Typically have:
@@ -26,36 +41,14 @@ keypoints:
     *   *Design, write, test, and maintain software*
     *   Manage data (or build tools to fetch, filter, organize, and process data)
     *   Deploy and run software (overlaps with sys admins)
-*   Are you an RSE?
-    1.  Are you employed to develop software for research?
-    1.  Are you spending more time developing software than conducting research?
-    1.  Are you employed as a postdoctoral researcher,
-        even though you predominantly work on software development?
-    1.  Are you the person who does computers in your research group?
-    1.  Are you sometimes not named on research papers
-        despite playing a fundamental part in developing the software used to create them?
-    1.  Do you lack the metrics needed to progress your academic career,
-        like papers and conference presentations,
-        despite having made a significant contribution through software?
-*   Key differences between research software and "normal" projects
-    *   Requirements may be either:
-        *   Discovered as we go along (exploring)
-        *   Relatively stable (engineering)
-    *   Problem is *subtle* as well as *complicated*
-        *   Control flow may be very simple...
-        *   ...but figuring out exactly what coefficients and indexes to use can be very hard
-*   For our purposes:
-    *   3x3: three people for three months
-    *   Contributors are frequently time-slicing other projects
-    *   "Everybody makes coffee"
 *   What does "done" look like?
-    *   Software can be used by people other than original authors
+    1.  Software can be used by people other than original authors
         *   Reproducibility meaningless without this
-    *   Reasonably confident that results are correct
+    2.  Reasonably confident that results are correct
         *   As trustworthy as physical experiment
-    *   Small changes and extensions are easy
+    3.  Small changes and extensions are easy
         *   I.e., researchers can safely make small changes to code
-    *   Fast enough to be useful
+    4.  Fast enough to be useful
 *   What do RSEs need to know?
     *   Programming language(s) - in more depth than most of their research colleagues
     *   Version control - ditto
@@ -70,6 +63,40 @@ keypoints:
         *   What state is it in (i.e., are we done yet)?
         *   Where is everything?
         *   How do we do things?
+*   For our purposes:
+    *   3x3: three people for three months
+    *   Contributors are frequently time-slicing other projects
+    *   "Everybody makes coffee"
 *   Goals of this class
     1.  Understand software lifecycles for small research projects
     2.  Know how to implement simple lifecycles with off-the-shelf tools
+
+> ## Are You an RSE?
+>
+> Score yourself using the questions below.
+>
+> 1.  Are you employed to develop software for research?
+> 1.  Are you spending more time developing software than conducting research?
+> 1.  Are you employed as a postdoctoral researcher,
+>     even though you predominantly work on software development?
+> 1.  Are you the person who does computers in your research group?
+> 1.  Are you sometimes not named on research papers
+>     despite playing a fundamental part in developing the software used to create them?
+> 1.  Do you lack the metrics needed to progress your academic career,
+>     like papers and conference presentations,
+>     despite having made a significant contribution through software?
+{: .challenge}
+
+> ## What Skills Do You Already Have?
+>
+> What do you use for each of the following?
+> What fraction of what you think you need to know do you believe you actually know?
+>
+> *   Programming language(s)
+> *   Version control
+> *   Build tools
+> *   Testing tools
+> *   Performance analysis tools
+> *   Packaging and deployment tools
+> *   Software project management tools
+{: .challenge}
