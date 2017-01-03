@@ -36,4 +36,28 @@ keypoints:
     *   Contributors are frequently time-slicing other projects
     *   "Everybody makes coffee"
 *   Goals for this class
-    *   FIXME
+    *   Understand how to go from ad hoc solo project to reliable small-team project
+
+> ## Create a Value Proposition for Your Project
+>
+> Fill in the template below for your current project.
+>
+> 1.  For *[description of target users*]
+> 2.  who want to *[statement of their need(s)]*,
+> 3.  *[project name]*
+> 4.  provides *[statement of key benefits]*.
+> 5.  Unlike *[name of alternative solutions(s)]*,
+> 6.  our project enables users to *[key differentiator]*.
+{: .challenge}
+
+> ## Describe How Your Project is Managed
+>
+> Write a short point-form description (5-6 bullets) of how your current project is managed:
+>
+> 1.  Who uses the software?
+> 2.  How?
+> 3.  How do they find the software?
+> 4.  How do they set it up?
+> 5.  Who decides what to change and when?
+> 6.  How are decisions and changes circulated?
+{: .challenge}

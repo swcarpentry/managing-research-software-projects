@@ -1,5 +1,5 @@
 ---
-title: "Introduction"
+title: "Research Software Engineers"
 teaching: 5
 exercises: 10
 questions:
