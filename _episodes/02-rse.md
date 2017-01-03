@@ -12,7 +12,7 @@ keypoints:
 - "Research software engineers need to understand languages, version control, build and test tools, performance tools, packaging, and lifecycle management."
 ---
 
-*   [What is a research software engineer](http://www.rse.ac.uk/who.html) (RSE)?
+*   [What is a research software engineer][what-is-rse] (RSE)?
     *   Combine expertise in programming with an in-depth understanding of research
     *   Typically have:
         *   An advanced degree in a research discipline
