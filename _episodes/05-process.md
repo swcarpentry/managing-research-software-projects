@@ -1,5 +1,5 @@
 ---
-title: "Step 3: Choose an Appropriate Process"
+title: "Step 3: Choose a Process"
 teaching: 5
 exercises: 10
 questions:
@@ -11,7 +11,6 @@ objectives:
 keypoints:
 - "FIXME"
 ---
-
 
 *  *Agile development* is a collection of techniques and practices that
     many people believe fit well with how researchers actually work, and
