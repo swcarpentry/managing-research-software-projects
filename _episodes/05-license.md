@@ -1,5 +1,5 @@
 ---
-title: "Step 2: Choose a License"
+title: "Step 3: Choose a License"
 teaching: 5
 exercises: 0
 questions:

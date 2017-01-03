@@ -1,5 +1,5 @@
 ---
-title: "Step 6: Make Contribution Easy"
+title: "Step 7: Make Contribution Easy"
 teaching: 5
 exercises: 10
 questions:
