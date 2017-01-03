@@ -1,5 +1,5 @@
 ---
-title: Licensing
+title: "Step 2: Choose a License"
 teaching: 5
 exercises: 0
 questions:
@@ -31,11 +31,11 @@ popular, and [choosealicense.com][choose-license] will
 help you find a common license that suits your needs.  Important
 considerations include:
 
-* Whether you want to address patent rights.
-* Whether you require people distributing derivative works to also
-  distribute their source code.
-* Whether the content you are licensing is source code.
-* Whether you want to license the code at all.
+*   whether you want to address patent rights,
+*   whether you require people distributing derivative works to also
+    distribute their source code,
+*   whether the content you are licensing is source code, and
+*   whether you want to license the code at all.
 
 Choosing a licence that is in common use makes life easier for
 contributors and users, because they are more likely to already be

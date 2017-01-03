@@ -1,5 +1,5 @@
 ---
-title: "Rule 2: Choose an Appropriate Process"
+title: "Step 3: Choose an Appropriate Process"
 teaching: 5
 exercises: 10
 questions:
