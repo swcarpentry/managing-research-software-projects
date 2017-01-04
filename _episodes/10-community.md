@@ -1,5 +1,5 @@
 ---
-title: "Step 7: Build a Community"
+title: "Step 8: Build a Community"
 teaching: 5
 exercises: 10
 questions:
