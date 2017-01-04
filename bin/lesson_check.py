@@ -303,7 +303,7 @@ class CheckBase(object):
 
 
     def check(self):
-        """Run tests on metadata."""
+        """Run tests."""
 
         self.check_metadata()
         self.check_line_lengths()
@@ -469,6 +469,14 @@ class CheckEpisode(CheckBase):
     def __init__(self, args, filename, metadata, metadata_len, text, lines, doc):
         super(CheckEpisode, self).__init__(args, filename, metadata, metadata_len, text, lines, doc)
 
+
+    def check(self):
+        """Run extra tests."""
+
+        super(CheckEpisode, self).check()
+        self.check_reference_inclusion()
+
+
     def check_metadata(self):
         super(CheckEpisode, self).check_metadata()
         if self.metadata:
@@ -493,6 +501,26 @@ class CheckEpisode(CheckBase):
                 self.reporter.add(self.filename,
                                   '"{0}" has wrong type in metadata ({1} instead of {2})',
                                   name, type(self.metadata[name]), type_)
+
+
+    def check_reference_inclusion(self):
+        """Check that links file has been included."""
+
+        if not self.args.reference_path:
+            return
+
+        for (i, last_line, line_len) in reversed(self.lines):
+            if last_line:
+                break
+
+        require(last_line,
+                'No non-empty lines in {0}'.format(self.filename))
+
+        include_filename = os.path.split(self.args.reference_path)[-1]
+        if include_filename not in last_line:
+            self.reporter.add(self.filename,
+                              'episode does not include "{0}"',
+                              include_filename)
 
 
 class CheckReference(CheckBase):
