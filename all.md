@@ -14,12 +14,6 @@ keypoints:
 - "Research software is 'good enough' when people other than its authors can use it with confidence and extend it with reasonable effort."
 ---
 
-FIXME: turning selfie code into research software project takes time
-
-> When life gives you lemons, think carefully if you want to tend a lemon tree garden forever.  
-> – [Daniel Schauenberg][schauenberg-quote]
-{: .quotation}
-
 *   Key differences between research software and "normal" projects
     *   Requirements may be either:
         *   Discovered as we go along (exploring)
@@ -43,6 +37,11 @@ FIXME: turning selfie code into research software project takes time
     *   "Everybody makes coffee"
 *   Goals for this class
     *   Understand how to go from ad hoc solo project to reliable small-team project
+
+> When life gives you lemons, think carefully if you want to tend a lemon tree garden forever.
+>
+> – [Daniel Schauenberg][quote-schauenberg]
+{: .quotation}
 
 > ## Create a Value Proposition for Your Project
 >
@@ -159,7 +158,50 @@ keypoints:
 - "FIXME"
 ---
 
-*   FIXME: we assume everything is under version control.  If not, go and do that.
+*   Assume your project is already under version control
+    *   If you are not, this may not be the right course for you
+*   You may need to meet people halfway if you want your project to grow
+*   Your collaborators might not be using it
+    *   And they might be right
+*   Google Docs for papers
+*   Dropbox for files
+    *   [Integrates with Git][git-dropbox]
+    *   Non-trivial setup...
+
+> …try to explain the notion of compiling a document to an
+> overworked physician you collaborate with. Oh, but before that, you
+> have to explain the difference between plain text and word
+> processing. And text editors. And markdown/LaTeX compilers. And
+> BiBTeX. And Git. And GitHub. Etc. Meanwhile he/she is getting paged
+> from the OR…
+>
+> …as much as we want to convince ourselves otherwise, when you
+> have to collaborate with those outside the scientific computing
+> bubble, the barrier to collaborating on papers in this framework is
+> simply too high to overcome. Good intentions aside, it always comes
+> down to "just give me a Word document with tracked changes," or
+> similar.
+>
+> – [Stephen Turner][good-enough]
+
+> Google Docs excels at easy sharing, collaboration, simultaneous
+> editing, commenting and reply-to-commenting. Sure, one can approximate
+> these using text-based systems and version control. The question is
+> why anyone would like to…
+>
+> The goal of reproducible research is to make sure one
+> can…reproduce…computational analyses. The goal of version
+> control is to track changes to source code. These are fundamentally
+> distinct goals, and while there is some overlap, version control is
+> merely a tool to help achieve that, and comes with so much overhead
+> and baggage that it is often not worth the effort.
+>
+> [Arjun Raj][quote-raj]
+
+> Normal humans don't work like programmers expect them to
+> because programmers haven't built tools that would let them.  
+>
+> – [Mike Hoye][quote-hoye]
 
 {% include links.md %}
 
@@ -181,48 +223,42 @@ keypoints:
 - "People who are not lawyers should not try to write licenses from scratch."
 ---
 
-When a repository with source code, a manuscript or other creative
-works becomes public, it should include a file `LICENSE` or
-`LICENSE.txt` in the base directory of the repository that clearly
-states under which license the content is being made available. This
-is because creative works are automatically eligible for intellectual
-property (and thus copyright) protection. Reusing creative works
-without a license is dangerous, because the copyright holders could
-sue you for copyright infringement.
-
-A license solves this problem by granting rights to others (the
-licensees) that they would otherwise not have. What rights are being
-granted under which conditions differs, often only slightly, from one
-license to another. In practice, a few licenses are by far the most
-popular, and [choosealicense.com][choose-license] will
-help you find a common license that suits your needs.  Important
-considerations include:
-
-*   whether you want to address patent rights,
-*   whether you require people distributing derivative works to also
-    distribute their source code,
-*   whether the content you are licensing is source code, and
-*   whether you want to license the code at all.
-
-Choosing a licence that is in common use makes life easier for
-contributors and users, because they are more likely to already be
-familiar with the license and don't have to wade through a bunch of
-jargon to decide if they're ok with it.  The [Open Source
-Inititative][osi-license-list] and [Free Software
-Foundation][fsf-license-list] both maintain lists of licenses which
-are good choices.
-
-[This paper][morin-software-licensing] and [this blog
-post][vanderplas-licensing] provide excellent overviews of licensing
-and licensing options from the perspective of scientists who also
-write code.
-
-At the end of the day what matters is that there is a clear statement
-as to what the license is. Also, the license is best chosen from the
-get-go, even if for a repository that is not public. Pushing off the
-decision only makes it more complicated later, because each time a new
-collaborator starts contributing, they, too, hold copyright and will
-thus need to be asked for approval once a license is chosen.
+*   Creative works are automatically eligible for intellectual property (and thus copyright) protection
+*   Reusing creative works without a license is dangerous
+    *   Because copyright holders could sue you for copyright infringement
+*   Every repository (version control or otherwise) should therefore include an explicit license
+    *   Usually `LICENSE` or `LICENSE.txt` in root directory
+*   Clearly states under which license(s) the content is being made available
+    *   Plural because code, data, and text may be covered by different licenses
+*   Important to decide early
+    *   Otherwise, each time a new collaborator starts contributing,
+        they will hold copyright on their work
+        and will thus need to be asked for approval when a license is chosen
+*   A few licenses are by far the most popular
+    *   Choosing a common license makes project more intelligible
+    *   **Don't write your own** (even if you are a lawyer)
+*   Common licenses
+    *   [Open Source Inititative][osi-license-list] license list
+    *   [Free Software Foundation][fsf-license-list] license list
+    *   [choosealicense.com][choose-license] will help you find a license that suits your needs
+*   For code:
+    *   **MIT/BSD**: do whatever you want as long as you cite the original source, and we accept no responsibility if things go wrong
+    *   GPL: as above, but changes must be distributed
+*   For data and text:
+    *   **CC-0**: public domain (for data)
+    *   **CC-BY**: do whatever you want as long as you cite the original source (for papers)
+    *   Other restrictions all inhibit legitimate use cases
+        *   -ND: no derivative works
+        *   -NC: no commercial use (without explicit permission)
+        *   -SA: share-alike
+*   Considerations:
+    *   Do you want to license the code at all?
+    *   Is the content you are licensing source code?
+    *   Do you require people distributing derivative works to also distribute their code?
+    *   Do you want to address patent rights?
+*   See [this paper][morin-software-licensing]
+    and [this blog post][vanderplas-licensing]
+    for overviews from a scientist's point of view
 
 > ## Can I Use an Open License?
 >
@@ -269,19 +305,16 @@ keypoints:
     *   Pro: sidesteps problems that can arise when moving from one institution to another
     *   Con: requires more time and effort to set up than other options
     *   Con: may not be allowed
-
-The third option is to use a public hosting service like
-[GitHub][github], [GitLab][gitlab], [BitBucket][bitbucket], or
-[SourceForge][sourceforge].  Each of these services provides a web
-interface that enables people to create, view, and edit their code
-repositories.  These services also provide communication and project
-management tools including issue tracking, wiki pages, email
-notifications, and code reviews.  These services benefit from
-economies of scale and network effects: it's easier to run one large
-service well than to run many smaller services to the same standard.
-It's also easier for people to collaborate.  Using a popular service
-can help connect your project with communities already using the same
-service.
+*   Option 3: public host service
+    *   [GitHub][github], [GitLab][gitlab], [BitBucket][bitbucket], [SourceForge][sourceforge], …
+    *   All provide web interface to
+        *   Create, view, and edit projects
+        *   Communication and project management tools (issue tracking, wiki pages, email, code reviews)
+    *   Pro: economies of scale
+    *   Pro: network effects (potential collaborators probably already know how to use them)
+    *   Con: public (unless you pay)
+        *   And even then, out-of-institution/out-of-country hosting can be problematic
+    *   Con: can be shut down, purchased, etc.
 
 > ## Institutional Barriers
 >
@@ -319,7 +352,7 @@ service.
 ====
 
 ---
-title: "Automate All the Things"
+title: "Automate Development Tasks"
 teaching: 5
 exercises: 10
 questions:
@@ -330,11 +363,90 @@ keypoints:
 - "FIXME"
 ---
 
-*   FIXME: Makefile to rebuild everything (and run common tasks)
-*   FIXME: make software installable as a package
-*   FIXME: continuous integration
-    *   Lint the code as part of running tests
-*   FIXME: checklists (including checklists for code review)
+*   DRY: Don't Repeat Yourself
+    *   Usually applied to nouns (code)
+    *   Just as true for verbs (actions)
+    *   The only thing you can accomplish by typing something in again is to get it wrong
+*   Use a build manager
+    *   [GNU Make][gnu-make] defined the category, but depends on native shell commands
+    *   [CMake][cmake] is a meta-tool that creates build files for multiple systems
+    *   [SCons][scons] and similar tools define build rules in a full-blown programming language
+    *   Many more…
+*   Originally created to compile multi-file programs efficiently, but can all be used for arbitrary tasks
+    *   Run tests, build packages for release, create reports, …
+    *   Common pattern: build shell script or utility program, then launch from build file
+
+> ## Create a Task list
+>
+> 1.  If your project already uses a build manager,
+>     what tasks are used most often?
+> 2.  If your project *doesn't* use a build manager,
+>     what are the first few tasks you should automate?
+{: .challenge}
+
+> ## Self-Documenting Build Files
+>
+> The default target in a build file (e.g., `make` with no parameters)
+> should print a list of available commands.
+> Look at the `Makefile` in this repository to see how this works,
+> then modify the build file for your project to do so as well.
+{: .challenge}
+
+{% include links.md %}
+
+====
+
+---
+title: "Checklists"
+teaching: 5
+exercises: 10
+questions:
+- "FIXME"
+objectives:
+- "FIXME"
+keypoints:
+- "FIXME"
+---
+
+*   A checklist is essentially a build file executed by human beings
+    *   *[The Checklist Manifesto][gawande-checklist-manifesto]*
+        describes how use of checklists cuts fatalities in surgery significantly,
+        along with many other examples
+*   Use them for anything that *can't* be done automatically by a machine
+*   Keep in version control
+    *   Ask every new contributor/user to use *and give feedback*
+*   Include a contact email address in every checklist
+
+> ## Checklist for First Day of Software Carpentry Workshop
+>
+> 1.  As learners arrive,
+>     ask them to connect to the network
+>     and check that they have software installed
+> 2.  Remind everyone of the Code of Conduct
+> 3.  Circulate the sign-in sheet and photo release form
+> 4.  Distribute sticky notes
+> 5.  Debug remaining software installation problems
+>     *   If someone can't get software working,
+>         pair them with someone who has it working
+> 6.  Remind learners of the workshop's goals and schedule
+> 7.  Remind helpers to mingle as well as answer questions
+>
+> Questions? Email help@software-carpentry.org.
+{: .callout}
+
+> ## Create a Setup Checklist
+>
+> 1.  Write a short point-form checklist describing the things you do
+>     when setting up a new machine for development.
+>     What do you install?
+>     What needs to be configured?
+>
+> 2.  Look over your checklist.
+>     How many of these steps can be automated using shell scripts or other small programs?
+>
+> 3.  Look over your checklist.
+>     How will newcomers using it know if they have completed a step correctly?
+{: .challenge}
 
 {% include links.md %}
 
@@ -352,20 +464,22 @@ keypoints:
 - "FIXME"
 ---
 
+\section{Have a README that briefly explains what the software does and what its dependencies are.}
+\section{Print usage information when launching from the command line that explains the software's features.}
+\section{Version your releases.}
+\section{Reuse software (within reason).}
+\section{Use a build utility and package manager.}
+\section{Do not require root or other special privileges.}
+\section{Eliminate hard-coded paths.}
+\section{Allow configuration of all useful parameters from the command line.}
+\section{Include a small test set that can be run to ensure the software is actually working.}
+\section{Produce identical results when given identical inputs.}
+
+*   FIXME: make software installable as a package
+
 *   FIXME: [Taschuk's Rules](http://oicr-gsi.github.io/robust-paper/)
 *   get you from "works on my laptop" to "runs on your cluster"
 *   FIXME: [choose boring technology][mckinley-boring]
-
-1.  Have a README that explains in a few lines what the software does and what its dependencies are
-1.  Print usage information when launching from the command line that explains the software's features
-1.  Give the software a meaningful version number
-1.  Make older versions available
-1.  Reuse software (within reason)
-1.  Do not require root or other special privileges
-1.  Eliminate hard-coded paths
-1.  Allow configuration of all useful parameters from the command line
-1.  Include a small test set that can be run to ensure the software is actually working
-1.  Produce identical results when given identical inputs
 
 FIXME: Assume your users are following [Noble's rules][noble-rules]
 
@@ -397,6 +511,43 @@ keypoints:
 ---
 
 FIXME: issue tracking and triage
+
+{% include links.md %}
+
+====
+
+---
+title: "Automate Shared Tasks"
+teaching: 5
+exercises: 10
+questions:
+- "FIXME"
+objectives:
+- "FIXME"
+keypoints:
+- "FIXME"
+---
+
+*   FIXME: continuous integration
+*   FIXME: lint the code as part of running tests
+
+{% include links.md %}
+
+====
+
+---
+title: "Distribute Packages"
+teaching: 5
+exercises: 10
+questions:
+- "FIXME"
+objectives:
+- "FIXME"
+keypoints:
+- "FIXME"
+---
+
+*   FIXME: checklists (including checklists for code review)
 
 {% include links.md %}
 
