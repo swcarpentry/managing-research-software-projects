@@ -1,5 +1,5 @@
 ---
-title: "Step 1: Recalibrate Productivity Sensors"
+title: "Recalibrate Productivity Sensors"
 teaching: 5
 exercises: 10
 questions:

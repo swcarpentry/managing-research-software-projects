@@ -1,5 +1,5 @@
 ---
-title: "Step 10: Mentor"
+title: "Mentor"
 teaching: 5
 exercises: 10
 questions:

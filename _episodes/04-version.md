@@ -1,5 +1,5 @@
 ---
-title: "Step 2: Version Control"
+title: "Version Control"
 teaching: 5
 exercises: 10
 questions:
