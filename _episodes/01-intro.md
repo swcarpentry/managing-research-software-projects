@@ -14,6 +14,10 @@ keypoints:
 - "Research software is 'good enough' when people other than its authors can use it with confidence and extend it with reasonable effort."
 ---
 
+> When life gives you lemons, think carefully if you want to tend a lemon tree garden forever.  
+> – [Daniel Schauenberg][schauenberg-quote]
+{: .quote}
+
 *   Key differences between research software and "normal" projects
     *   Requirements may be either:
         *   Discovered as we go along (exploring)

@@ -11,7 +11,8 @@ keypoints:
 - "Rules regarding intellectual property and storage of sensitive information apply no matter where code and data are hosted."
 ---
 
-**FIXME: we assume everything is under version control.  If not, go and do that.**
+*   FIXME: we assume everything is under version control.  If not, go and do that.
+*   FIXME: pre-commit review
 
 A big question for groups that want to open up their work is where to
 host their code and data.  One option is for the lab, the department, or the

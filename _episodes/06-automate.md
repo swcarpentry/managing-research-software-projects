@@ -10,10 +10,10 @@ keypoints:
 - "FIXME"
 ---
 
-FIXME: Makefile to rebuild everything (and run common tasks)
-
-FIXME: make software installable as a package
-
-FIXME: continuous integration
+*   FIXME: Makefile to rebuild everything (and run common tasks)
+*   FIXME: make software installable as a package
+*   FIXME: continuous integration
+    *   Lint the code as part of running tests
+*   FIXME: checklists (including checklists for code review)
 
 {% include links.md %}

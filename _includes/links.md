@@ -12,6 +12,7 @@
 [noble-rules]: http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424
 [osi-license-list]: http://opensource.org/licenses
 [robinson-crunch-mode]: http://www.igda.org/?page=crunchsixlessons
+[schauenberg-quote]: https://twitter.com/mrtazz/status/767438616167608320
 [sourceforge]: http://sourceforge.net
 [steinmacher-barriers]: http://www.igor.pro.br/publica/papers/GSD_CSCW2014.pdf
 [vanderplas-licensing]: http://www.astrobetter.com/blog/2014/03/10/the-whys-and-hows-of-licensing-scientific-code/

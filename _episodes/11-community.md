@@ -29,8 +29,6 @@ keypoints:
     *   ensures relevancy of your work when funding runs out or maintainer moves on
     *   more likely to impact traditional academic metrics (i.e. citations)
 
-*   FIXME: issue tracking
-
 *   general communication
     *   small projects converge on one channel (i.e., issues, mailing list, Slack)
     *   strongly prefer email as lowest common denominator, threaded, and async
