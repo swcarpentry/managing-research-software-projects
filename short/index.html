@@ -167,16 +167,30 @@ From "works on my laptop" to "runs on your cluster".
 
 <!-- Automated testing -->
 <section data-markdown>
-**Automated testing**
+**Automated Testing**
 
 *   Already have correctness tests in place (or should!)
 *   Invest time to automate these tests
-*   Common kinds of tests
-    *   Smoke tests (sanity checks)                       <!-- literally, make sure the code doesn't blow up when invoked -->
-    *   Unit tests (developer-facing)                     <!-- testing at scale of individual functions/methods -->
-    *   Functional tests (user-facing)                    <!-- testing at scale of entire reusable components (scripts, classes, libraries) -->
-    *   Regression tests (bug-facing)                     <!-- written when a bug is fixed -->
-*   Execute frequently to ensure reliability of software  <!-- setting up for discussion of continuous integration -->
+*   Execute tests automatically and frequently
+    *   Ensures code changes don't break what already works <!-- setting up for discussion of continuous integration -->
+</section>
+
+<section data-markdown>
+**Automated Testing (cont.)**
+
+*   How do you know what tests to write?
+    *   Measure code coverage       <!-- Include examples from a project you're working on. -->
+    *   Write regression tests for observed bugs
+    *   Test-driven development (more later)
+</section>
+
+<section data-markdown>
+**Kinds of Tests**
+
+*   Smoke tests (sanity checks)     <!-- literally, make sure the code doesn't blow up when invoked -->
+*   Unit tests (developer-facing)   <!-- testing at scale of individual functions/methods -->
+*   Functional tests (user-facing)  <!-- testing at scale of entire reusable components (scripts, classes, libraries) -->
+*   Regression tests (bug-facing)   <!-- written when a bug is fixed -->
 </section>
 
 <!-- @ Version control -->
@@ -298,6 +312,31 @@ for an overview.
 </section>
 
 <section data-markdown>
+**Exercise**
+
+```python
+def test_overlay_no_overlap():
+    rect1 = Rectangle(0, 0, 1, 1)
+    rect2 = Rectangle(2, 0, 2, 2)
+    assert overlay(rect1, rect2) == None
+
+def test_overlay_contains():
+    rect1 = Rectangle(0, 0, 5, 5)
+    rect2 = Rectangle(2, 2, 3, 3)
+    assert overlay(rect1, rect2) == Rectangle(0, 0, 5, 5)
+
+def test_shared_edge_or_point():
+    rect1 = Rectangle(0, 0, 2, 2)
+    rect2 = Rectangle(2, 1, 3, 3)
+    assert overlay(rect1, rect2) == Rectangle(2, 1, 2, 2)
+
+    rect1 = Rectangle(0, 0, 2, 2)
+    rect2 = Rectangle(2, 2, 4, 4)
+    assert overlay(rect1, rect2) == Rectangle(2, 2, 2, 2)
+```
+</section>
+
+<section data-markdown>
 **Continuous Integration**
 
 *   Tests are already automated, right...RIGHT?!
@@ -347,7 +386,24 @@ for an overview.
         *   profile performance empirically
         *   optimize code surgically
     *   Clean up code
-*   Compromise on best practices if you must
+</section>
+
+<section data-markdown>
+**Compromises (cont.)**
+
+*   Incremental improvement ([Petre](http://arxiv.org/abs/1407.5648))
+    *   Don't to fix everything at once
+    *   Instead, whenever you touch a function to fix or extend it, clean it up then.
+        *   Check for code clarity
+        *   Improve documentation / comments
+        *   Write a unit test
+    *   Improvements will accumulate quickly
+</section>
+
+<section data-markdown>
+**Compromises (cont.)**
+
+*   Compromise on best practices if you must!
     * but not on version control
     * and not on automated testing
 </section>
@@ -357,27 +413,16 @@ for an overview.
 
 *   Write **lots** of tests for scientific core of the code
 *   Start with many fewer tests for other project components
-    *   command-line interface
-    *   file I/O
-    *   other "boring" and "unimportant" code
 *   When bugs are encountered:
+    *   write new regression tests specific to that bug  <!-- #tdd #ftw -->
     *   fix the observed bug
-    *   write new regression tests specific to that bug
     *   get on with more important things
 </section>
 
 <section data-markdown>
 **[Stupidity-Driven Development](http://ivory.idyll.org/blog/2014-research-coding.html)**
 
-*   Avoids wasting time writing tests for bugs that:
-    *   never appear, or appear rarely
-    *   don't affect correctness of results
-*   Order of priorities
-    *   correctness
-    *   performance
-    *   user experience
-    *   ...
-    *   beautiful code
+Avoids wasting time writing tests for bugs that never appear!
 </section>
 
 <section data-markdown>
