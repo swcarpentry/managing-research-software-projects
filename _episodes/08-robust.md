@@ -1,5 +1,5 @@
 ---
-title: "Step 6: Make Your Project Robust"
+title: "Step 6: Make Your Software Robust"
 teaching: 5
 exercises: 10
 questions:
