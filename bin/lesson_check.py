@@ -14,7 +14,7 @@ from optparse import OptionParser
 
 from util import Reporter, read_markdown, load_yaml, check_unwanted_files, require, IMAGE_FILE_SUFFIX
 
-__version__ = '0.2'
+__version__ = '0.3'
 
 # Where to look for source Markdown files.
 SOURCE_DIRS = ['', '_episodes', '_extras']
@@ -48,7 +48,10 @@ P_TRAILING_WHITESPACE = re.compile(r'\s+$')
 P_FIGURE_REFS = re.compile(r'<img[^>]+src="([^"]+)"[^>]*>')
 
 # Pattern to match internally-defined Markdown links.
-P_INTERNALLY_DEFINED_LINK = re.compile(r'\[[^\]]+\]\[[^\]]+\]')
+P_INTERNAL_LINK_REF = re.compile(r'\[([^\]]+)\]\[([^\]]+)\]')
+
+# Pattern to match reference links (to resolve internally-defined references).
+P_INTERNAL_LINK_DEF = re.compile(r'^\[([^\]]+)\]:.*')
 
 # What kinds of blockquotes are allowed?
 KNOWN_BLOCKQUOTES = {
@@ -103,6 +106,8 @@ def main():
     args = parse_args()
     args.reporter = Reporter()
     check_config(args.reporter, args.source_dir)
+    args.references = read_references(args.reference_path)
+
     docs = read_all_markdown(args.source_dir, args.parser)
     check_fileset(args.source_dir, args.reporter, docs.keys())
     check_unwanted_files(args.source_dir, args.reporter)
@@ -110,6 +115,7 @@ def main():
         checker = create_checker(args, filename, docs[filename])
         checker.check()
     check_figures(args.source_dir, args.reporter)
+
     args.reporter.report()
 
 
@@ -126,6 +132,10 @@ def parse_args():
                       default=None,
                       dest='parser',
                       help='path to Markdown parser')
+    parser.add_option('-r', '--references',
+                      default=None,
+                      dest='reference_path',
+                      help='path to Markdown file of external references')
     parser.add_option('-s', '--source',
                       default=os.curdir,
                       dest='source_dir',
@@ -158,6 +168,25 @@ def check_config(reporter, source_dir):
     reporter.check({'values': {'root': '..'}} in config.get('defaults', []),
                    'configuration',
                    '"root" not set to ".." in configuration')
+
+
+def read_references(ref_path):
+    """Read shared file of reference links, returning set of valid references."""
+
+    result = set()
+    if ref_path:
+        with open(ref_path, 'r') as reader:
+            for (num, line) in enumerate(reader):
+                m = P_INTERNAL_LINK_DEF.search(line)
+                require(m,
+                        '{0}:{1} not valid reference:\n{2}'.format(ref_path, num, line.rstrip()))
+                ref = m.group(1)
+                require(ref,
+                        'Empty reference at {0}:{1}'.format(ref_path, num))
+                require(ref not in result,
+                        'Duplicate reference {0} at {1}:{2}'.format(ref, ref_path, num))
+                result.add(ref)
+    return result
 
 
 def read_all_markdown(source_dir, parser):
@@ -342,17 +371,16 @@ class CheckBase(object):
     def check_defined_link_references(self):
         """Check that defined links resolve in the file.
 
-        Internally-defined links match the pattern [text][label].  If
-        the label contains '{{...}}', it is hopefully a references to
-        a configuration value - we should check that, but don't right
-        now.
+        Internally-defined links match the pattern [text][label].
         """
 
         result = set()
         for node in self.find_all(self.doc, {'type' : 'text'}):
-            for match in P_INTERNALLY_DEFINED_LINK.findall(node['value']):
-                if '{{' not in match:
-                    result.add(match)
+            for match in P_INTERNAL_LINK_REF.findall(node['value']):
+                text = match[0]
+                link = match[1]
+                if link not in self.args.references:
+                    result.add('"{0}"=>"{1}"'.format(text, link))
         self.reporter.check(not result,
                             self.filename,
                             'Internally-defined links may be missing definitions: {0}',
