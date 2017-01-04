@@ -72,3 +72,5 @@ keypoints:
 > *   Packaging and deployment tools
 > *   Software project management tools
 {: .challenge}
+
+{% include links.md %}

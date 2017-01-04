@@ -65,3 +65,5 @@ keypoints:
 > 5.  Who decides what to change and when?
 > 6.  How are decisions and changes circulated?
 {: .challenge}
+
+{% include links.md %}
