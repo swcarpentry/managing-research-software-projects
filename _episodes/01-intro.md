@@ -15,7 +15,7 @@ keypoints:
 ---
 
 > When life gives you lemons, think carefully if you want to tend a lemon tree garden forever.  
-> – [Daniel Schauenberg][schauenberg-quote]
+> – [Daniel Schauenberg][quote-schauenberg]
 {: .quotation}
 
 *   Key differences between research software and "normal" projects
