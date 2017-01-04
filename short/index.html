@@ -386,7 +386,24 @@ def test_shared_edge_or_point():
         *   profile performance empirically
         *   optimize code surgically
     *   Clean up code
-*   Compromise on best practices if you must
+</section>
+
+<section data-markdown>
+**Compromises (cont.)**
+
+*   Incremental improvement ([Petre](http://arxiv.org/abs/1407.5648))
+    *   Don't to fix everything at once
+    *   Instead, whenever you touch a function to fix or extend it, clean it up then.
+        *   Check for code clarity
+        *   Improve documentation / comments
+        *   Write a unit test
+    *   Improvements will accumulate quickly
+</section>
+
+<section data-markdown>
+**Compromises (cont.)**
+
+*   Compromise on best practices if you must!
     * but not on version control
     * and not on automated testing
 </section>
@@ -396,27 +413,16 @@ def test_shared_edge_or_point():
 
 *   Write **lots** of tests for scientific core of the code
 *   Start with many fewer tests for other project components
-    *   command-line interface
-    *   file I/O
-    *   other "boring" and "unimportant" code
 *   When bugs are encountered:
+    *   write new regression tests specific to that bug  <!-- #tdd #ftw -->
     *   fix the observed bug
-    *   write new regression tests specific to that bug
     *   get on with more important things
 </section>
 
 <section data-markdown>
 **[Stupidity-Driven Development](http://ivory.idyll.org/blog/2014-research-coding.html)**
 
-*   Avoids wasting time writing tests for bugs that:
-    *   never appear, or appear rarely
-    *   don't affect correctness of results
-*   Order of priorities
-    *   correctness
-    *   performance
-    *   user experience
-    *   ...
-    *   beautiful code
+Avoids wasting time writing tests for bugs that never appear!
 </section>
 
 <section data-markdown>
