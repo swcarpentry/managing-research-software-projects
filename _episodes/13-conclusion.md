@@ -11,5 +11,6 @@ keypoints:
 ---
 
 *   FIXME: wrap up
+*   FIXME: *[Marketing for Scientists][kuchner-marketing]*
 
 {% include links.md %}
