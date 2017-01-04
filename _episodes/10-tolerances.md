@@ -1,5 +1,5 @@
 ---
-title: "Step 7: Specify Tolerances"
+title: "Step 8: Specify Tolerances"
 teaching: 5
 exercises: 10
 questions:

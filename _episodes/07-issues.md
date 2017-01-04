@@ -1,5 +1,5 @@
 ---
-title: "Step 9: Marketing"
+title: "Step 5: Issues"
 teaching: 5
 exercises: 10
 questions:
@@ -10,6 +10,6 @@ keypoints:
 - "FIXME"
 ---
 
-*   FIXME: Kuchner's *[Marketing for Scientists][kuchner-marketing]*
+FIXME: issue tracking and triage
 
 {% include links.md %}

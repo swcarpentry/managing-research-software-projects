@@ -1,5 +1,5 @@
 ---
-title: "Step 5: Automate All the Things"
+title: "Step 4: Automate All the Things"
 teaching: 5
 exercises: 10
 questions:
