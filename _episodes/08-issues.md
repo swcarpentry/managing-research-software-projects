@@ -1,5 +1,5 @@
 ---
-title: "Step 5: Issues"
+title: "Step 6: Issues"
 teaching: 5
 exercises: 10
 questions:

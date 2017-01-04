@@ -1,5 +1,5 @@
 ---
-title: "Step 6: Choose a Process"
+title: "Step 7: Choose a Process"
 teaching: 5
 exercises: 10
 questions:
