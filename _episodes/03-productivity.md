@@ -10,6 +10,7 @@ keypoints:
 - "FIXME"
 ---
 
-FIXME: [recalibrate productivity sensors][bartel-recalibrate]
+*   FIXME: [recalibrate productivity sensors][bartel-recalibrate]
+*   FIXME: [choose boring technology][mckinley-boring]
 
 {% include links.md %}

@@ -7,6 +7,7 @@
 [github]: http://github.com
 [gitlab]: http://gitlab.com
 [kuchner-marketing]: https://www.amazon.com/Marketing-Scientists-Shine-Tough-Times/dp/1597269948/
+[mckinley-boring]: http://mcfunley.com/choose-boring-technology
 [morin-software-licensing]: http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002598
 [noble-rules]: http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424
 [osi-license-list]: http://opensource.org/licenses

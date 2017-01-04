@@ -61,6 +61,7 @@ keypoints:
 > ## What Skills Do You Already Have?
 >
 > What do you use for each of the following?
+> ("Nothing yet" is a perfectly good answer.)
 > What fraction of what you think you need to know do you believe you actually know?
 >
 > *   Programming language(s)
