@@ -32,7 +32,7 @@ keypoints:
     5.  Can be maintained by people other than its original author(s)
         *   I.e., it is *sustainable*
 *   For our purposes:
-    *   3x3: three people for three months
+    *   3x6: three people for six months
     *   Contributors are frequently time-slicing other projects
     *   "Everybody makes coffee"
 *   Goals for this class
