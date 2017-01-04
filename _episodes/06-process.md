@@ -430,20 +430,23 @@ that may include screenshots, error messages, and so on.
 
 It also records who created it and when, and who it's assigned to.
 
-    ID: 1278
-    Created-By: mummy
-    Owned-By: wolfman
-    State: assigned
-    Summary: Message file reader crashes on accented characters
-    Description:
-    1. Create a text file called 'accent.msg' containing the message
-     "You vill dream of pümpernickel" (with an umlaut over the 'u').
+~~~
+ID: 1278
+Created-By: mummy
+Owned-By: wolfman
+State: assigned
+Summary: Message file reader crashes on accented characters
+Description:
+1. Create a text file called 'accent.msg' containing the message
+ "You vill dream of pümpernickel" (with an umlaut over the 'u').
 
-    2. Run the program with 'python mindcontrol.py --all --message accent.msg'.
+2. Run the program with 'python mindcontrol.py --all --message accent.msg'.
 
-    Program crashes with the message "No encoding for [] on line 1 of 'accent.msg'".
-    ([] shows where a solid black box appears in the output instead of a printable
-    character.)
+Program crashes with the message "No encoding for [] on line 1 of 'accent.msg'".
+([] shows where a solid black box appears in the output instead of a printable
+character.)
+~~~
+{: .source}
 
 When Wolfman checks in the code that fixes this bug, and the tests for
 that fix, he changes the ticket's state from 'assigned' to 'closed'.
