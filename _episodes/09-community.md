@@ -39,6 +39,4 @@ keypoints:
 *   in-person meetings
 *   [avoid common pitfalls](http://producingoss.com/en/producingoss.html#common-pitfalls)
 
-*   [managing participants](http://producingoss.com/en/producingoss.html#managing-participants)
-
 {% include links.md %}
