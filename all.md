@@ -366,7 +366,7 @@ keypoints:
 *   DRY: Don't Repeat Yourself
     *   Usually applied to nouns (code)
     *   Just as true for verbs (actions)
-    *   The only thing you can accomplish by typing something in again is to get it wrong
+    *   The only thing you can accomplish by typing something repeatedly is to get it wrong
 *   Use a build manager
     *   [GNU Make][gnu-make] defined the category, but depends on native shell commands
     *   [CMake][cmake] is a meta-tool that creates build files for multiple systems
@@ -408,7 +408,7 @@ keypoints:
 - "FIXME"
 ---
 
-*   A checklist is essentially a build file executed by human beings
+*   A checklist is a build file meant to be executed by human beings
     *   *[The Checklist Manifesto][gawande-checklist-manifesto]*
         describes how use of checklists cuts fatalities in surgery significantly,
         along with many other examples
@@ -421,31 +421,26 @@ keypoints:
 >
 > 1.  As learners arrive,
 >     ask them to connect to the network
->     and check that they have software installed
-> 2.  Remind everyone of the Code of Conduct
-> 3.  Circulate the sign-in sheet and photo release form
-> 4.  Distribute sticky notes
-> 5.  Debug remaining software installation problems
->     *   If someone can't get software working,
->         pair them with someone who has it working
-> 6.  Remind learners of the workshop's goals and schedule
-> 7.  Remind helpers to mingle as well as answer questions
+>     and check that they have software installed.
+> 2.  Remind everyone of the Code of Conduct.
+> 3.  Circulate the sign-in sheet and photo release form.
+> 4.  Distribute sticky notes.
+> 5.  Debug remaining software installation problems.
+>     *   If someone can't get software working, pair them with someone who has it working.
+> 6.  Remind learners of the workshop's goals and schedule.
+> 7.  Remind helpers to mingle as well as answer questions.
 >
-> Questions? Email help@software-carpentry.org.
+> Questions or suggestions? Email help@software-carpentry.org.
 {: .callout}
 
 > ## Create a Setup Checklist
 >
 > 1.  Write a short point-form checklist describing the things you do
->     when setting up a new machine for development.
->     What do you install?
->     What needs to be configured?
+>     when setting up a new machine to do development on your project.
 >
-> 2.  Look over your checklist.
->     How many of these steps can be automated using shell scripts or other small programs?
+> 2.  How many of the steps in your checklist can be automated using shell scripts or other small programs?
 >
-> 3.  Look over your checklist.
->     How will newcomers using it know if they have completed a step correctly?
+> 3.  How will newcomers know if they have completed the steps in the checklist correctly?
 {: .challenge}
 
 {% include links.md %}
@@ -453,7 +448,7 @@ keypoints:
 ====
 
 ---
-title: "Make Your Software Robust"
+title: "Make the Project Describe Itself"
 teaching: 5
 exercises: 10
 questions:
@@ -464,37 +459,202 @@ keypoints:
 - "FIXME"
 ---
 
-\section{Have a README that briefly explains what the software does and what its dependencies are.}
-\section{Print usage information when launching from the command line that explains the software's features.}
-\section{Version your releases.}
-\section{Reuse software (within reason).}
-\section{Use a build utility and package manager.}
-\section{Do not require root or other special privileges.}
-\section{Eliminate hard-coded paths.}
-\section{Allow configuration of all useful parameters from the command line.}
-\section{Include a small test set that can be run to ensure the software is actually working.}
-\section{Produce identical results when given identical inputs.}
+*   *Robust* is the difference between "works for me on my machine"
+    and "works for someone I've never met on a cluster I've never heard of"
+    *   Rules are described in [Taschuk's Rules](http://oicr-gsi.github.io/robust-paper/)
+*   Have a README that briefly explains what the software does and what its dependencies are
+    *   For humans to read *before* installing
+*   Tell the user what could be done
+    *   Print usage from the command line by default
+    *   Include version (discussed below)
+*   Tell the user what was *actually* done
+    *   Log actions
 
-*   FIXME: make software installable as a package
+> ## Write a Usage Statement
+>
+> Run `make --help` (or something similar) and examine its output,
+> then write a similar command-line usage message for your project.
+{: .challenge}
 
-*   FIXME: [Taschuk's Rules](http://oicr-gsi.github.io/robust-paper/)
-*   get you from "works on my laptop" to "runs on your cluster"
-*   FIXME: [choose boring technology][mckinley-boring]
-
-FIXME: Assume your users are following [Noble's rules][noble-rules]
-
-1.  Put each project in its own directory which is named after the project
-1.  Put text documents in `doc/`
-1.  Put raw data and metadata in `data/`
-    *   Treat as read-only thereafter
-1.  Put files generated during analysis in `results/`
-    *   Preliminary cleanup is part of the analysis
-1.  Put project source code in `src/`
-1.  Put external scripts and compiled programs in `bin/`
-    *   Unless they are system-installed
-1.  Name all files to reflect their content or function
+> ## Logging
+>
+> Read the [tutorial on the Python logging library][python-logging-tutorial]
+> (or an equivalent tutorial for your preferred language's logging library).
+>
+> 1.  How do libraries of this kind give users control over what is logged and where?
+> 2.  Is this an appropriate level of complexity for your project?
+>     If not, what would you use instead?
+{: .challenge}
 
 {% include links.md %}
+
+====
+
+---
+title: "Make the Project Installable"
+teaching: 5
+exercises: 10
+questions:
+- "FIXME"
+objectives:
+- "FIXME"
+keypoints:
+- "FIXME"
+---
+
+*   Version your releases
+    *   Semantic versioning: `major.minor.patch`
+    *   Release date versioning: `yyyy.vv`
+*   Make old versions available
+*   Do not require root or other special privileges
+*   Eliminate hard-coded paths in the software
+
+> ## How Do You Version Now?
+>
+> How many different versions of your project are in use right now?
+> How do you know?
+> If a user has a problem,
+> how will you and they find out which version of the software they have?
+{: .challenge}
+
+> ## Where Does Your Software Live?
+>
+> 1.  What directories does your software add files to when it is installed?
+> 2.  What new directories does it create?
+{: .challenge}
+
+> ## Hard-coded Paths
+>
+> 1.  What files does your software read and/or write?
+> 2.  How do you know?
+> 3.  Which of these are referenced by fixed (hard-coded) paths?
+{: .challenge}
+
+{% include links.md %}
+
+====
+
+---
+title: "Make the Software Easy to Integrate"
+teaching: 5
+exercises: 10
+questions:
+- "FIXME"
+objectives:
+- "FIXME"
+keypoints:
+- "FIXME"
+---
+
+*   Command-line parameters for commonly-changed options
+    *   Also makes program easy to control from shell scripts
+*   Configuration files for less frequently changed options
+*   Frequently use multiple overlaid configuration files
+    *   System-level configuration file created during installation for things like cluster name
+    *   User-level configuration file in `~/.programrc` for user's credentials
+        *   `rc` suffix is old Unix abbreviation for "resource control"
+    *   Job-level configuration file for particular runs
+
+> ## Common and Rare
+>
+> 1.  What options or parameters does your program use?
+> 2.  Which ones are users most likely to set or change?
+> 3.  How do you know?
+{: .challenge}
+
+> ## Configuration Files
+>
+> 1.  Can some or all of your program's options be specified in an external configuration file?
+> 2.  If so, what data format do those files use?
+> 3.  If not, is it worth adding that capability?
+
+{% include links.md %}
+
+====
+
+---
+title: "Make the Software Trustworthy"
+teaching: 5
+exercises: 10
+questions:
+- "FIXME"
+objectives:
+- "FIXME"
+keypoints:
+- "FIXME"
+---
+
+*   Not enough to be right - have to be *seen* to be right
+*   Include a small test set that can be run to ensure the software is actually working
+    *   Not the same as a comprehensive unit test suite for use in development (which you should also have)
+    *   Unit tests may take too long to run, and output may not be actionable
+    *   Want smaller suite that says "am I set up correctly?"
+*   Produce identical results when given identical inputs
+    *   Absolutely necessary for reproducible research
+    *   Means external control of random numbe generation seeds,
+        aggregation order for floating point results,
+        dates and times,
+        etc.
+    *   Probably the hardest thing on this list for many projects
+
+> ## Is This Turned On?
+>
+> 1.  How can the person who installs your software tell if it is installed correctly?
+> 2.  How can the person who *uses* your software tell if it is installed correctly?
+{: .challenge}
+
+> ## Out of Control
+>
+> Under what circumstances could your program produce different answers
+> when given what the user believes are the same inputs?
+{: .challenge}
+
+{% include links.md %}
+
+====
+
+---
+title: "Choose Boring Technology"
+teaching: 5
+exercises: 10
+questions:
+- "FIXME"
+objectives:
+- "FIXME"
+keypoints:
+- "FIXME"
+---
+
+*   Idea discussed in [McKinley's talk][mckinley-boring]
+*   Every project has a limited "innovation budget"
+    *   Because every new technology introduces risk
+    *   And risks interact non-linearly
+*   Allow yourself one new tool or practice at a time
+*   And (strongly) prefer things that have been around for a long time
+    *   Limitations are known
+    *   More people likely to know how to work with them
+    *   "What's oldest will last longest" (proverb)
+
+> ## Familiarity
+>
+> List the main dependencies of your project,
+> then create a 2x2 grid
+> where the X axis is how long has each one has existed
+> (weeks, months, years, decades)
+> and the Y axis is how long you have been using it
+> (same scale).
+> How many of your dependencies are in an uncomfortable part of the grid?
+{: .challenge}
+
+{% include links.md %}
+
+====
+
+HERE
+
+*   Always use a package manager to manage installation
+    *   Describe dependencies in machine-readable form
+    *   Always set up development machines using the package manager
 
 ====
 

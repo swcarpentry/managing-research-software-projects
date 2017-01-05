@@ -16,6 +16,7 @@
 [morin-software-licensing]: http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002598
 [noble-rules]: http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424
 [osi-license-list]: http://opensource.org/licenses
+[python-logging-tutorial]: https://docs.python.org/3/howto/logging.html#logging-basic-tutorial
 [quote-hoye]: https://twitter.com/mhoye/status/805611816197955585
 [quote-raj]: http://rajlaboratory.blogspot.ca/2016/03/from-over-reproducibility-to.html
 [quote-schauenberg]: https://twitter.com/mrtazz/status/767438616167608320
