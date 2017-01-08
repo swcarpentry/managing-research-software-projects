@@ -650,11 +650,44 @@ keypoints:
 
 ====
 
-HERE
+---
+title: "Packaging"
+teaching: 5
+exercises: 10
+questions:
+- "FIXME"
+objectives:
+- "FIXME"
+keypoints:
+- "FIXME"
+---
 
-*   Always use a package manager to manage installation
-    *   Describe dependencies in machine-readable form
-    *   Always set up development machines using the package manager
+*   Describe dependencies in machine-readable form
+
+> ## Requirements for a Simple Website
+>
+> ~~~
+> Django>=1.9,<1.10
+> PyYAML
+> requests>=2.0
+> ~~~
+{: .source}
+
+*    Set up development machines using a package manager
+    *   Doesn't guarantee that the file is up to date, but it helps
+*   Use the same package description to install software on users' machines
+*   Package managers are often painful to work with
+    *   Like standards, everybody has their own
+    *   Often language-specific
+    *   Often complex (because they're solving complex problems)
+    *   Focus on libraries - generally don't address extra development tools
+
+> ## Dependencies
+>
+> Describe your project's dependencies in the format shown above.
+{: .challenge}
+
+{% include links.md %}
 
 ====
 
@@ -670,14 +703,78 @@ keypoints:
 - "FIXME"
 ---
 
-FIXME: issue tracking and triage
+*   Issue-tracking tools are often called bug trackers
+    *   Well-organized teams use them as a shared to-do list to manage everything
+*   Every task is recorded as a separate ticket
+    *   Unique ID
+    *   One-line summary to aid browsing
+    *   Status
+    *   Owner (i.e., who's responsible)
+    *   Full description that may include screenshots, error messages, etc.
+    *   History: who created it when, how it has been modified
+    *   Threaded discussion
+
+~~~
+ID: 1278
+Created-By: mummy
+Owned-By: wolfman
+State: assigned
+Summary: Message file reader crashes on accented characters
+Description:
+1.  Create a text file called 'accent.msg' containing the message
+    "Pümpernickel" (with an umlaut over the 'u').
+
+2.  Run 'python mindcontrol.py --all --message accent.msg'
+
+Program crashes with the message "No encoding for [] on line 1 of 'accent.msg'".
+([] shows where a solid black box appears in the output instead of a printable
+character.)
+~~~
+{: .source}
+
+*   More sophisticated systems allow people to:
+    *   Record dependencies between tickets
+    *   Estimate how long work will take
+    *   Record how long work actually took
+*   Can be used to make the development lifecycle explicit
+    *   I.e., only allow certain state transitions
+    *   And notify interested parties of state transitions
+
+![Issue Lifecyce]({{ site.github.url }}/fig/issue-lifecycle.png)
+
+*   Don't worry about any of this until people are actually filing issues
+*   Key use: prioritization
+    1.  What has to be done right now?
+    2.  What should be done soon?
+    3.  What can safely be left until later?
+
+> ## What's On Your List?
+>
+> 1.  What are the top 10 items on your project's to-do list?
+> 2.  How sure are you that your collaborators and users would agree with your selection?
+{: .challenge}
+
+> ## What's Missing?
+>
+> Look at the issue lifecycle diagram above.
+> What steps or transitions would you add?
+> Which ones would you remove?
+> Which ones would you make other people responsible for?
+{: .challenge}
+
+> ## What's Your Lifecycle?
+>
+> 1.  What states can your project's issues be in?
+> 2.  What state transitions are allowed?  ("Any to any" is a common and acceptable answer.)
+> 3.  Who decides when an issue can move from one state to another?
+{: .challenge}
 
 {% include links.md %}
 
 ====
 
 ---
-title: "Automate Shared Tasks"
+title: "Work While You're Asleep"
 teaching: 5
 exercises: 10
 questions:
@@ -690,24 +787,6 @@ keypoints:
 
 *   FIXME: continuous integration
 *   FIXME: lint the code as part of running tests
-
-{% include links.md %}
-
-====
-
----
-title: "Distribute Packages"
-teaching: 5
-exercises: 10
-questions:
-- "FIXME"
-objectives:
-- "FIXME"
-keypoints:
-- "FIXME"
----
-
-*   FIXME: checklists (including checklists for code review)
 
 {% include links.md %}
 
@@ -1130,54 +1209,6 @@ all nighters, your IQ is that of someone legally incompetent to care for
 themselves. The kicker is that, as with other forms of impairment,
 people don't realize they're affected: they believe they're still
 functioning properly.
-
-One of the key practices in sturdy development is the use of *ticketing*
-to keep track of work.
-
-Ticketing tools are often called *bug-tracking systems*, since they are
-often used to keep track of bugs that need to be fixed, but
-well-organized teams use them as a shared to-do list to manage all kinds
-of tasks, not just bugs.
-
-Every task is recorded as a separate ticket, each of which has a unique
-number, a one-line summary, its current state, and a longer description
-that may include screenshots, error messages, and so on.
-
-It also records who created it and when, and who it's assigned to.
-
-~~~
-ID: 1278
-Created-By: mummy
-Owned-By: wolfman
-State: assigned
-Summary: Message file reader crashes on accented characters
-Description:
-1. Create a text file called 'accent.msg' containing the message
- "You vill dream of pümpernickel" (with an umlaut over the 'u').
-
-2. Run the program with 'python mindcontrol.py --all --message accent.msg'.
-
-Program crashes with the message "No encoding for [] on line 1 of 'accent.msg'".
-([] shows where a solid black box appears in the output instead of a printable
-character.)
-~~~
-{: .source}
-
-When Wolfman checks in the code that fixes this bug, and the tests for
-that fix, he changes the ticket's state from 'assigned' to 'closed'.
-
-If someone later discovers that his fix doesn't actually work, they can
-change the state from 'closed' to 'open' (meaning "we need to decide
-who's going to work on this") or 'assigned' (meaning "a particular
-person is now responsible for working on this").
-
-More sophisticated ticketing systems allow people to record dependencies
-between tickets (such as "work can't start on this one until \#917 is
-closed"), to estimate how long work will take, to record how long work
-actually took, and so on.
-
-They also limit who can change the states of tickets or assign them to
-particular people, which is one way to implement particular workflows.
 
 Another key practice in sturdy development is code review. As we said in
 an earlier episode, empirical studies have found that this is the single
