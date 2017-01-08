@@ -769,6 +769,11 @@ character.)
 > 3.  Who decides when an issue can move from one state to another?
 {: .challenge}
 
+> ## How to Write a Good Bug Report
+>
+> FIXME: links to articles and action to critique a bug report.
+{: .challenge}
+
 {% include links.md %}
 
 ====
