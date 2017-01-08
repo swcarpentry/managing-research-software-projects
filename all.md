@@ -40,7 +40,7 @@ keypoints:
 
 > When life gives you lemons, think carefully if you want to tend a lemon tree garden forever.
 >
-> – [Daniel Schauenberg][quote-schauenberg]
+> - [Daniel Schauenberg][quote-schauenberg]
 {: .quotation}
 
 > ## Create a Value Proposition for Your Project
@@ -168,29 +168,29 @@ keypoints:
     *   [Integrates with Git][git-dropbox]
     *   Non-trivial setup...
 
-> …try to explain the notion of compiling a document to an
+> ...try to explain the notion of compiling a document to an
 > overworked physician you collaborate with. Oh, but before that, you
 > have to explain the difference between plain text and word
 > processing. And text editors. And markdown/LaTeX compilers. And
 > BiBTeX. And Git. And GitHub. Etc. Meanwhile he/she is getting paged
-> from the OR…
+> from the OR...
 >
-> …as much as we want to convince ourselves otherwise, when you
+> ...as much as we want to convince ourselves otherwise, when you
 > have to collaborate with those outside the scientific computing
 > bubble, the barrier to collaborating on papers in this framework is
 > simply too high to overcome. Good intentions aside, it always comes
 > down to "just give me a Word document with tracked changes," or
 > similar.
 >
-> – [Stephen Turner][good-enough]
+> - [Stephen Turner][good-enough]
 
 > Google Docs excels at easy sharing, collaboration, simultaneous
 > editing, commenting and reply-to-commenting. Sure, one can approximate
 > these using text-based systems and version control. The question is
-> why anyone would like to…
+> why anyone would like to...
 >
 > The goal of reproducible research is to make sure one
-> can…reproduce…computational analyses. The goal of version
+> can...reproduce...computational analyses. The goal of version
 > control is to track changes to source code. These are fundamentally
 > distinct goals, and while there is some overlap, version control is
 > merely a tool to help achieve that, and comes with so much overhead
@@ -201,7 +201,7 @@ keypoints:
 > Normal humans don't work like programmers expect them to
 > because programmers haven't built tools that would let them.  
 >
-> – [Mike Hoye][quote-hoye]
+> - [Mike Hoye][quote-hoye]
 
 {% include links.md %}
 
@@ -306,7 +306,7 @@ keypoints:
     *   Con: requires more time and effort to set up than other options
     *   Con: may not be allowed
 *   Option 3: public host service
-    *   [GitHub][github], [GitLab][gitlab], [BitBucket][bitbucket], [SourceForge][sourceforge], …
+    *   [GitHub][github], [GitLab][gitlab], [BitBucket][bitbucket], [SourceForge][sourceforge], ...
     *   All provide web interface to
         *   Create, view, and edit projects
         *   Communication and project management tools (issue tracking, wiki pages, email, code reviews)
@@ -371,9 +371,9 @@ keypoints:
     *   [GNU Make][gnu-make] defined the category, but depends on native shell commands
     *   [CMake][cmake] is a meta-tool that creates build files for multiple systems
     *   [SCons][scons] and similar tools define build rules in a full-blown programming language
-    *   Many more…
+    *   Many more...
 *   Originally created to compile multi-file programs efficiently, but can all be used for arbitrary tasks
-    *   Run tests, build packages for release, create reports, …
+    *   Run tests, build packages for release, create reports, ...
     *   Common pattern: build shell script or utility program, then launch from build file
 
 > ## Create a Task list
@@ -1001,7 +1001,7 @@ agile often call it "big design up front" (BDUF) or something less kind.
 We prefer the label "sturdy" because it puts a more positive spin on
 things. While agile is all about reacting quickly and taking advantage
 of opportunities as they arise, sturdy is about carrying the load of
-large projects—it emphasizes predictability..
+large projects-it emphasizes predictability..
 
 Let's start by looking at what sturdy development *isn't*. A *waterfall
 model* of software development divides the process into distinct stages;
@@ -1026,9 +1026,9 @@ multiply:
 
 The obvious implication is that time invested in up-front design can pay
 off many-fold if it prevents mistakes being made in the first place. It
-isn't always possible to do—people may not know what they want until
+isn't always possible to do-people may not know what they want until
 they see something running, or tools may change so quickly that anything
-we design today will be obsolete by the time it's implemented—but very
+we design today will be obsolete by the time it's implemented-but very
 few programmers have ever said, "I wish I'd spent *less* time thinking
 about this before I started coding."
 
@@ -1085,7 +1085,7 @@ one). We'll talk more about software architecture in a later episode.
 
 Once everything has been estimated, it's time to prioritize, because
 there's always more to do than there is time to do it. The easiest way
-to do this for medium-sized projects and teams is to draw a 3×3 grid on
+to do this for medium-sized projects and teams is to draw a 3x3 grid on
 a whiteboard. One axis is "effort", broken down into "small", "medium",
 and "large". The other is "importance", broken down into "low",
 "medium", and "high". Each feature's name is put on a sticky note, and
@@ -1094,7 +1094,7 @@ then the sticky note goes into one of the nine boxes on the grid:
 ![Prioritizing Work]({{ site.github.url }}/fig/prioritize.png)
 
 Once this has been done, it's easy to draw a diagonal line on the grid
-and throw away everything below it—after all, anything that's rated
+and throw away everything below it-after all, anything that's rated
 "high effort" but "low importance" isn't worth doing. Conversely,
 anything that's high importance and low effort definitely belongs in the
 plan.
@@ -1128,7 +1128,7 @@ corners early on.
 A common way to do this is to keep a *burn-down chart*, which compares
 the plan with reality on a day-by-day or week-by-week basis. If and when
 a gap opens up, the team can either figure out when they're actually
-going to be done, and move the delivery date back, or go back to the 3×3
+going to be done, and move the delivery date back, or go back to the 3x3
 grid to figure out what they can drop or scale back to meet the current
 deadline.
 
@@ -1150,7 +1150,7 @@ estimating how long the next one will take.
 
 In fact, whether or not a developer keeps track of their stats is a good
 way to tell how serious they are about their craft in an
-interview—something that would-be developers should keep in mind.
+interview-something that would-be developers should keep in mind.
 
 Going back to the original timeline, you may have noticed that design
 overlaps estimation, and coding overlaps design. This is deliberate: as
