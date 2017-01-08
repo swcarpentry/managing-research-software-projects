@@ -17,6 +17,7 @@
 [noble-rules]: http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424
 [osi-license-list]: http://opensource.org/licenses
 [python-logging-tutorial]: https://docs.python.org/3/howto/logging.html#logging-basic-tutorial
+[python-travis-tutorial]: https://www.smartfile.com/blog/testing-python-with-travis-ci/
 [quote-hoye]: https://twitter.com/mhoye/status/805611816197955585
 [quote-raj]: http://rajlaboratory.blogspot.ca/2016/03/from-over-reproducibility-to.html
 [quote-schauenberg]: https://twitter.com/mrtazz/status/767438616167608320
@@ -24,6 +25,7 @@
 [scons]: http://www.scons.org/
 [sourceforge]: http://sourceforge.net
 [steinmacher-barriers]: http://www.igor.pro.br/publica/papers/GSD_CSCW2014.pdf
+[travis-ci]: https://travis-ci.org/
 [vanderplas-licensing]: http://www.astrobetter.com/blog/2014/03/10/the-whys-and-hows-of-licensing-scientific-code/
 [what-is-rse]: http://www.rse.ac.uk/who.html
 [zenodo]: https://zenodo.org/
