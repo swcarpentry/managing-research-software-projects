@@ -14,10 +14,6 @@ keypoints:
 - "Research software is 'good enough' when people other than its authors can use it with confidence and extend it with reasonable effort."
 ---
 
-> When life gives you lemons, think carefully if you want to tend a lemon tree garden forever.  
-> – [Daniel Schauenberg][quote-schauenberg]
-{: .quotation}
-
 *   Key differences between research software and "normal" projects
     *   Requirements may be either:
         *   Discovered as we go along (exploring)
@@ -41,6 +37,11 @@ keypoints:
     *   "Everybody makes coffee"
 *   Goals for this class
     *   Understand how to go from ad hoc solo project to reliable small-team project
+
+> When life gives you lemons, think carefully if you want to tend a lemon tree garden forever.
+>
+> - [Daniel Schauenberg][quote-schauenberg]
+{: .quotation}
 
 > ## Create a Value Proposition for Your Project
 >

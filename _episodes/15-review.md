@@ -1,5 +1,5 @@
 ---
-title: "Issues"
+title: "Code Review"
 teaching: 5
 exercises: 10
 questions:
@@ -10,6 +10,6 @@ keypoints:
 - "FIXME"
 ---
 
-FIXME: issue tracking and triage
+FIXME: code review
 
 {% include links.md %}
