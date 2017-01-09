@@ -1,6 +1,6 @@
 ---
 title: "Introduction"
-teaching: 5
+teaching: 10
 exercises: 10
 questions:
 - "What are the key differences between research software and 'normal' projects?"

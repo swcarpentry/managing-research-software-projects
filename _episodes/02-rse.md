@@ -1,6 +1,6 @@
 ---
 title: "Research Software Engineers"
-teaching: 5
+teaching: 10
 exercises: 10
 questions:
 - "What is a research software engineer?"
