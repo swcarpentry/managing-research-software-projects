@@ -3,11 +3,12 @@ title: "Checklists"
 teaching: 5
 exercises: 10
 questions:
-- "FIXME"
+- "How should I handle tasks that need to be done repeatedly, but computers can't do automatically?"
 objectives:
-- "FIXME"
+- "Explain when to use checklists rather than a build manager."
 keypoints:
-- "FIXME"
+- "Use checklists for tasks that have to be done repeatedly, but can't be done by a computer."
+- "Have new contributors go through checklists to look for omissions and inaccuracies."
 ---
 
 *   A checklist is a build file meant to be executed by human beings
