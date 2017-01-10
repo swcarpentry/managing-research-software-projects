@@ -3,11 +3,13 @@ title: "Automate Development Tasks"
 teaching: 5
 exercises: 10
 questions:
-- "FIXME"
+- "How should I handle tasks I do repeatedly?"
 objectives:
-- "FIXME"
+- "Explain what build managers were originally designed to do, and what else they are now used to do."
+- "Make a build file self-explaining."
 keypoints:
-- "FIXME"
+- "Use a build manager to manage repetitive tasks."
+- "Make build files explain themselves."
 ---
 
 *   DRY: Don't Repeat Yourself
@@ -18,10 +20,15 @@ keypoints:
     *   [GNU Make][gnu-make] defined the category, but depends on native shell commands
     *   [CMake][cmake] is a meta-tool that creates build files for multiple systems
     *   [SCons][scons] and similar tools define build rules in a full-blown programming language
-    *   Many more...
 *   Originally created to compile multi-file programs efficiently, but can all be used for arbitrary tasks
     *   Run tests, build packages for release, create reports, ...
     *   Common pattern: build shell script or utility program, then launch from build file
+*   Key feature: dependencies
+    *   "X depends on Y depends on Z"
+    *   Usually implemented using timestamps or hashes
+    *   Not well suited to verbs
+*   General workflow tools may be a better fit for actual scientific work
+    *   E.g., [Galaxy][galaxy]
 
 > ## Create a Task list
 >

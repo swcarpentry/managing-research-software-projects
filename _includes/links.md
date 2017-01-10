@@ -5,6 +5,7 @@
 [cmake]: https://cmake.org/
 [figshare]: http://figshare.com/
 [fsf-license-list]: http://www.gnu.org/licenses/license-list.html
+[galaxy]: https://galaxyproject.org/
 [gawande-checklist-manifesto]: https://www.amazon.com/The-Checklist-Manifesto-Things-Right/dp/0312430000
 [git-dropbox]: https://github.com/anishathalye/git-remote-dropbox
 [github]: http://github.com
