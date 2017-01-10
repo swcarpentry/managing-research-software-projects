@@ -17,6 +17,7 @@
 [morin-software-licensing]: http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1002598
 [noble-rules]: http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424
 [osi-license-list]: http://opensource.org/licenses
+[pydoit]: http://pydoit.org/
 [python-logging-tutorial]: https://docs.python.org/3/howto/logging.html#logging-basic-tutorial
 [python-travis-tutorial]: https://www.smartfile.com/blog/testing-python-with-travis-ci/
 [quote-hoye]: https://twitter.com/mhoye/status/805611816197955585

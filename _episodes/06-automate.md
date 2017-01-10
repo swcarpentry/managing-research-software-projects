@@ -28,7 +28,8 @@ keypoints:
     *   Usually implemented using timestamps or hashes
     *   Not well suited to verbs
 *   General workflow tools may be a better fit for actual scientific work
-    *   E.g., [Galaxy][galaxy]
+    *   [Galaxy][galaxy] is a high-end tool
+    *   [doit][pydoit] is a lot easier to start with
 
 > ## Create a Task list
 >
