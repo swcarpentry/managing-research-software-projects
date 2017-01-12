@@ -3,9 +3,10 @@ title: "Make the Software Easy to Integrate"
 teaching: 5
 exercises: 10
 questions:
-- "FIXME"
+- "How can I make it easy for other people to use my software as a component in their work?"
 objectives:
-- "FIXME"
+- "Explain the pros and cons of command-line parameters vs. configuration files."
+- "Explain the pros and cons of libraries vs. external applications."
 keypoints:
 - "FIXME"
 ---
@@ -18,6 +19,10 @@ keypoints:
     *   User-level configuration file in `~/.programrc` for user's credentials
         *   `rc` suffix is old Unix abbreviation for "resource control"
     *   Job-level configuration file for particular runs
+*   How to connect to other programs?
+    *   Use a shell script to combine everything: universal but limited
+    *   Run your program in a sub-process: ditto
+    *   Build a library with a command-line wrapper: flexible, but more work for users
 
 > ## Common and Rare
 >
@@ -31,6 +36,15 @@ keypoints:
 > 1.  Can some or all of your program's options be specified in an external configuration file?
 > 2.  If so, what data format do those files use?
 > 3.  If not, is it worth adding that capability?
+{: .challenge}
+
+> ## Using Your Project as a Component
+>
+> Suppose someone wants to use your software as part of a larger program
+> written in a language other than the one you use.
+>
+> 1.  What's the simplest way for them to do this?
+> 2.  What *won't* they be able to do?
 {: .challenge}
 
 {% include links.md %}

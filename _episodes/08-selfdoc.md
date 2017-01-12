@@ -3,11 +3,15 @@ title: "Make the Project Describe Itself"
 teaching: 5
 exercises: 10
 questions:
-- "FIXME"
+- "How can I make it easier for people to find out what my project does?"
 objectives:
-- "FIXME"
+- "Explain what 'robust software' is."
+- "Identify three things projects can do to make themselves easier to understand."
 keypoints:
-- "FIXME"
+- "Robust software is software that works for people you've never met on machines you've never heard of."
+- "Every project should have a README that briefly explains its purpose and dependencies."
+- "Every program should be able print a short usage message."
+- "Every program should be able to log its actions."
 ---
 
 *   *Robust* is the difference between "works for me on my machine"
@@ -19,7 +23,8 @@ keypoints:
     *   Print usage from the command line by default
     *   Include version (discussed below)
 *   Tell the user what was *actually* done
-    *   Log actions
+    *   Log actions by writing messages to a findable place
+    *   Use a logging library that allows you to control level of detail
 
 > ## Write a Usage Statement
 >

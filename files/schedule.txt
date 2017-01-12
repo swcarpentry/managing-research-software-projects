@@ -1,0 +1,24 @@
+09:00   Introduction
+09:10   What is a research software engineer?
+09:30   How can I use version control to manage workflow?
+09:50   What license should I choose?
+10:10   Where should I host my project?
+10:30   Coffee
+10:50   How should I automate repetitive tasks?
+11:10   How can I use checklists for things that can't be automated?
+11:30   How can I make my project describe itself?
+11:50   Summary
+12:00   Lunch
+13:00   How can I make my project installable?
+13:20   How can I make my software easy to integrate?
+13:40   How can I make my software trustworthy?
+14:00   Why should I choose boring technology?
+14:20   How can I use issues to manage workflow?
+14:40   How can I use code review to share knowledge?
+15:00   How can I get the computer to do work while I'm asleep?
+15:20   Coffee
+15:40   How can I use testing to design software?
+15:40   When and how should people program together?
+16:00   How can I turn my project into a community?
+16:20   When and how should I recalibrate my productivity sensors?
+16:40   Conclusion
