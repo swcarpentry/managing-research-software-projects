@@ -3,13 +3,15 @@ title: "Agile Development"
 teaching: 5
 exercises: 10
 questions:
-- "What is agile software development?"
-- "What is sturdy software development?"
 - "What kind of development process should my project use?"
 objectives:
-- "FIXME"
+- "Explain the key features of agile development."
+- "Explain why agile development is a good fit for many small research software projects."
 keypoints:
-- "FIXME"
+- "Agile development is a software development process based on short iterations and rapid feedback."
+- "Key feedback loops are pair programming, test-driven development, continuous integration, and stand-up meetings."
+- "Agile works well for exploratory projects."
+- "Agile depends on high-bandwidth communication between developers and users, and on developers wanting to be empowered."
 ---
 
 *   *Agile development* fits well with how most researchers work
@@ -68,5 +70,12 @@ keypoints:
         *   Many become quite defensive when told that figuring out what to do is
             now part of their job, but that's as essential to agile development as
             it is to scientific research.
+
+> ## Are You Agile?
+>
+> 1.  Which of the key agile practices described above are you currently using?
+> 2.  Which do you think you and your team would actually adopt in the next 3-6 months?
+> 3.  Which do you think are not good fits to your needs or situation?
+{: .challenge}
 
 {% include links.md %}

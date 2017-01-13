@@ -3,13 +3,15 @@ title: "Test-Driven Development"
 teaching: 5
 exercises: 10
 questions:
-- "What is agile software development?"
-- "What is sturdy software development?"
-- "What kind of development process should my project use?"
+- "How can figure out what my code is supposed to do?"
+- "How can I stay focused on building what I actually need to?"
 objectives:
-- "FIXME"
+- "Define test-driven development and explain the rationale for it."
+- "Write unit tests to define what what a simple function is supposed to do."
 keypoints:
-- "FIXME"
+- "Test-driven development (TDD) is the practice of writing tests before writing code."
+- "Writing tests first helps clarify the intent and interface of the code to be written."
+- "Empirical evidence for TDD's benefits is unclear, but many programmers find it very useful."
 ---
 
 *   *Test-driven development* (TDD)
@@ -28,26 +30,19 @@ keypoints:
     *   But many productive programmers believe in it
     *   So maybe we're measuring the wrong things...
 
-> ## First, the Tests
->
-> 1.  Using `assert` statements,
->     write half a dozen tests for each of the following functions.
-> 2.  Compare your tests to those written by your neighbors.
->     What errors did they test for that you didn't?
->     What would your tests catch that they missed?
-> 3.  Where did you interpret requirements differently?
->     I.e., where would a function pass one of your neighbors' tests but fail one of yours
->     or vice versa?
->
-> Non-Decreasing Sub-Lists
-> :   Given a list of numbers,
->     return a list of the sums of each non-decreasing sub-list.
->     For example,
->     if the input is [1, 2, 3, 3, 1, 5, 6, 3, 1, 2, 3],
->     the output should be [9, 12, 3, 6].
->
-> FIXME Second Problem
-> :   FIXME spec
-{: .challenge}
+<blockquote class="challenge" markdown="1">
+## First, the Tests
+
+1.  Using `assert` statements,
+    write half a dozen tests for each of the following functions.
+2.  Compare your tests to those written by your neighbors.
+    What errors did they test for that you didn't?
+    What would your tests catch that they missed?
+3.  Where did you interpret requirements differently?
+    I.e., where would a function pass one of your neighbors' tests but fail one of yours
+    or vice versa?
+
+{% include problems.md %}
+</blockquote>
 
 {% include links.md %}

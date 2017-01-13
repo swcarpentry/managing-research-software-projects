@@ -9,7 +9,11 @@ objectives:
 - "Describe three benefits of code reviews."
 - "Explain the difference between pre-commit and post-commit review."
 keypoints:
-- "FIXME"
+- "Code review is the most cost-effective way to find bugs known."
+- "Use pre-commit review."
+- "Review code after all mechanical checks have passed."
+- "Keep changes short enough to be reviewed in less than an hour."
+- "Use code review to share knowledge within the team."
 ---
 
 *   Code review is the most cost-effective way to find bugs we know of
