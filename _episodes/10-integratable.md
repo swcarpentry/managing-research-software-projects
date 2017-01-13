@@ -8,7 +8,9 @@ objectives:
 - "Explain the pros and cons of command-line parameters vs. configuration files."
 - "Explain the pros and cons of libraries vs. external applications."
 keypoints:
-- "FIXME"
+- "Provide command-line parameters for commonly-changed options."
+- "Provide hierarchical configuration files for *all* options."
+- "Do not invent your own syntax for configuration files."
 ---
 
 *   Command-line parameters for commonly-changed options
@@ -19,6 +21,10 @@ keypoints:
     *   User-level configuration file in `~/.programrc` for user's credentials
         *   `rc` suffix is old Unix abbreviation for "resource control"
     *   Job-level configuration file for particular runs
+*   Use a standard syntax for configuration files
+    *   Windows init files are widely supported
+    *   YAML is increasingly popular
+    *   "If you have to write a parser, you've done something wrong."
 *   How to connect to other programs?
     *   Use a shell script to combine everything: universal but limited
     *   Run your program in a sub-process: ditto
