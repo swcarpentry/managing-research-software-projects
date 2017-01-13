@@ -49,8 +49,14 @@ keypoints:
 
 > ## Sharing Code vs. Sharing Publications
 >
-> FIXME:  Discuss how code repositories
-> differ from services like [arXiV][arxiv] and [figshare][figshare].
+> Sites like [GitHub][github] are meant for sharing things while they're being developed.
+> Services like [arXiV][arxiv] and [figshare][figshare], on the other hand,
+> are meant to be used to archive particular snapshots of things for future reference.
+> There's obviously overlap between the two -
+> in particular, it's possible to tag a particular version of a project in a code repository -
+> but as a general rule,
+> version control is "where you work"
+> while repositories are "where you publish".
 {: .callout}
 
 > ## Can My Work Be Public?
