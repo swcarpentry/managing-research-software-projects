@@ -3,15 +3,23 @@ title: "Issues"
 teaching: 5
 exercises: 10
 questions:
-- "FIXME"
+- "How can I keep track of what needs to be done?"
 objectives:
-- "FIXME"
+- "Describe what sorts of things should be recorded in an issue-tracking system."
+- "Describe what goes into a well-written issue."
+- "Explain how issue-tracking systems can be used to implement workflows."
+- "Explain how issue-tracking systems can be used to focus attention where it's needed."
 keypoints:
-- "FIXME"
+- "An issue-tracking system is a shared to-do list for a project."
+- "Every issue has a few mandatory fields to help with searching, and free-form text for details."
+- "Every issue is in a particular state."
+- "A project can define a workflow by specifying who can change tickets' states when."
+- "Use tickets to prioritize work: what needs be done now, what can be deferred until later."
 ---
 
 *   Issue-tracking tools are often called bug trackers
     *   Well-organized teams use them as a shared to-do list to manage everything
+    *   "Version control tells us where we've been; issue tracking tells us where we're going."
 *   Every task is recorded as a separate ticket
     *   Unique ID
     *   One-line summary to aid browsing
@@ -79,11 +87,6 @@ character.)
 > 1.  What states can your project's issues be in?
 > 2.  What state transitions are allowed?  ("Any to any" is a common and acceptable answer.)
 > 3.  Who decides when an issue can move from one state to another?
-{: .challenge}
-
-> ## How to Write a Good Bug Report
->
-> FIXME: links to articles and action to critique a bug report.
 {: .challenge}
 
 {% include links.md %}

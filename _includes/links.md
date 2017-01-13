@@ -25,6 +25,7 @@
 [quote-schauenberg]: https://twitter.com/mrtazz/status/767438616167608320
 [robinson-crunch-mode]: http://www.igda.org/?page=crunchsixlessons
 [scons]: http://www.scons.org/
+[smart-bear-code-review]: https://smartbear.com/SmartBear/media/pdfs/best-kept-secrets-of-peer-code-review.pdf
 [sourceforge]: http://sourceforge.net
 [steinmacher-barriers]: http://www.igor.pro.br/publica/papers/GSD_CSCW2014.pdf
 [travis-ci]: https://travis-ci.org/
