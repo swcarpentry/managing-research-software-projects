@@ -37,6 +37,7 @@ keypoints:
     *   "Everybody makes coffee"
 *   Goals for this class
     *   Understand how to go from ad hoc solo project to reliable small-team project
+    *   **[Recalibrate your productivity sensors][bartel-recalibrate]**
 
 > When life gives you lemons, think carefully if you want to tend a lemon tree garden forever.
 >

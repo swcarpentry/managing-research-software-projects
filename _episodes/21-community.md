@@ -34,7 +34,7 @@ keypoints:
 *   Use video conferencing and in-person meetings to build community, not to share information
     *   People can read faster than you can talk
 *   [Avoid common pitfalls][producing-oss-pitfalls]
-    *   Don't pose without a purpose
+    *   Don't post without a purpose
     *   Don't rehash previous discussion
         *   Summarize in blog posts or web pages and point people at those
     *   Avoid bikeshedding
@@ -46,5 +46,25 @@ keypoints:
     *   No "well, actually"
     *   No back-seat driving
     *   No subtle -isms
+*   Don't be afraid to [market your project][kuchner-marketing]
+    *   If it really is good, you should tell people about it
+    *   Your papers are your advertisements
+    *   Your grant proposals are your product
+
+> ## Code of Conduct
+>
+> Add the Contributor Covenant or some similar code of conduct to your project.
+> (Do *not* create one of your own.)
+> What is the process for complaint, appeal, and adjudication?
+{: .challenge}
+
+> ## Channels
+>
+> 1.  What is your project's primary communication channel?
+> 2.  Why and how was it chosen?
+> 3.  What discussion(s) take place in other channels?
+> 4.  Why?
+> 5.  How easy or hard is it for a newcomer to find where things are being discussed?
+{: .challenge}
 
 {% include links.md %}
