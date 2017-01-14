@@ -15,9 +15,12 @@ Building on that foundation, this course will discuss:
 *   what agile development is, and how to adapt it for research purposes
 *   how to turn a project into a community
 
-Please see the [design notes]({{ site.github.url }}/design/) for background on the lesson;
-suggestions and improvements are very welcome,
-and you can send us either by
+Comments and improvements are very welcome;
+you can send us either by
 [filing issues]({{ site.github.repository_url}}/issues)
 or
 [submitting pull requests]({{ site.github.repository_url}}/pulls).
+Please first see the [design notes]({{"/design/" | absolute_url}}) for background on the lesson.
+Please also note that **the schedule is just a placeholder**:
+we recognize that there's at least two days of material here,
+so suggestions on what to *cut* are as welcome as corrections or additions.
