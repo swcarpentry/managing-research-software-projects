@@ -23,7 +23,7 @@ keypoints:
 *   Every task is recorded as a separate ticket
     *   Unique ID
     *   One-line summary to aid browsing
-    *   Status
+    *   Status (sometimes organized by [stages of grief][twitter-grief])
     *   Owner (i.e., who's responsible)
     *   Full description that may include screenshots, error messages, etc.
     *   History: who created it when, how it has been modified

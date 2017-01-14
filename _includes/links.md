@@ -52,6 +52,7 @@
 [taschuk-rules]: https://github.com/oicr-gsi/robust-paper
 [travis-ci]: https://travis-ci.org/
 [travis-pr]: https://docs.travis-ci.com/user/pull-requests
+[twitter-grief]: https://twitter.com/rseroter/status/788028797144535040
 [tyranny-structurelessness]: http://www.jofreeman.com/joreen/tyranny.htm
 [vanderplas-licensing]: http://www.astrobetter.com/blog/2014/03/10/the-whys-and-hows-of-licensing-scientific-code/
 [waffle]: http://waffle.io
