@@ -78,3 +78,5 @@ permalink: /discuss/
     *   Leads to <https://www.usenix.org/system/files/conference/osdi14/osdi14-paper-yuan.pdf>
 *   How to fund open source projects: <https://github.com/danielskatz/sustaining-research-projects>
 *   What is open science? <http://ivory.idyll.org/blog/2016-what-is-open-science.html>
+
+{% include links.md %}

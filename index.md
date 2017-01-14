@@ -24,3 +24,5 @@ Please first see the [design notes]({{"/design/" | absolute_url}}) for backgroun
 Please also note that **the schedule is just a placeholder**:
 we recognize that there's at least two days of material here,
 so suggestions on what to *cut* are as welcome as corrections or additions.
+
+{% include links.md %}
