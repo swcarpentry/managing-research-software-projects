@@ -55,7 +55,7 @@ character.)
     *   I.e., only allow certain state transitions
     *   And notify interested parties of state transitions
 
-![Issue Lifecyce]({{ site.github.url }}/fig/issue-lifecycle.png)
+![Issue Lifecycle]({{ site.github.url }}/fig/issue-lifecycle.png)
 
 *   Don't worry about any of this until people are actually filing issues
 *   Key use: prioritization

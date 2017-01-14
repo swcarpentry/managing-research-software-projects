@@ -21,7 +21,7 @@ keypoints:
         *   Ideally, also serves as examples of use
 *   Produce identical results when given identical inputs
     *   Absolutely necessary for reproducible research
-    *   Means external control of random numbe generation seeds,
+    *   Means external control of random number generation seeds,
         aggregation order for floating point results,
         dates and times,
         etc.
