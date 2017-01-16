@@ -26,6 +26,9 @@ keypoints:
     *   Use [Contributor Covenant][contributor-covenant] by default
     *   Make the process for complaint, appeal, and adjudication *very* clear
         *   And make the first point of contact very clear as well
+    *   Needs:
+        *   Incident response plan (i.e., who does what when an incident occurs)
+        *   Widespread promotion (people have to know it exists and where to find it)
 *   Most important next step is to manage communication
     *   Small projects converge on one channel (i.e., issues, mailing list, Slack)
         *   "Someone mailed me your tweet about the Slack discussion so I filed a GitHub issue about updating the Google Doc. Wait, why are you crying?"
