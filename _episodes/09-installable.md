@@ -17,6 +17,8 @@ keypoints:
 *   Version your releases
     *   Semantic versioning: `major.minor.patch`
     *   Release date versioning: `yyyy.vv`
+*   Update the version number every time you release a change (however small)
+    *   Tempting not to do a full release when "it was just a little change"
 *   Make old versions available
 *   Do not require root or other special privileges
     *   Users may have this on their laptop, but probably don't have it on the cluster

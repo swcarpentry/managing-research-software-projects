@@ -25,6 +25,7 @@ keypoints:
     *   Windows init files are widely supported
     *   YAML is increasingly popular
     *   "If you have to write a parser, you've done something wrong."
+        *   ...or someone upstream from you did
 *   How to connect to other programs?
     *   Use a shell script to combine everything: universal but limited
     *   Run your program in a sub-process: ditto
