@@ -47,6 +47,8 @@ keypoints:
     *   Is the content you are licensing source code?
     *   Do you require people distributing derivative works to also distribute their code?
     *   Do you want to address patent rights?
+    *   Is your license compatible with the licenses of the software you depend on?
+        *   E.g., can't use MIT on top of GPL
 *   See [this paper][morin-software-licensing]
     and [this blog post][vanderplas-licensing]
     for overviews from a scientist's point of view
