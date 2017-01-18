@@ -28,6 +28,8 @@ keypoints:
         *   Which puts a sharp upper bound on size of change
     *   Focus is on behavior, not appearance
     *   Reviewer has checklist to refer to
+        *   Which includes usability as well as correctness
+        *   If nobody can figure out how to call a function, it might as well not exist
 *   Aim is not just to prevent bugs
     *   *Share knowledge*
     *   Ensure a consistent way to solve problems, not just consistent (superficial) style
