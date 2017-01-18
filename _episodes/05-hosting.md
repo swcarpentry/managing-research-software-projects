@@ -12,6 +12,9 @@ keypoints:
 ---
 
 *   Where to host code and data?
+    *   Privacy
+    *   Clear ownership
+    *   Availability (uptime, bandwidth, etc.)
 *   Option 1:  lab, department, or university provides server, manages accounts and backups, etc.
     *   Pro: clarifies who owns what
         *   Particularly important if any of the material is sensitive
@@ -32,7 +35,8 @@ keypoints:
         *   Communication and project management tools (issue tracking, wiki pages, email, code reviews)
     *   Pro: economies of scale
     *   Pro: network effects (potential collaborators probably already know how to use them)
-    *   Con: public (unless you pay)
+    *   Con: public (or only a limited amount of privacy)
+        *   Unless you pay
         *   And even then, out-of-institution/out-of-country hosting can be problematic
     *   Con: can be shut down, purchased, etc.
 
