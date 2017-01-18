@@ -16,7 +16,9 @@ keypoints:
 *   We assume your project is already under version control
     *   If not, this may not be the right course for you
 *   We also assume you use version control for everything created by human beings
-    *   In particular, papers
+    *   A major reason for the existence and survival of tools like LaTeX and Markdown
+    *   Collaboration would be a *lot* easier if version control systems knew
+        how to manage rich document formats...
 *   Use a *[feature branch workflow]({{ site.github.url }}/reference/#feature-branch)*
     *   Designate one branch as the main development branch (typically called `master`)
     *   Create a new branch for each feature from `master`
