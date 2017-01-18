@@ -41,6 +41,7 @@
 [quote-raj]: http://rajlaboratory.blogspot.ca/2016/03/from-over-reproducibility-to.html
 [quote-schauenberg]: https://twitter.com/mrtazz/status/767438616167608320
 [recurse-social-rules]: https://www.recurse.com/manual#sub-sec-social-rules
+[ride-like-a-girl]: https://medium.com/@nkkl/ride-like-a-girl-1d5524e25d3a
 [robinson-crunch-mode]: http://www.igda.org/?page=crunchsixlessons
 [rse]: http://www.rse.ac.uk/
 [scons]: http://www.scons.org/

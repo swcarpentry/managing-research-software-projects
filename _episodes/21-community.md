@@ -23,6 +23,7 @@ keypoints:
     *   How easy is it to get set up?
     *   How friendly was reception of first contribution?
 *   Every project should include a contributor code of conduct
+    *   And every project leader should think about [what it's like to be in a vulnerable group][ride-like-a-girl]
     *   Use [Contributor Covenant][contributor-covenant] by default
     *   Make the process for complaint, appeal, and adjudication *very* clear
         *   And make the first point of contact very clear as well
