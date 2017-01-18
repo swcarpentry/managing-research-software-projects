@@ -33,6 +33,8 @@ keypoints:
     *   Small projects converge on one channel (i.e., issues, mailing list, Slack)
         *   "Someone mailed me your tweet about the Slack discussion so I filed a GitHub issue about updating the Google Doc. Wait, why are you crying?"
     *   Strongly prefer email for general discussion: ubiquitous, threaded, and asynchronous
+        *   But only if publicly archived
+        *   Point-to-point email makes key information unfindable and fosters cliques
     *   And discussion threads on issues for specific topics (to avoid overwhelming general channel)
 *   Use video conferencing and in-person meetings to build community, not to share information
     *   People can read faster than you can talk
