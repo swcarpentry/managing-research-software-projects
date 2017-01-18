@@ -30,6 +30,7 @@ keypoints:
 *   General workflow tools may be a better fit for actual scientific work
     *   [Galaxy][galaxy] is a high-end tool
     *   [doit][pydoit] is a lot easier to start with
+    *   Only as stable as the pieces they connect
 
 > ## Create a Task list
 >
