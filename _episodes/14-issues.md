@@ -62,6 +62,9 @@ character.)
     1.  What has to be done right now?
     2.  What should be done soon?
     3.  What can safely be left until later?
+*   Another use is to show that you're working on someone
+    *   Assigning to someone or setting an "in progress" tag can save a lot of wasted effort
+    *   And reassure anxious users
 *   Criteria for decision:
     1.  How much do we need this?
     2.  How long will it take?
