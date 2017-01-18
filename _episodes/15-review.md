@@ -29,8 +29,11 @@ keypoints:
     *   Focus is on behavior, not appearance
     *   Reviewer has checklist to refer to
 *   Aim is not just to prevent bugs
-    *   Detect duplication
     *   *Share knowledge*
+    *   Ensure a consistent way to solve problems, not just consistent (superficial) style
+    *   Detect duplication
+*   For adoption, start with "at least one round of code review per feature"
+    *   Where a feature is "a body of work that took less than a week"
 *   See [Cohen et al][smart-bear-code-review] for more details
 
 > ## Challenge
