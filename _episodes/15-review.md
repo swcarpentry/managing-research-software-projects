@@ -30,6 +30,8 @@ keypoints:
     *   Reviewer has checklist to refer to
         *   Which includes usability as well as correctness
         *   If nobody can figure out how to call a function, it might as well not exist
+*   And review includes review of the documentation
+    *   Including review of the commit comments, because readable logs matter too
 *   Aim is not just to prevent bugs
     *   *Share knowledge*
     *   Ensure a consistent way to solve problems, not just consistent (superficial) style
