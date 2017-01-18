@@ -19,6 +19,7 @@ keypoints:
     *   "What range of outputs will I accept as correct for input X in situation Y?"
 *   Integer and text operations: usually require exact answer
 *   Anything involving floating point: allow error bars (just as in physical experiments)
+    *   But still produce identical answers for identical inputs
 *   Examples
     *   When refactoring image processing routine to improve performance:
         if more than 1% of pixels change value by more than the low bit, assume a bug
