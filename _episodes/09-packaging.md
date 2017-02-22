@@ -14,8 +14,15 @@ keypoints:
 ---
 
 *   Describe dependencies in machine-readable form
+    *   E.g., Python's `requirements.txt` gives package names, and optionally (ranges of) versions
 
 > ## Requirements for a Simple Website
+>
+> This `requirements.txt` file specifies that a website needs Django version 1.9.something,
+> any version of PyYAML,
+> and Version 2.0 or later of the requests library.
+> Running `pip install -r requirements.txt` on the command line
+> will find and install this software.
 >
 > ~~~
 > Django>=1.9,<1.10
@@ -34,17 +41,10 @@ keypoints:
     *   Often complex (because they're solving complex problems)
     *   Focus on libraries - generally don't address extra development tools
 
-> ## There Was a Better Way
->
-> Rather than relying on human beings to update version numbers appropriately as software changes,
-> a method called *design by contract* relies on precise specifications of what functions do
-> in order to determine whether an upgrade will break existing behavior.
-> Unfortunately, design by contract has never become widespread.
-{: .callout}
-
 > ## Dependencies
 >
-> 1.  Describe your project's dependencies in the format shown above.
+> 1.  Describe your project's dependencies in the format shown above
+>     (or if you're using some other package management system, its preferred format).
 > 2.  How do you know the list is correct?
 >     How would you know if something changed and it fell out of date?
 {: .challenge}

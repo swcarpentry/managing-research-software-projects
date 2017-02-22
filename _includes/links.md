@@ -18,6 +18,8 @@
 [gnu-make]: https://www.gnu.org/software/make/
 [good-enough]: https://arxiv.org/abs/1609.00037
 [jenkins-primer]: http://www.nickjenkins.net/prose/projectPrimer.pdf
+[jors]: http://openresearchsoftware.metajnl.com/
+[joss]: http://joss.theoj.org/
 [kuchner-marketing]: https://www.amazon.com/Marketing-Scientists-Shine-Tough-Times/dp/1597269948/
 [lint]: https://en.wikipedia.org/wiki/Lint_(software)
 [make-lesson]: https://swcarpentry.github.io/make-novice/
@@ -47,6 +49,7 @@
 [scons]: http://www.scons.org/
 [shell-lesson]: https://swcarpentry.github.io/shell-novice/
 [smart-bear-code-review]: https://smartbear.com/SmartBear/media/pdfs/best-kept-secrets-of-peer-code-review.pdf
+[software-paper-authorship]: http://ivory.idyll.org/blog/2015-authorship-on-software-papers.html
 [sourceforge]: http://sourceforge.net
 [sphinx]: http://www.sphinx-doc.org/
 [steinmacher-barriers]: http://www.igor.pro.br/publica/papers/GSD_CSCW2014.pdf
