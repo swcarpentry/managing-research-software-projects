@@ -26,7 +26,8 @@ keypoints:
 > whose X axis is how long has each one has existed
 > (weeks, months, years, decades)
 > and whose Y axis is how long you have been using it
-> (same scale).
+> (weeks, months, years).
+> Which parts of the grid are uncomfortable for you?
 > How many of your dependencies are in an uncomfortable part of the grid?
 {: .challenge}
 
