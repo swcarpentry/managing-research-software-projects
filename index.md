@@ -21,8 +21,17 @@ you can send us either by
 or
 [submitting pull requests]({{ site.github.repository_url}}/pulls).
 Please first see the [design notes]({{"/design/" | absolute_url}}) for background on the lesson.
-Please also note that the schedule is just a placeholder:
-we recognize that there's at least two days of material here,
-so suggestions on what to *cut* are as welcome as corrections or additions.
+Please also note that:
+
+1.  The schedule is just a placeholder:
+    we recognize that there's at least two days of material here,
+    so suggestions on what to *cut* are as welcome as corrections or additions.
+2.  Some groups will be able to skip some of the material about
+    [task automation]({{ site.github.url }}/06-automate/),
+    [making software robust]({{ site.github.url }}/07-robust/),
+    [using issue trackers]({{ site.github.url }}/10-issues/),
+    and so on.
+    Instructors should survey classes beforehand (or at the start of the day)
+    to find out how much of this they already know or are interested in.
 
 {% include links.md %}
