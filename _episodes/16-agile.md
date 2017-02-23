@@ -32,7 +32,7 @@ keypoints:
         so short cycles avoid building things people don't actually want
     *   Most people can organize time for a few days without much effort,
         so short cycles reduce proportion of time spent on coordination
-*   This exploratory approach makes agile a good fit for research software
+*   This exploratory approach makes agile a good fit for young research software
     *   Researchers often can't know what to write next
         until they've seen the output of the current program
 *   Every day starts with a *stand-up meeting* where everyone reports:
@@ -44,6 +44,8 @@ keypoints:
     *   Encourages people to break work down into tasks that are at most one day long
     *   If someone to says "still working on X" several days in a row,
         they're not giving meaningful feedback on their progress
+*   The PI is typically the *product owner* with ultimate say over what functionality the software has
+    *   Not necessarily the same as what changes are made, since one feature can satisfy many needs (and one need may require many new features)
 *   Agile development works best when:
     1.  Requirements are constantly changing, i.e., long-range planning
         isn't possible anyway. This is often the case for scientific
