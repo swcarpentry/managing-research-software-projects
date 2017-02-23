@@ -20,8 +20,8 @@ keypoints:
     *   Increases the odds of survival for your work when funding runs out or you move on
     *   More likely to impact traditional academic metrics (i.e., citations)
 *   [Steinmacher][steinmacher-barriers] identified two main barriers to contribution in open projects
-    *   How easy is it to get set up?
-    *   How friendly was reception of first contribution?
+    1.  How easy is it to get set up?
+    2.  How friendly was reception of first contribution?
 *   Every project should include a contributor code of conduct
     *   And every project leader should think about [what it's like to be in a vulnerable group][ride-like-a-girl]
     *   Use [Contributor Covenant][contributor-covenant] by default
@@ -39,7 +39,7 @@ keypoints:
     *   And discussion threads on issues for specific topics (to avoid overwhelming general channel)
 *   Use video conferencing and in-person meetings to build community, not to share information
     *   People can read faster than you can talk
-*   [Avoid common pitfalls][producing-oss-pitfalls]
+*   Avoid [common communication pitfalls][producing-oss-pitfalls]
     *   Don't post without a purpose
     *   Don't rehash previous discussion
         *   Summarize in blog posts or web pages and point people at those
@@ -52,15 +52,13 @@ keypoints:
     *   No "well, actually"
     *   No back-seat driving
     *   No subtle -isms
-*   Don't be afraid to [market your project][kuchner-marketing]
-    *   If it really is good, you should tell people about it
-    *   Your grant proposals are your product
-    *   Your papers are your advertisements
-        *   Make the main paper(s) you want people to cite obvious, in the documentation and in a CITATION file alongside the README
-        *   If there isn't a paper yet, get agreement on what's needed for a "code paper"
-        *   Journals like [JOSS][joss] and [JORS][jors] have clear guidelines and checklists
-        *   Keep planning for future papers and how people should be credited for their work so that the community remains engaged and committed
-        *   See [this example][software-paper-authorship] of a discussion of this
+*   Be clear when the group is deciding and when it is merely advising
+    *   Distinguish between inquiry and delegation
+        *   "Could you please look at X?" is ambiguous
+*   Share management tasks as well as technical tasks
+    *   Make it clear what has been delegated
+    *   Follow up on everything you delegate
+    *   Be clear about what "done" looks like
 
 > ## Code of Conduct
 >

@@ -16,14 +16,6 @@ keypoints:
 ---
 
 *   Managers make it possible for people to do things - leaders make them want to
-*   Avoid [the tyranny of structurelessness][tyranny-structurelessness]
-    *   Be clear when the group is deciding and when it is merely advising
-    *   Distinguish between inquiry and delegation
-        *   "Could you please look at X?" is ambiguous
-    *   Share management tasks as well as technical tasks
-        *   Make it clear what has been delegated
-    *   Follow up on everything you delegate
-    *   Be clear about what "done" looks like
 *   Most people welcome a [performance review][performance-review] if you:
     *   Evaluate against a standard
     *   Focus on impact

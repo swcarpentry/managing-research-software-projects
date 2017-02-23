@@ -1,6 +1,7 @@
 [arxiv]: http://arxiv.org/
 [bartel-recalibrate]: http://www.tombartel.de/blog/recalibrate-your-productivity-sensors/
 [bitbucket]: http://bitbucket.org
+[bpco]: https://www.amazon.com/Building-Powerful-Community-Organizations-Personal/dp/0977151808/
 [cc-by-human]: https://creativecommons.org/licenses/by/4.0/
 [cc-by-legal]: https://creativecommons.org/licenses/by/4.0/legalcode
 [choose-license]: http://choosealicense.com/
