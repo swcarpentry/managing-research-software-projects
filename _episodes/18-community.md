@@ -15,10 +15,19 @@ keypoints:
 - "Avoid common communication pitfalls."
 ---
 
+*   Clearly identify members of core team
+    *   Who is a primary part of the project and what rights does that give them
+    *   What do *they* need to get out of the project and when (e.g., completion of thesis or contract)
+    *   Review annually (at least)
 *   Treat every user as a potential contributor
     *   Makes it more likely that others will use your software
     *   Increases the odds of survival for your work when funding runs out or you move on
     *   More likely to impact traditional academic metrics (i.e., citations)
+*   Be clear about what peripheral participation means
+    *   Make it clear that you respect research confidentiality and define what that actually means
+        *   E.g., have explicit agreements about data availability, publication embargoes, etc.
+        *   Even (or especially) if the project is "all open, all the time"
+    *   Be explicit about when and how software changes will be integrated so that people have reasonable expectations
 *   [Steinmacher][steinmacher-barriers] identified two main barriers to contribution in open projects
     1.  How easy is it to get set up?
     2.  How friendly was reception of first contribution?
