@@ -6,7 +6,7 @@ questions:
 - "What kind of development process should my project use?"
 objectives:
 - "Explain the key features of agile development."
-- "Explain why agile development is a good fit for many small research software projects."
+- "Explain why agile development is a good fit for many new research software projects."
 keypoints:
 - "Agile development is a software development process based on short iterations and rapid feedback."
 - "Key feedback loops are pair programming, test-driven development, continuous integration, and stand-up meetings."

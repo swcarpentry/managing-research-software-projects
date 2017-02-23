@@ -21,7 +21,7 @@ you can send us either by
 or
 [submitting pull requests]({{ site.github.repository_url}}/pulls).
 Please first see the [design notes]({{"/design/" | absolute_url}}) for background on the lesson.
-Please also note that **the schedule is just a placeholder**:
+Please also note that the schedule is just a placeholder:
 we recognize that there's at least two days of material here,
 so suggestions on what to *cut* are as welcome as corrections or additions.
 
