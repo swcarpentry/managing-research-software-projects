@@ -27,9 +27,9 @@ Please also note that:
     we recognize that there's at least two days of material here,
     so suggestions on what to *cut* are as welcome as corrections or additions.
 2.  Some groups will be able to skip some of the material about
-    [task automation]({{ site.github.url }}/06-automate/),
-    [making software robust]({{ site.github.url }}/07-robust/),
-    [using issue trackers]({{ site.github.url }}/10-issues/),
+    [task automation]("/06-automate/" | absolute_url),
+    [making software robust]("/07-robust/" | absolute_url),
+    [using issue trackers]("/10-issues/" | absolute_url),
     and so on.
     Instructors should survey classes beforehand (or at the start of the day)
     to find out how much of this they already know or are interested in.

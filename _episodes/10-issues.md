@@ -55,7 +55,7 @@ character.)
     *   I.e., only allow certain state transitions
     *   And notify interested parties of state transitions
 
-![Issue Lifecycle]({{ site.github.url }}/fig/issue-lifecycle.png)
+![Issue Lifecycle]({{"/fig/issue-lifecycle.png" | absolute_url}})
 
 *   Don't worry about any of this until people are actually filing issues
 *   Key use: prioritization
@@ -69,7 +69,7 @@ character.)
     1.  How much do we need this?
     2.  How long will it take?
 
-![Prioritization]({{ site.github.url }}/fig/prioritize.png)
+![Prioritization]({{"/fig/prioritize.png" | absolute_url}})
 
 > ## What's On Your List?
 >

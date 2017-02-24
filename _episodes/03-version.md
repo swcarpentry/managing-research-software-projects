@@ -19,7 +19,7 @@ keypoints:
     *   A major reason for the existence and survival of tools like LaTeX and Markdown
     *   Collaboration would be a *lot* easier if version control systems knew
         how to manage rich document formats...
-*   Use a *[feature branch workflow]({{ site.github.url }}/reference/#feature-branch)*
+*   Use a *[feature branch workflow]({{"/reference/#feature-branch" | absolute_url}})*
     *   Designate one branch as the main development branch (typically called `master`)
     *   Create a new branch for each feature from `master`
     *   Only use that branch for that feature

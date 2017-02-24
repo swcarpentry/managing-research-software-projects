@@ -23,7 +23,7 @@ keypoints:
     *   So careful up-front planning can pay for itself by reducing effort downstream
     *   Truest when the problem domain, good solution strategies, and technologies are all well understood
 
-![Sturdy Lifecycle]({{ site.github.url }}/fig/sturdy.png)
+![Sturdy Lifecycle]({{"/fig/sturdy.png" | absolute_url}})
 
 1.  *Gather requirements*: figure out what the software is supposed to do
     *   The responsibiliyt of the *product manager*
@@ -76,7 +76,7 @@ keypoints:
     *   The system converts files to RJCS-2 format before storing them.
     *   The system displays an error message page if an uploaded file cannot be parsed, but takes no other action.
     *   Etc.
-*   Best to [specify requirements as tests]({{ site.github.url }}/13-tdd/), but those can still require human-readable explanation
+*   Best to [specify requirements as tests]({{"/13-tdd/" | absolute_url}}), but those can still require human-readable explanation
 
 > ## Prioritize
 >
