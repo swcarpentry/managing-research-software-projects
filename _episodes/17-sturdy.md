@@ -47,6 +47,9 @@ keypoints:
         *   Importance is "low", "medium", "high"
     *   Each feature goes into one square
     *   Then draw a diagonal and throw away everything below it that requires a lot of effort but isn't important
+
+![Prioritization]({{"/fig/prioritize.png" | absolute_url}})
+
 4.  *Create a schedule*
     *   Who is going to do what, when?
     *   Do *not* shave estimates to make things fit
