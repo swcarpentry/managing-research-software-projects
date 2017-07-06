@@ -34,7 +34,7 @@ keypoints:
 
 *   *Robust* is the difference between "works for me on my machine"
     and "works for someone I've never met on a cluster I've never heard of"
-    *   Rules are described in [Taschuk's Rules](http://oicr-gsi.github.io/robust-paper/)
+    *   Rules are described in [Taschuk's Rules][taschuk-rules]
 *   Have a README that briefly explains what the software does and what its dependencies are
     *   For humans to read *before* installing
 *   Tell the user what could be done

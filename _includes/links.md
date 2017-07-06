@@ -80,7 +80,7 @@
 [sphinx]: http://www.sphinx-doc.org/
 [steinmacher-barriers]: http://www.igor.pro.br/publica/papers/GSD_CSCW2014.pdf
 [styles]: https://github.com/swcarpentry/styles/
-[taschuk-rules]: https://github.com/oicr-gsi/robust-paper
+[taschuk-rules]: http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005412
 [training]: http://swcarpentry.github.io/instructor-training/
 [travis-ci]: https://travis-ci.org/
 [travis-pr]: https://docs.travis-ci.com/user/pull-requests
