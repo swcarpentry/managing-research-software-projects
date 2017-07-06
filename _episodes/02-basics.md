@@ -1,5 +1,5 @@
 ---
-title: "Mechanics"
+title: "Basics"
 teaching: 15
 exercises: 10
 questions:
@@ -169,16 +169,8 @@ character.)
 
 > ## What's On Your List?
 >
-> 1.  What are the top 10 items on your project's to-do list?
+> 1.  What are the top 3 items on your project's to-do list?
 > 2.  How sure are you that your collaborators and users would agree with your selection?
-{: .challenge}
-
-> ## What's Missing?
->
-> Look at the issue lifecycle diagram above.
-> What steps or transitions would you add?
-> Which ones would you remove?
-> Which ones would you make other people responsible for?
 {: .challenge}
 
 > ## What's Your Lifecycle?
