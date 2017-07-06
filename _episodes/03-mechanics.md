@@ -32,6 +32,14 @@ keypoints:
 - "Use tickets to prioritize work: what needs be done now, what can be deferred until later."
 ---
 
+## DRY: Don't Repeat Yourself
+
+*   Usually applied to nouns (code)
+*   Just as true for verbs (actions)
+*   The only thing you can accomplish by typing something repeatedly is to get it wrong
+
+## Version Control
+
 *   We assume your project is already under version control
     *   If not, this may not be the right course for you
 *   We also assume you use version control for everything created by human beings
@@ -43,10 +51,9 @@ keypoints:
     *   Create a new branch for each feature from `master`
     *   Only use that branch for that feature
     *   Merge the branch when the feature is done
-*   DRY: Don't Repeat Yourself
-    *   Usually applied to nouns (code)
-    *   Just as true for verbs (actions)
-    *   The only thing you can accomplish by typing something repeatedly is to get it wrong
+
+## Build Manager
+
 *   Use a build manager
     *   [GNU Make][gnu-make] defined the category, but depends on native shell commands
     *   [CMake][cmake] is a meta-tool that creates build files for multiple systems
@@ -62,6 +69,9 @@ keypoints:
     *   [Galaxy][galaxy] is a high-end tool
     *   [doit][pydoit] is a lot easier to start with
     *   Only as stable as the pieces they connect
+
+## Checklists
+
 *   A checklist is a build file meant to be executed by human beings
     *   *[The Checklist Manifesto][gawande-checklist-manifesto]*
         describes how use of checklists cuts fatalities in surgery significantly,
@@ -70,6 +80,9 @@ keypoints:
 *   Keep in version control
     *   Ask every new contributor/user to use *and give feedback*
 *   Include a contact email address in every checklist
+
+## Issue Tracking
+
 *   Issue-tracking tools are often called bug trackers
     *   Well-organized teams use them as a shared to-do list to manage everything
     *   "Version control tells us where we've been; issue tracking tells us where we're going."
@@ -121,22 +134,6 @@ character.)
 *   Criteria for decision:
     1.  How much do we need this?
     2.  How long will it take?
-
-> ## Checklist for First Day of Software Carpentry Workshop
->
-> 1.  As learners arrive,
->     ask them to connect to the network
->     and check that they have software installed.
-> 2.  Remind everyone of the Code of Conduct.
-> 3.  Circulate the sign-in sheet and photo release form.
-> 4.  Distribute sticky notes.
-> 5.  Debug remaining software installation problems.
->     *   If someone can't get software working, pair them with someone who has it working.
-> 6.  Remind learners of the workshop's goals and schedule.
-> 7.  Remind helpers to mingle as well as answer questions.
->
-> Questions or suggestions? Email help@software-carpentry.org.
-{: .callout}
 
 > ## How Do You Manage Your Repository?
 >
