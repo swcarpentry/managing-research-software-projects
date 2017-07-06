@@ -15,7 +15,13 @@ keypoints:
 - "Crunch mode doesn't work."
 ---
 
+> When life gives you lemons, think carefully if you want to tend a lemon tree garden forever.
+>
+> - [Daniel Schauenberg][quote-schauenberg]
+{: .quotation}
+
 *   Managers make it possible for people to do things - leaders make them want to
+    *   **[Recalibrate your productivity sensors][bartel-recalibrate]**
 *   Most people welcome a [performance review][performance-review] if you:
     *   Evaluate against a standard
     *   Focus on impact
