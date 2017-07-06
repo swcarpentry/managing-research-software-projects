@@ -20,9 +20,9 @@ Don't tell people to Google things.
     Telling them to Google can also give the impression that we think their problem is trivial.
     (That said, if learners have done enough programming before to be past these issues,
     having them search for solutions online can help them solidify their understanding.)
-    It's also worth quoting
-    [Trevor King](https://github.com/swcarpentry/python-novice-gapminder/issues/22#issuecomment-182573516)'s
-    comment about online search:
-    "If you find anything,
+    Also,
+    if you find anything,
     other folks were confused enough to bother with a blog or Stack Overflow post,
-    so it's probably not trivial."
+    so it's probably not trivial.
+
+{% include links.md %}

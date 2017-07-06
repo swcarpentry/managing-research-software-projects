@@ -112,7 +112,7 @@ I can use...
 
 *   ...[GitHub][github] for project management (issues and pull requests).
 *   ...[Make][make-lesson] for task automation.
-*   ...[Travis-CI][travis] for continuous integration.
+*   ...[Travis-CI][travis-ci] for continuous integration.
 *   ...[Sphinx][sphinx] for documentation generation.
 *   ...[Pip and Setuptools][python-packaging] to create and install packages.
 *   ...[Waffle][waffle] for backlog management.
@@ -192,18 +192,4 @@ I can use...
 
 *   Discussion: 15 min
 
-[gapminder-learning-plan]: http://swcarpentry.github.io/python-novice-gapminder/design/#stage-2---learning-plan
-[git-lesson]: https://swcarpentry.github.io/git-novice/
-[github]: https://github.com/
-[jenkins-primer]: http://www.nickjenkins.net/prose/projectPrimer.pdf
-[make-lesson]: https://swcarpentry.github.io/make-novice/
-[noble-rules]: http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1000424
-[python-lesson]: https://swcarpentry.github.io/python-novice-gapminder/
-[python-packaging]: https://packaging.python.org/
-[rse]: http://www.rse.ac.uk/
-[shell-lesson]: https://swcarpentry.github.io/shell-novice/
-[sphinx]: http://www.sphinx-doc.org/
-[taschuk-rules]: https://github.com/oicr-gsi/robust-paper
-[travis-pr]: https://docs.travis-ci.com/user/pull-requests
-[travis]: https://travis-ci.org/
-[waffle]: http://waffle.io
+{% include links.md %}

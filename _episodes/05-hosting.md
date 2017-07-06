@@ -12,6 +12,9 @@ keypoints:
 ---
 
 *   Where to host code and data?
+    *   Privacy
+    *   Clear ownership
+    *   Availability (uptime, bandwidth, etc.)
 *   Option 1:  lab, department, or university provides server, manages accounts and backups, etc.
     *   Pro: clarifies who owns what
         *   Particularly important if any of the material is sensitive
@@ -32,7 +35,8 @@ keypoints:
         *   Communication and project management tools (issue tracking, wiki pages, email, code reviews)
     *   Pro: economies of scale
     *   Pro: network effects (potential collaborators probably already know how to use them)
-    *   Con: public (unless you pay)
+    *   Con: public (or only a limited amount of privacy)
+        *   Unless you pay
         *   And even then, out-of-institution/out-of-country hosting can be problematic
     *   Con: can be shut down, purchased, etc.
 
@@ -49,8 +53,14 @@ keypoints:
 
 > ## Sharing Code vs. Sharing Publications
 >
-> FIXME:  Discuss how code repositories
-> differ from services like [arXiV][arxiv] and [figshare][figshare].
+> Sites like [GitHub][github] are meant for sharing things while they're being developed.
+> Services like [arXiV][arxiv] and [figshare][figshare], on the other hand,
+> are meant to be used to archive particular snapshots of things for future reference.
+> There's obviously overlap between the two -
+> in particular, it's possible to tag a particular version of a project in a code repository -
+> but as a general rule,
+> version control is "where you work"
+> while repositories are "where you publish".
 {: .callout}
 
 > ## Can My Work Be Public?

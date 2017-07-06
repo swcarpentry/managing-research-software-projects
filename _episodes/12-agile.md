@@ -3,13 +3,15 @@ title: "Agile Development"
 teaching: 5
 exercises: 10
 questions:
-- "What is agile software development?"
-- "What is sturdy software development?"
 - "What kind of development process should my project use?"
 objectives:
-- "FIXME"
+- "Explain the key features of agile development."
+- "Explain why agile development is a good fit for many new research software projects."
 keypoints:
-- "FIXME"
+- "Agile development is a software development process based on short iterations and rapid feedback."
+- "Key feedback loops are pair programming, test-driven development, continuous integration, and stand-up meetings."
+- "Agile works well for exploratory projects."
+- "Agile depends on high-bandwidth communication between developers and users, and on developers wanting to be empowered."
 ---
 
 *   *Agile development* fits well with how most researchers work
@@ -21,7 +23,7 @@ keypoints:
     *   Multi-year development plans didn't make sense when everything
         they depended on would be obsolete by the time work started
 
-![Agile Feedback Loops]({{ site.github.url }}/fig/agile-feedback.png)
+![Agile Feedback Loops]({{"/fig/agile-feedback.png" | absolute_url}})
 
 *   Key feature is *short iterations*: single day to two weeks
     *   In each iteration, the team decides what to build next, designs it,
@@ -30,7 +32,7 @@ keypoints:
         so short cycles avoid building things people don't actually want
     *   Most people can organize time for a few days without much effort,
         so short cycles reduce proportion of time spent on coordination
-*   This exploratory approach makes agile a good fit for research software
+*   This exploratory approach makes agile a good fit for young research software
     *   Researchers often can't know what to write next
         until they've seen the output of the current program
 *   Every day starts with a *stand-up meeting* where everyone reports:
@@ -42,6 +44,8 @@ keypoints:
     *   Encourages people to break work down into tasks that are at most one day long
     *   If someone to says "still working on X" several days in a row,
         they're not giving meaningful feedback on their progress
+*   The PI is typically the *product owner* with ultimate say over what functionality the software has
+    *   Not necessarily the same as what changes are made, since one feature can satisfy many needs (and one need may require many new features)
 *   Agile development works best when:
     1.  Requirements are constantly changing, i.e., long-range planning
         isn't possible anyway. This is often the case for scientific
@@ -68,5 +72,12 @@ keypoints:
         *   Many become quite defensive when told that figuring out what to do is
             now part of their job, but that's as essential to agile development as
             it is to scientific research.
+
+> ## Are You Agile?
+>
+> 1.  Which of the key agile practices described above are you currently using?
+> 2.  Which do you think you and your team would actually adopt in the next 3-6 months?
+> 3.  Which do you think are not good fits to your needs or situation?
+{: .challenge}
 
 {% include links.md %}

@@ -31,12 +31,15 @@ keypoints:
     4.  Fast enough to be useful
     5.  Can be maintained by people other than its original author(s)
         *   I.e., it is *sustainable*
+    6.  Has a citable publication described in an easy-to-find way
+        so that users can credit the project in an academically-digestible form
 *   For our purposes:
     *   3x6: three people for six months
     *   Contributors are frequently time-slicing other projects
     *   "Everybody makes coffee"
 *   Goals for this class
     *   Understand how to go from ad hoc solo project to reliable small-team project
+    *   **[Recalibrate your productivity sensors][bartel-recalibrate]**
 
 > When life gives you lemons, think carefully if you want to tend a lemon tree garden forever.
 >
