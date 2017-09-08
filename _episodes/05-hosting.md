@@ -11,10 +11,16 @@ keypoints:
 - "Rules regarding intellectual property and storage of sensitive information apply no matter where code and data are hosted."
 ---
 
-*   Where to host code and data?
-    *   Privacy
-    *   Clear ownership
-    *   Availability (uptime, bandwidth, etc.)
+*   What are the permanent access points for your project?
+    *   Software under development
+    *   Stable releases/versions
+    *   Documentation
+    *   Supporting data
+*   Hosting considerations
+    *   Privacy (what level, if any, of restricted access do you need?)
+    *   Ownership, branding
+    *   Reliability
+    *   Management burden
 *   Option 1:  lab, department, or university provides server, manages accounts and backups, etc.
     *   Pro: clarifies who owns what
         *   Particularly important if any of the material is sensitive
