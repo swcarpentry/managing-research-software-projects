@@ -32,9 +32,14 @@ keypoints:
 *   Check style as well as correctness
     *   Sometimes called "linters" after the original [lint][lint] for C
     *   Equivalents have been built for most languages
-        *   E.g., [pep8][pep8] for Python
+        *   [pep8][pep8] for Python
+        *   [formatR][formatR] for R
     *   Most are configurable
         *   Stick to a pre-defined style rather than argue about one of your own
+    *   Automatic enforcement eliminates subjective arguments
+        *   If the linter passes, the code is approved
+        *   Guarantees you never have to worry about style if the linter is happy
+        *   Most linters support exceptions, these can be approved in code review on a case-by-case basis
 
 > ## Lint Your Code
 >
@@ -45,11 +50,7 @@ keypoints:
 
 > ## Setting Up Continuous Integration
 >
-> 1.  Create a new Git repository on GitHub
->     and add a single Python file with one function that adds two numbers.
-> 2.  Follow the steps in [this tutorial][python-travis-tutorial]
->     to set up Travis-CI testing of that function.
->
+> Follow the steps in [this tutorial][python-travis-tutorial] to set up Travis-CI testing for the SNDS repository.
 > How long did it take you to set this up?
 {: .challenge}
 
