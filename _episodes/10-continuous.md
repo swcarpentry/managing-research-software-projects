@@ -1,5 +1,5 @@
 ---
-title: "Work While You're Asleep"
+title: "Continuous Integration"
 teaching: 5
 exercises: 10
 questions:
