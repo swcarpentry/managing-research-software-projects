@@ -25,11 +25,10 @@ keypoints:
 *   The concert merchandise model
     *   Your grant proposals are your product
     *   Your papers are your advertisements
-*   Consider: What part does software play in your research? Are you funded by o
-    *   New theories?
-    *   New models?
-    *   New results?
-    *   New tools?
+*   Consider the following:
+    *   What part does software play in your research?
+    *   Who procures funding for your research, and what are the expectations about software of those funding agencies?
+    *   Are you funded/employed primarily to produce software tools? Or to produce theories/models/results/methods?
 *   We should clarify what marketing means
     *   It is not being pushy
     *   It is not shameless self-promotion
