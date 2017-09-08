@@ -22,8 +22,9 @@ keypoints:
 *   Much more to a research software project than just code:
     *   Data
     *   Organization
-    *   Communication
     *   Process
+    *   Communication
+        *   We should think about programming not as instructing a computer what to do, but as communicating with other humans what we want the computer to do (paraphrased from Donald Knuth)
 *   This class will discuss:
     *   What a research software project needs to achieve its goals
     *   How to go from ad hoc solo project to reliable small-team project
