@@ -1,21 +1,14 @@
 ---
-title: "Basics"
-teaching: 15
+title: "Automate Frequent Tasks"
+teaching: 10
 exercises: 10
 questions:
-- "How should I manage work using version control?"
 - "How should I handle tasks I do repeatedly?"
-- "How should I handle tasks that need to be done repeatedly, but computers can't do automatically?"
 objectives:
-- "Explain how to use feature branches to manage software development."
 - "Explain what build managers were originally designed to do, and what else they are now used to do."
 - "Make a build file self-explaining."
 - "Explain when to use checklists rather than a build manager."
 keypoints:
-- "Use version control for everything created manually, not just code."
-- "Create a new branch for each feature."
-- "Only use that branch for that feature."
-- "Merge and delete the branch when the feature is complete."
 - "Use a build manager to manage repetitive tasks."
 - "Make build files explain themselves."
 - "Use checklists for tasks that have to be done repeatedly, but can't be done by a computer."
@@ -28,26 +21,13 @@ keypoints:
 *   Just as true for verbs (actions)
 *   The only thing you can accomplish by typing something repeatedly is to get it wrong
 
-## Version Control
-
-*   We assume your project is already under version control
-    *   If not, this may not be the right course for you
-*   We also assume you use version control for everything created by human beings
-    *   A major reason for the existence and survival of tools like LaTeX and Markdown
-    *   Collaboration would be a *lot* easier if version control systems knew
-        how to manage rich document formats...
-*   Use a *[feature branch workflow]({{"/reference/#feature-branch" | absolute_url}})*
-    *   Designate one branch as the main development branch (typically called `master`)
-    *   Create a new branch for each feature from `master`
-    *   Only use that branch for that feature
-    *   Merge the branch when the feature is done
-
 ## Build Manager
 
 *   Use a build manager
     *   [GNU Make][gnu-make] defined the category, but depends on native shell commands
     *   [CMake][cmake] is a meta-tool that creates build files for multiple systems
     *   [SCons][scons] and similar tools define build rules in a full-blown programming language
+    *   Language-specific tools like [rake][rake], [pydoit][pydoit], and [SnakeMake][snakemake]
 *   Originally created to compile multi-file programs efficiently, but can all be used for arbitrary tasks
     *   Run tests, build packages for release, create reports, ...
     *   Common pattern: build shell script or utility program, then launch from build file
