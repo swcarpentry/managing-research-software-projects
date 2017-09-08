@@ -1,5 +1,5 @@
 ---
-title: "Hosting"
+title: "Host Your Project Responsibly"
 teaching: 5
 exercises: 10
 questions:
@@ -23,6 +23,7 @@ keypoints:
     *   Con: longevity
         *   Someone who has spent ten years collecting data wants it to be available 10 years from now
         *   That's well beyond the lifespan of most of the grants that fund academic infrastructure
+        *   Empirically, link rot is a huge issue with research software
 *   Option 2: purchase a domain and pay an Internet service provider (ISP) to host it
     *   Pro: gives the individual or group more control
     *   Pro: sidesteps problems that can arise when moving from one institution to another
