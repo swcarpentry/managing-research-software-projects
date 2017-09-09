@@ -16,6 +16,7 @@
 [cran-knitr]: https://cran.r-project.org/web/packages/knitr/index.html
 [cran-stringr]: https://cran.r-project.org/web/packages/stringr/index.html
 [figshare]: http://figshare.com/
+[formatR]: https://yihui.name/formatr/
 [fsf-license-list]: http://www.gnu.org/licenses/license-list.html
 [galaxy]: https://galaxyproject.org/
 [gapminder-learning-plan]: http://swcarpentry.github.io/python-novice-gapminder/design/#stage-2---learning-plan
