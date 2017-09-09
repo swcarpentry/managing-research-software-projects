@@ -7,7 +7,8 @@ questions:
 objectives:
 - "Describe the current or desired governance model for your organization."
 keypoints:
-- "FIXME"
+- "Every project has a governance structure, either officially or unofficially."
+- "Give people pathways to contribution."
 ---
 
 *   As a community grows, it needs more formal organization

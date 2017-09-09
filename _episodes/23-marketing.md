@@ -5,11 +5,12 @@ exercises: 10
 questions:
 - "How can I raise money for my project?"
 objectives:
-- "FIXME"
+- "Explain how to communicate the value of research to stakeholders."
 keypoints:
-- "FIXME"
+- "Marketing is the craft of seeing the value of your research from someone else's point of view."
+- "Your papers are your advertisements - your grant proposals are your product."
+- "Check your project's social media profile regularly."
 ---
-
 
 *   It's tempting to think of science as purely meritocratic
     *   "If I do good science, it should speak for itself"
