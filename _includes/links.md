@@ -81,6 +81,7 @@
 [sourceforge]: http://sourceforge.net
 [sphinx]: http://www.sphinx-doc.org/
 [steinmacher-barriers]: http://www.igor.pro.br/publica/papers/GSD_CSCW2014.pdf
+[stupidity-driven]: http://ivory.idyll.org/blog/2014-research-coding.html
 [styles]: https://github.com/swcarpentry/styles/
 [taschuk-rules]: http://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1005412
 [training]: http://swcarpentry.github.io/instructor-training/
