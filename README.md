@@ -10,7 +10,9 @@ or run `make` in this directory for a list of helpful commands.
 
 Maintainer(s):
 
+* [Daniel Standage][standage-daniel]
 * [Greg Wilson][wilson-greg]
 
 [lesson-example]: https://swcarpentry.github.com/lesson-example/
-[wilson-greg]: http://software-carpentry.org/team/#wilson_g
+[standage-daniel]: https://standage.github.io/
+[wilson-greg]: http://third-bit.com/
