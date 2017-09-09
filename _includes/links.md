@@ -63,6 +63,7 @@
 [quote-hoye]: https://twitter.com/mhoye/status/805611816197955585
 [quote-raj]: http://rajlaboratory.blogspot.ca/2016/03/from-over-reproducibility-to.html
 [quote-schauenberg]: https://twitter.com/mrtazz/status/767438616167608320
+[rake]: https://ruby.github.io/rake/
 [r-markdown]: http://rmarkdown.rstudio.com/
 [recurse-social-rules]: https://www.recurse.com/manual#sub-sec-social-rules
 [ride-like-a-girl]: https://medium.com/@nkkl/ride-like-a-girl-1d5524e25d3a
@@ -75,6 +76,7 @@
 [scons]: http://www.scons.org/
 [shell-lesson]: https://swcarpentry.github.io/shell-novice/
 [smart-bear-code-review]: https://smartbear.com/SmartBear/media/pdfs/best-kept-secrets-of-peer-code-review.pdf
+[snakemake]: https://snakemake.readthedocs.io/
 [software-paper-authorship]: http://ivory.idyll.org/blog/2015-authorship-on-software-papers.html
 [sourceforge]: http://sourceforge.net
 [sphinx]: http://www.sphinx-doc.org/
