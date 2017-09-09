@@ -1,5 +1,5 @@
 ---
-title: "Issues"
+title: "Issue Trackers"
 teaching: 15
 exercises: 10
 questions:
@@ -22,6 +22,10 @@ keypoints:
 *   Issue-tracking tools are often called bug trackers
     *   Well-organized teams use them as a shared to-do list to manage everything
     *   "Version control tells us where we've been; issue tracking tells us where we're going."
+*   Can be used to:
+    *   Request, plan, and discuss new features
+    *   Describe bugs, and solicit/collect bug reports from community
+    *   Dump ideas for future reference
 *   Every task is recorded as a separate ticket
     *   Unique ID
     *   One-line summary to aid browsing
@@ -60,16 +64,20 @@ character.)
 ![Issue Lifecycle]({{"/fig/issue-lifecycle.png" | absolute_url}})
 
 *   Don't worry about any of this until people are actually filing issues
-*   Key use: prioritization
+*   Key utility: prioritization
     1.  What has to be done right now?
     2.  What should be done soon?
     3.  What can safely be left until later?
-*   Another use is to show that you're working on someone
-    *   Assigning to someone or setting an "in progress" tag can save a lot of wasted effort
-    *   And reassure anxious users
 *   Criteria for decision:
     1.  How much do we need this?
     2.  How long will it take?
+*   Key utility: documenting your team's work
+    *   Whenever you start working on a new task/feature/bugfix, open a PR early in the process with a description of the in-progress work and links to any relevant tickets.
+    *   Make it clear if and when the PR is ready for intermediate or final review.
+        Use of status tags (such as **In Progress** and **Ready for Review**) is encouraged.
+    *   Think of the issue tracker as a shared lab notebook.
+        It contains a full record of work done, along with relevant discussion.
+    *   Everyone can see what everyone else is up to.
 
 > ## What's On Your List?
 >
