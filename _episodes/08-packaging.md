@@ -1,5 +1,5 @@
 ---
-title: "Packaging"
+title: "Distribute Your Software"
 teaching: 5
 exercises: 10
 questions:
@@ -13,7 +13,13 @@ keypoints:
 - "Always set up development machines using the package description in order to ensure it's up to date."
 ---
 
-*   Describe dependencies in machine-readable form
+*   Package managers support software installation with a single command
+    *   Handle dependencies recursively
+    *   Easily scripted/automated
+*   Motivation: ease software installation burden
+    *   For users and sysadmins at least
+    *   Result: a bit more work for the developer(s)
+*   Describe project dependencies in machine-readable form
     *   E.g., Python's `requirements.txt` gives package names, and optionally (ranges of) versions
 
 > ## Requirements for a Simple Website
@@ -32,6 +38,10 @@ keypoints:
 > {: .source}
 {: .callout}
 
+*   Common package managers
+    *   OS-specific: homebrew, apt, yum, pacman
+    *   Language-specific: pip, cran, npm, gem, cpan
+    *   Generic: conda, others?
 *   Set up development machines using a package manager
     *   Doesn't guarantee that the file is up to date, but it helps
 *   Use the same package description to install software on users' machines
@@ -41,11 +51,14 @@ keypoints:
     *   Often complex (because they're solving complex problems)
     *   Focus on libraries - generally don't address extra development tools
 
-> ## Dependencies
+> ## Ask Your Doctor: Is Packaging Right for You?
 >
-> 1.  Describe your project's dependencies in the format shown above
->     (or if you're using some other package management system, its preferred format).
-> 2.  How do you know the list is correct?
+> 1.  What language is your project primarily implemented in?
+>     Does a package manager exist for this language?
+> 2.  Write down your project's dependencies.
+>     Can these be installed with a package manager?
+>     Is this the same package manager as above?
+> 3.  How do you know if your dependency list is correct?
 >     How would you know if something changed and it fell out of date?
 {: .challenge}
 
