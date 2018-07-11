@@ -79,7 +79,7 @@ keypoints:
     *   The system converts files to RJCS-2 format before storing them.
     *   The system displays an error message page if an uploaded file cannot be parsed, but takes no other action.
     *   Etc.
-*   Best to [specify requirements as tests]({{"/11-testing/" | absolute_url}}), but those can still require human-readable explanation
+*   Best to [specify requirements as tests]({{"/13-testing/" | absolute_url}}), but those can still require human-readable explanation
 
 > ## Prioritize
 >
