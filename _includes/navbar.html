@@ -46,7 +46,7 @@
             <li><a href="{{ page.root }}{{ episode.url }}">{{ episode.title }}</a></li>
             {% endfor %}
 	    <li role="separator" class="divider"></li>
-            <li><a href="{{ page.root }}/aio/">All in one page (Beta)</a></li>
+            <li><a href="{{ page.root }}{% link aio.md %}">All in one page (Beta)</a></li>
           </ul>
         </li>
 	{% endif %}
