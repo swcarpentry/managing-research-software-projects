@@ -12,9 +12,9 @@
 [contact]: mailto:lessons@software-carpentry.org
 [contributing]: {{ site.github.repository_url }}/blob/gh-pages/CONTRIBUTING.md
 [contributor-covenant]: http://contributor-covenant.org/
-[cran-checkpoint]: https://cran.r-project.org/web/packages/checkpoint/index.html
-[cran-knitr]: https://cran.r-project.org/web/packages/knitr/index.html
-[cran-stringr]: https://cran.r-project.org/web/packages/stringr/index.html
+[cran-checkpoint]: https://cran.r-project.org/package=checkpoint
+[cran-knitr]: https://cran.r-project.org/package=knitr
+[cran-stringr]: https://cran.r-project.org/package=stringr
 [figshare]: http://figshare.com/
 [formatR]: https://yihui.name/formatr/
 [fsf-license-list]: http://www.gnu.org/licenses/license-list.html
