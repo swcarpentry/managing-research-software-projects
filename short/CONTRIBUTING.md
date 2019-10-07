@@ -4,7 +4,7 @@ Please keep the [issue tracker](http://github.com/hakimel/reveal.js/issues) limi
 
 
 ### Personal Support
-If you have personal support or setup questions the best place to ask those are [StackOverflow](http://stackoverflow.com/questions/tagged/reveal.js).
+If you have personal support or setup questions the best place to ask those are [StackOverflow](https://stackoverflow.com/questions/tagged/reveal.js?tab=Votes).
 
 
 ### Bug Reports
