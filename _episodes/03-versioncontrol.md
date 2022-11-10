@@ -23,8 +23,8 @@ keypoints:
     *   Collaboration would be a *lot* easier if version control systems knew
         how to manage rich document formats...
 *   Use a *feature branch workflow*
-    *   Designate one branch as the main development branch (typically called `master`)
-    *   Create a new branch for each feature from `master`
+    *   Designate one branch as the main development branch (typically called `main`)
+    *   Create a new branch for each feature from `main`
     *   Only use that branch for that feature
     *   Merge the branch when the feature is done
 
@@ -43,7 +43,7 @@ keypoints:
 > 1. Clone the SNDS repo to your laptop
 > 2. Create a new branch with a unique label (such as your last name) and check out that branch.
 > 3. Add your name and email address to the `CONTRIBUTORS` file.
-> 4. Commit your changes, push your new branch to Github, and open a new pull request to merge your "feature branch" into `master`.
+> 4. Commit your changes, push your new branch to Github, and open a new pull request to merge your "feature branch" into `main`.
 {: .challenge}
 
 {% include links.md %}
